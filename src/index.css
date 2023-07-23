@@ -1,13 +1,18 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* fuente para numeros*/
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+/*para letras son separadas*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+/*font Waterfall */
+
+html {
+  font-family: "Raleway", sans-serif;
+  scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.font-numero {
+  font-family: "Inter", sans-serif;
 }
