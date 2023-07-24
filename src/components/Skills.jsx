@@ -1,4 +1,5 @@
 import React from "react";
+import { useAppContext } from "../context/AppProvider";
 const cargarImagen = require.context("../images", true);
 
 const skills = [
@@ -17,9 +18,10 @@ const skills = [
 ];
 
 const Skills = () => {
+  const { texts } = useAppContext();
   return (
     <div className="px-4 mb-16 md:px-48 lg:px-80">
-      <h1 className="text-2xl py-2 mb-3 text-cyan-500">Skills</h1>
+      <h1 className="text-2xl py-2 mb-3 text-cyan-500">{texts.skillTitle}</h1>
       <div className="grid grid-cols-2 gap-4">
         {skills.map((item, index) => (
           <div

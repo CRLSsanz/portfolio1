@@ -54,6 +54,16 @@ const Portfolio = () => {
           <Contact />
         </div>
       </section>
+      <section id="section6" className="h-48 bg-[#1A2035] flex">
+        <div className="my-auto w-full text-center">
+          <h1 className="h-16">HOME BLOG PRICING ABOUT FAQ CONTACT</h1>
+          <p>
+            All Rights Reserved. <span className="font-numero">© 2023 </span>
+            CRLS <br />
+            Design By : SanzDesign
+          </p>
+        </div>
+      </section>
     </div>
   );
 };

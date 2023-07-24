@@ -1,16 +1,36 @@
 import React, { useState } from "react";
+import { useAppContext } from "../context/AppProvider";
+const cargarImagen = require.context("../images", true);
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
+  const { texts, language, handleLanguage } = useAppContext();
 
   return (
     <div className="w-full">
       <nav className="w-full h-16 px-2 lg:px-24 flex justify-between items-center bg-gradient-to-l from-cyan-600 backdrop-blur-2xl">
+        <div className="relative ml-4">
+          <img
+            className="shadow-lg border shadow-gray-200"
+            src={cargarImagen(`./${language}.png`)}
+            //style={{ width: `${item.width}` }}
+            alt="English"
+          />
+          <select
+            className="absolute -top-1 left-2 pl-4 appearance-none bg-transparent text-transparent focus:text-gray-200 focus:outline-none"
+            onChange={handleLanguage}
+          >
+            <option value="en">English</option>
+            <option value="es">Espanish</option>
+            <option value="fr">Frances</option>
+            <option value="it">Italiano</option>
+          </select>
+        </div>
         <a
           href="#section1"
-          className="px-4 text-lg text-gray-100 font-semibold"
+          className="hidden px-4 text-lg text-gray-100 font-semibold"
         >
-          Cs
+          C R L S
         </a>
         <button
           onClick={() => setNavbar(!navbar)}
@@ -50,27 +70,29 @@ const Navbar = () => {
         }`}
       >
         <li className="">
-          <span className="uppercase text-xs tracking-widest ">Navigation</span>
+          <span className="uppercase text-xs tracking-widest ">
+            {texts.navbarTitle}
+          </span>
         </li>
         <br />
         <li className="w-full py-2 hover:font-bold ">
           <a href="#section2" onClick={() => setNavbar(!navbar)}>
-            About
+            {texts.navbarAbout}
           </a>
         </li>
         <li className="w-full border-t border-gray-400 py-4 hover:font-bold ">
           <a href="#section3" onClick={() => setNavbar(!navbar)}>
-            Skills
+            {texts.navbarSkills}
           </a>
         </li>
         <li className="w-full border-t border-gray-400 py-4 hover:font-bold ">
           <a href="#section4" onClick={() => setNavbar(!navbar)}>
-            Work
+            {texts.navbarWork}
           </a>
         </li>
         <li className="w-full border-t border-gray-400 py-4 hover:font-bold ">
           <a href="#section5" onClick={() => setNavbar(!navbar)}>
-            Contact
+            {texts.navbarContact}
           </a>
         </li>
 
