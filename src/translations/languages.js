@@ -33,6 +33,11 @@ const translations = {
     workItem3: "Marketing Online",
     workItem4: "Fast Food J&M",
     workView: "View",
+    //CONTACT
+    contactTitle: "Contact",
+    contactText:
+      "I am currently available for freelance work. If you have a project that you want to start or think you need my help, contact me and I will help you.",
+    contactSend: "Send Message!",
   },
   es: {
     //NAVBAR
@@ -67,8 +72,10 @@ const translations = {
     workItem4: "Comida Rapida J&M",
     workView: "Ver",
     //CONTACT
+    contactTitle: "Contáctame",
     contactText:
       "Actualmente estoy disponible para trabajo independiente. Si tiene un proyecto que desea comenzar o cree que necesita mi ayuda, contactame y te ayudare.",
+    contactSend: "Enviar Mensaje!",
   },
   fr: {
     //NAVBAR
@@ -102,6 +109,11 @@ const translations = {
     workItem3: "Marketing en Ligne",
     workItem4: "Restauration Rapide J&M",
     workView: "Voir",
+    //CONTACT
+    contactTitle: "Contactez-moi",
+    contactText:
+      "Je suis actuellement disponible pour un travail indépendant. Si vous avez un projet que vous souhaitez démarrer ou pensez avoir besoin de mon aide, contactez-moi et je vous aiderai.",
+    contactSend: "Envoyer Message!",
   },
   it: {
     //NAVBAR
@@ -135,6 +147,11 @@ const translations = {
     workItem3: "Marketing Online",
     workItem4: "Fast Food J&M",
     workView: "Vedere",
+    //CONTACT
+    contactTitle: "Contattami",
+    contactText:
+      "Attualmente sono disponibile per lavoro freelance. Se hai un progetto che vuoi avviare o pensi di aver bisogno del mio aiuto, contattami e ti aiuterò.",
+    contactSend: "Invia Messaggio!",
   },
 };
 

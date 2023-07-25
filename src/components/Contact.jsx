@@ -1,6 +1,9 @@
 import React from "react";
+import { useAppContext } from "../context/AppProvider";
 
 const Contact = () => {
+  const { texts } = useAppContext();
+
   const handleSubmit = (event) => {
     event.preventDefault();
     alert("Sending Form");
@@ -9,12 +12,10 @@ const Contact = () => {
 
   return (
     <div className="px-4 mb-4">
-      <h1 className="text-2xl py-2 font-semibold text-cyan-500">Contact </h1>
-      <p className="text-sm text-gray-300 mb-3">
-        I’m interested in freelance opportunities, especially ambitious or large
-        projects. However, if you have other request or question, don’t hesitate
-        to use the form.
-      </p>
+      <h1 className="text-2xl py-2 font-semibold text-cyan-500">
+        {texts.contactTitle}
+      </h1>
+      <p className="text-sm text-gray-300 mb-3">{texts.contactText}</p>
       <form onSubmit={handleSubmit} className="text-gray-700">
         <input
           type="text"
@@ -41,7 +42,7 @@ const Contact = () => {
             type="submit"
             className="px-4 py-2 border border-cyan-600 text-cyan-500"
           >
-            Send Message
+            {texts.contactSend}
           </button>
         </div>
       </form>
