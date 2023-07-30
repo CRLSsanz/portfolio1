@@ -10,13 +10,13 @@ const Footer = () => {
   return (
     <div>
       <div className="p-10">
-        <div className="bg-[#259ca0] rounded-ss-[80px] rounded-br-[80px] rounded-bl-2xl rounded-tr-[40px]  py-10 -mt-40 shadow-md">
-          <h1 className="hidden text-5xl font-numero">31</h1>
-          <h4 className="hidden">Projects Delivere!</h4>
-          <h1 className="text-5xl font-numero">3</h1>
-          <h4 className="">Years Experience</h4>
-          <h1 className="text-5xl font-extralight font-numero mt-10">{time}</h1>
-          <h4>Seconds on this site!</h4>
+        <div className="bg-[#259ca0] rounded-tl-[80px] rounded-br-[80px] rounded-bl-2xl rounded-tr-[40px]  py-10 -mt-40 shadow-md">
+          <h1 className="hidden text-5xl font-numero font-thin">37</h1>
+          <h4 className="hidden italic">Projects Delivere!</h4>
+          <h1 className="text-5xl font-numero font-thin mt-10xx">3</h1>
+          <h4 className="italic">Years Experience</h4>
+          <h1 className="text-5xl font-numero font-thin mt-10">{time}</h1>
+          <h4 className="italic">Seconds on this site!</h4>
         </div>
       </div>
       <div className="flex justify-center">
@@ -36,8 +36,9 @@ const Footer = () => {
       <h1 className="mb-5 leading-loose">
         HOME <br /> ABOUT <br /> SKILLS <br /> WORK <br /> CONTACT
       </h1>
-      <div class="flex flex-wrap justify-center gap-2 text-gray-300 mb-10">
-        <div className="bg-transparent border border-gray-300 rounded-full w-8 h-8 flex">
+      {/** SVG SOCIAL */}
+      <div class="flex flex-wrap justify-center text-gray-300 mb-10">
+        <div className="bg-transparent border border-gray-300 rounded-full w-8 h-8 flex mr-2">
           <svg
             className="m-auto"
             stroke="currentColor"
@@ -57,7 +58,7 @@ const Footer = () => {
             </g>
           </svg>
         </div>
-        <div className="bg-transparent border border-gray-300 rounded-full w-8 h-8 flex">
+        <div className="bg-transparent border border-gray-300 rounded-full w-8 h-8 flex mr-2">
           <svg
             className="m-auto"
             stroke="currentColor"
@@ -74,7 +75,7 @@ const Footer = () => {
             </g>
           </svg>
         </div>
-        <div className="bg-transparent border border-gray-300 rounded-full w-8 h-8 flex">
+        <div className="bg-transparent border border-gray-300 rounded-full w-8 h-8 flex mr-2">
           <svg
             className="m-auto"
             stroke="currentColor"
@@ -91,7 +92,7 @@ const Footer = () => {
           </svg>
         </div>
         {/** prueba */}
-        <div className="bg-transparent border border-gray-300 rounded-full w-8 h-8 flex">
+        <div className="bg-transparent border border-gray-300 rounded-full w-8 h-8 flex mr-0">
           <svg
             className="m-auto"
             fill="currentColor"
@@ -105,7 +106,7 @@ const Footer = () => {
         </div>
       </div>
       <p className="text-xs mb-5">
-        All Rights Reserved. <span className="font-numero">© 2023 </span>
+        All Rights Reserved <span className="font-numero">© 2023 </span>
       </p>
     </div>
   );

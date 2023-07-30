@@ -12,9 +12,9 @@ const Work = () => {
       </h1>
       <p className="text-sm text-gray-200 mb-3">{texts.workText} </p>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-10">
-        <div className="bg-[#1A2035] shadow-md shadow-gray-500 rounded-br-3xl rounded-ss-3xl">
+        <div className="bg-[#1A2035] shadow-md shadow-gray-500 rounded-br-3xl rounded-tl-3xl">
           <img
-            className="w-full rounded-ss-3xl"
+            className="w-full rounded-tl-3xl"
             src={cargarImagen(`./work1.jpg`)}
             //style={{ width: "200px" }}
             alt="work1"
@@ -36,9 +36,9 @@ const Work = () => {
           </div>
         </div>
 
-        <div className="bg-gray-100 text-gray-700 shadow-md shadow-gray-500 rounded-br-3xl rounded-ss-3xl">
+        <div className="bg-gray-100 text-gray-700 shadow-md shadow-gray-500 rounded-br-3xl rounded-tl-3xl">
           <img
-            className="w-full rounded-ss-3xl"
+            className="w-full rounded-tl-3xl"
             src={cargarImagen(`./work2.jpg`)}
             //style={{ width: "200px" }}
             alt="work2"
@@ -65,9 +65,9 @@ const Work = () => {
           />
         </div>
 
-        <div className="bg-[#1A2035] shadow-md shadow-gray-500 rounded-br-3xl rounded-ss-3xl">
+        <div className="bg-[#1A2035] shadow-md shadow-gray-500 rounded-br-3xl rounded-tl-3xl">
           <img
-            className="w-full rounded-ss-3xl"
+            className="w-full rounded-tl-3xl"
             src={cargarImagen(`./work4.jpg`)}
             //style={{ width: "200px" }}
             alt="work4"
@@ -93,32 +93,32 @@ const Work = () => {
           />
         </div>
 
-        <div className="bg-gray-100 text-gray-700 shadow-md shadow-gray-500 rounded-br-3xl rounded-ss-3xl">
+        <div className="bg-gray-100 text-gray-700 shadow-md shadow-gray-500 rounded-br-3xl rounded-tl-3xl">
           <img
-            className="w-full rounded-ss-3xl"
+            className="w-full rounded-tl-3xl"
             src={cargarImagen(`./work6.jpg`)}
             //style={{ width: "200px" }}
             alt="work6"
           />
-          <div className="p-2">
+          <div className="p-4">
             <div className="flex justify-between mb-2">
               <h1>{texts.workItem4}</h1>
               <h1>{texts.workView}</h1>
             </div>
             <div className="text-gray-100 flex flex-wrap">
-              <h1 className="p-1 px-2 bg-gray-500 rounded mr-1 mb-1">React</h1>
-              <h1 className="p-1 px-2 bg-gray-500 rounded mr-1 mb-1">
+              <h1 className="p-1 px-2 bg-gray-800 rounded mr-1 mb-1">React</h1>
+              <h1 className="p-1 px-2 bg-gray-800 rounded mr-1 mb-1">
                 React Router
               </h1>
-              <h1 className="p-1 px-2 bg-gray-500 rounded mr-1 mb-1">
+              <h1 className="p-1 px-2 bg-gray-800 rounded mr-1 mb-1">
                 Tailwind
               </h1>
-              <h1 className="p-1 px-2 bg-gray-500 rounded mr-1 mb-1">
+              <h1 className="p-1 px-2 bg-gray-800 rounded mr-1 mb-1">
                 Chart Js
               </h1>
-              <h1 className="p-1 px-2 bg-gray-500 rounded mr-1 mb-1">Fetch</h1>
-              <h1 className="p-1 px-2 bg-gray-500 rounded mr-1 mb-1">Axios</h1>
-              <h1 className="p-1 px-2 bg-gray-500 rounded mr-1 mb-1">
+              <h1 className="p-1 px-2 bg-gray-800 rounded mr-1 mb-1">Fetch</h1>
+              <h1 className="p-1 px-2 bg-gray-800 rounded mr-1 mb-1">Axios</h1>
+              <h1 className="p-1 px-2 bg-gray-800 rounded mr-1 mb-1">
                 Node.js
               </h1>
             </div>

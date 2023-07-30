@@ -34,7 +34,7 @@ const translations = {
     workItem4: "Fast Food J&M",
     workView: "View",
     //CONTACT
-    contactTitle: "Contact",
+    contactTitle: "Contact me",
     contactText:
       "I am currently available for freelance work. If you have a project that you want to start or think you need my help, contact me and I will help you.",
     contactSend: "Send Message!",

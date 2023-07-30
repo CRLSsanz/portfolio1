@@ -10,7 +10,7 @@ const Portfolio = () => {
   return (
     <div>
       <section id="section1" className="min-h-screen bg-[#1A2035] flex">
-        <div className="my-auto">
+        <div className="my-auto px-2">
           <Home />
         </div>
       </section>
@@ -32,7 +32,7 @@ const Portfolio = () => {
       </section>
 
       <section id="section3" className="min-h-[700px] bg-[#1A2035] flex">
-        <div className="my-autoooo w-full">
+        <div className="my-autoooo w-full px-2">
           <h1 className="h-16"> </h1>
           <Skills />
         </div>
