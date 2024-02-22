@@ -13,7 +13,7 @@ const Portfolio = () => {
         id="section1"
         className="min-h-screen Bbg-[#1A2035] bg-[#151515] flex"
       >
-        <div className="my-auto">
+        <div className="m-auto">
           <Home />
         </div>
       </section>
