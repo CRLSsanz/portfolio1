@@ -9,8 +9,11 @@ const bag3 = "https://github.com/CRLSsanz/trade/blob/main/fondo01.jpg?raw=true";
 const Portfolio = () => {
   return (
     <div>
-      <section id="section1" className="min-h-screen bg-[#1A2035] flex">
-        <div className="my-auto px-2">
+      <section
+        id="section1"
+        className="min-h-screen Bbg-[#1A2035] bg-[#151515] flex"
+      >
+        <div className="my-auto">
           <Home />
         </div>
       </section>
