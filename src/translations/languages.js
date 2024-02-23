@@ -48,9 +48,9 @@ const translations = {
     navbarContact: "Contacto",
     //HOME
     homeHello: "Hola mi nombre es",
-    homeTitle: "Soy un Desarrollador Web",
+    homeTitle: "Desarrollador Web",
     homeText:
-      "Un entusiasta de los nuevos retos. Me apasiona crear software excelente buscando aprovechar mi experiencia y conocimiento para mejorar un poco la web y sus aplicaciones.",
+      "Soy un entusiasta de los nuevos retos; me apasiona crear software excelente buscando aprovechar mi experiencia y conocimientos para mejorar un poco la web y sus aplicaciones.",
     homeButton: "Ver Portafolio",
     //ABOUT
     aboutTitle: "Lo que hago",
