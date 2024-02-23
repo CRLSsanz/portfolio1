@@ -70,7 +70,7 @@ const Navbar = () => {
       </div>
 
       <ul
-        className={`fixed z-50 flex flex-col justify-center text-center text-gray-500 font-semibold bg-gray-100/95 bBg-[#0C87A7ee] border-l-2 border-gray-500/50 top-16 w-[calc(100%-100px)] sm:w-[500px] h-[calc(100%-48px)] lg:h-[calc(100%-56px)] transform transition-all duration-1000 px-8 sm:px-12 lg:px-24 lg:text-xl
+        className={`fixed z-50 flex flex-col justify-center text-center text-gray-500 lg:font-semibold bg-gray-100/95 bBg-[#0C87A7ee] border-l-2 border-gray-500/50 top-16 w-[calc(100%-100px)] sm:w-[500px] h-[calc(100%-48px)] lg:h-[calc(100%-56px)] transform transition-all duration-1000 px-8 sm:px-12 lg:px-24 lg:text-xl
         ${
           navbar
             ? " opacity-100 pointer-events-auto right-0"
