@@ -18,13 +18,13 @@ const Navbar = () => {
               alt="English"
             />
             <select
-              className="absolute -top-1 left-2 pl-6 appearance-none bg-transparent text-transparent focus:text-gray-200 focus:outline-none"
+              className="absolute -top-1 left-2 pl-5 pr-5 appearance-none bg-transparent text-transparent focus:text-gray-200 focus:outline-none"
               onChange={handleLanguage}
             >
               <option value="en">English</option>
-              <option value="es">Espanish</option>
               <option value="fr">Frances</option>
               <option value="it">Italiano</option>
+              <option value="es">Spanish</option>
             </select>
           </div>
           <a

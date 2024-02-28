@@ -9,7 +9,7 @@ const Home = () => {
     <div className="relative h-full mt-14 p-6 text-gray-100 lg:text-xl lg:w-[1180px]">
       <div className="absolute top-0 right-0 ">
         <div
-          className="flex w-[130px] h-[500px] md:w-[200px] lg:w-[400px] md:h-[700px] lg:-mt-32"
+          className="flex w-[130px] h-[500px] md:w-[200px] lg:w-[400px] md:h-[600px] lg:-mt-32"
           style={{
             backgroundImage: `linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0)), url(${foto})`,
             backgroundPosition: "18%",
@@ -32,7 +32,7 @@ const Home = () => {
         <p className="mb-10 md:pr-20 md:text-justify">{texts.homeText}</p>
         <a
           href="#section4"
-          className="px-10 py-2 tracking-wider rounded-tr-lg rounded-bl-lg border-r-2 border-l-2 text-cyan-400 border-cyan-500"
+          className=" whitespace-nowrap px-10 py-2 tracking-wider rounded-tl-lg rounded-br-lg border-r-2 border-l-2 text-cyan-400 border-cyan-500"
         >
           {texts.homeButton}
         </a>

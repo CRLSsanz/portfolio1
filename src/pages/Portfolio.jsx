@@ -22,14 +22,21 @@ const Portfolio = () => {
         id="section2"
         className="min-h-[700px] bg-[#1A2035] flex"
         style={{
-          backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${bag3})`,
+          backgroundImage: `linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(${bag3})`,
           backgroundPosition: "30%",
           backgroundSize: "cover",
           //backgroundAttachment: "fixed",
         }}
       >
-        <div className="my-auto w-full px-2">
-          <h1 className="h-16"> </h1>
+        <div className="my-auto w-full -mt-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150">
+            <path
+              fill="#151515"
+              fill-opacity="1"
+              d="M0,10L1440,140L1440,0L0,0Z"
+            ></path>
+          </svg>
+          <h1 className="h-8"> </h1>
           <About />
         </div>
       </section>

@@ -50,7 +50,7 @@ const translations = {
     homeHello: "Hola mi nombre es",
     homeTitle: "Desarrollador Web",
     homeText:
-      "Soy un entusiasta de los nuevos retos; me apasiona crear software excelente buscando aprovechar mi experiencia y conocimientos para mejorar un poco la web y sus aplicaciones.",
+      "Soy un entusiasta de los nuevos retos; me apasiona crear software excelente buscando aprovechar mi experiencia y conocimientos.",
     homeButton: "Ver Portafolio",
     //ABOUT
     aboutTitle: "Lo que hago",
