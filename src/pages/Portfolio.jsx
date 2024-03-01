@@ -11,9 +11,10 @@ const Portfolio = () => {
     <div>
       <section
         id="section1"
-        className="min-h-screen Bbg-[#1A2035] bg-[#151515] flex"
+        className="min-h-screen lg:min-h-[800px] Bbg-[#1A2035] bg-[#151515] flex"
       >
-        <div className="m-auto">
+        <div className="my-auto">
+          <h1 className="h-16"> </h1>
           <Home />
         </div>
       </section>

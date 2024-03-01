@@ -6,8 +6,8 @@ const About = () => {
   const { texts } = useAppContext();
   return (
     <div className=" text-gray-600 px-5 sm:px-20 md:px-5 lg:px-20 xl:px-32 2xl:px-56 mb-10 sm:mb-20">
-      <div className="lg:px-0 flex flex-col items-center 2xl:flex-row ">
-        <div className="text-center 2xl:text-start md:w-[600px] 2xl:w-full 2xl:basis-1/3 text-white pb-20">
+      <div className="lg:px-0 flex flex-col 2xl:flex-row ">
+        <div className="w-full md:w-[600px] 2xl:w-full 2xl:basis-1/3 text-white pb-20">
           <h1 className="text-3xl lg:text-4xl text-cyan-400 font-bold mb-5">
             {texts.aboutTitle}
           </h1>
@@ -16,21 +16,23 @@ const About = () => {
             es esencial para el éxito de tu negocio, es por ello te acompañamos
             desde el proceso de definición y construcción de tu marca.
           </p>
-          <a
-            href="#section4"
-            className="font-semibold whitespace-nowrap px-20 py-3 tracking-wider text-white bg-cyan-500"
-          >
-            Mas informacion{" "}
-            <span className="hidden xl:inline-block"> -{">"} </span>
-          </a>
+          <div className="flex">
+            <a
+              href="#section4"
+              className="text-center w-full md:w-1/2 rounded font-semibold whitespace-nowrap py-3 tracking-wider text-white bg-gradient-to-r from-cyan-500 to-blue-500"
+            >
+              Mas informacion{" "}
+              <span className="hidden xl:inline-block"> -{">"} </span>
+            </a>
+          </div>
         </div>
 
-        <div className="2xl:basis-2/3 text-center md:grid md:grid-cols-2 md:gap-5 lg:grid-cols-4">
-          <div className="bg-white/95 rounded shadow-lg shadow-gray-400 p-5 pt-10 mb-5 md:mb-0">
+        <div className="2xl:basis-2/3 md:grid md:grid-cols-2 md:gap-5 lg:grid-cols-4">
+          <div className="bg-white/95 shadow-lg shadow-gray-400 p-5 pt-10 mb-5 md:mb-0">
             <h1 className="flex flex-col items-center h-20 opacity-60">
               <img src={cargarImagen(`./ab-diseweb.png`)} alt="" srcset="" />
             </h1>
-            <h1 className="uppercase font-semibold text-cyan-500 h-14">
+            <h1 className="uppercase text-lg text-center font-semibold text-cyan-500 h-14">
               Desarrollo y diseño web
             </h1>
             <p className="lg:text-start mb-6">
@@ -39,11 +41,11 @@ const About = () => {
             </p>
           </div>
 
-          <div className="bg-[#ffffff]/90 rounded shadow-lg shadow-gray-400 p-5 pt-10 mb-5 md:mb-0">
+          <div className="bg-[#ffffff]/95 rounded-sm shadow-lg shadow-gray-400 p-5 pt-10 mb-5 md:mb-0">
             <h1 className="flex flex-col items-center h-20 opacity-60">
               <img src={cargarImagen(`./ab-shopping.png`)} alt="" srcset="" />
             </h1>
-            <h1 className="uppercase font-semibold text-cyan-500 h-14">
+            <h1 className="uppercase text-lg text-center font-semibold text-cyan-500 h-14">
               Tienda Virtual
             </h1>
             <p className="lg:text-start mb-6">
@@ -53,11 +55,16 @@ const About = () => {
             </p>
           </div>
 
-          <div className="bg-[#ffffff]/90 rounded shadow-lg shadow-gray-400 p-5 pt-10 mb-5 md:mb-0">
+          <div className="bg-[#ffffff]/95 rounded shadow-lg shadow-gray-400 p-5 pt-10 mb-5 md:mb-0">
             <h1 className="flex flex-col items-center h-20 opacity-60">
-              <img src={cargarImagen(`./ab-responsive.png`)} alt="" srcset="" />
+              <img
+                src={cargarImagen(`./ab-responsive.png`)}
+                className="w-[50px]"
+                alt=""
+                srcset=""
+              />
             </h1>
-            <h1 className="uppercase font-semibold text-cyan-500 h-14">
+            <h1 className="uppercase text-lg text-center font-semibold text-cyan-500 h-14">
               Diseño Responsive
             </h1>
             <p className="lg:text-start mb-6">
@@ -71,7 +78,7 @@ const About = () => {
             <h1 className="flex flex-col items-center h-20 opacity-60">
               <img src={cargarImagen(`./ab-hosting.png`)} alt="" srcset="" />
             </h1>
-            <h1 className="uppercase font-semibold text-cyan-500 h-14">
+            <h1 className="uppercase text-lg text-center font-semibold text-cyan-500 h-14">
               Hosting
             </h1>
             <p className="lg:text-start mb-6">
