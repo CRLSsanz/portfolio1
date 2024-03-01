@@ -11,9 +11,9 @@ const Portfolio = () => {
     <div>
       <section
         id="section1"
-        className="min-h-screen lg:min-h-[800px] Bbg-[#1A2035] bg-[#151515] flex"
+        className="min-h-screen md:min-h-[800px] Bbg-[#1A2035] bg-[#151515] flex"
       >
-        <div className="my-auto">
+        <div className="my-auto w-full">
           <h1 className="h-16"> </h1>
           <Home />
         </div>
@@ -23,7 +23,7 @@ const Portfolio = () => {
         id="section2"
         className="min-h-[700px] bg-[#1A2035] flex"
         style={{
-          backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${bag3})`,
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,1)), url(${bag3})`,
           backgroundPosition: "30%",
           backgroundSize: "cover",
           //backgroundAttachment: "fixed",
@@ -54,10 +54,39 @@ const Portfolio = () => {
           </svg>
           <h1 className="h-8 sm:h-20"> </h1>
           <About />
+          <h1 id="section3" className="h-16">
+            {" "}
+          </h1>
+          <Skills />
+          <svg
+            className="block md:hidden -mb-1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 180"
+          >
+            <path
+              fill="#259ca0"
+              fillOpacity="1"
+              d="M0,160L1440,15L1440,180L0,180Z"
+            ></path>
+          </svg>
+          <svg
+            className="hidden md:block -mb-1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 70"
+          >
+            <path
+              fill="#259ca0"
+              fillOpacity="1"
+              d="M0,60L1080,15L1440,60L1440,70L720,70L0,70Z"
+            ></path>
+          </svg>
         </div>
       </section>
 
-      <section id="section3" className="min-h-[700px] bg-[#1A2035] flex">
+      <section
+        id="section3XX"
+        className="hidden min-h-[700px] bg-[#1A2035] Fflex"
+      >
         <div className="my-autoooo w-full">
           <h1 className="h-16"> </h1>
           <Skills />
