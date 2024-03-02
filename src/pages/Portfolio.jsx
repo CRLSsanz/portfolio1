@@ -23,8 +23,8 @@ const Portfolio = () => {
         id="section2"
         className="min-h-[700px] bg-[#1A2035] flex"
         style={{
-          backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,1)), url(${bag3})`,
-          backgroundPosition: "30%",
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,3)), url(${bag3})`,
+          backgroundPosition: "50%",
           backgroundSize: "cover",
           //backgroundAttachment: "fixed",
         }}
@@ -100,11 +100,8 @@ const Portfolio = () => {
         </div>
       </section>
 
-      <section
-        id="section5"
-        className="min-h-[800px] bg-[#1A2035] flex justify-center"
-      >
-        <div className="my-autooo w-[600px] px-2">
+      <section id="section5" className="min-h-[800px] bg-[#1A2035] flex">
+        <div className="lg:mx-auto">
           <h1 className="h-16"> </h1>
           <Contact />
         </div>
@@ -120,7 +117,7 @@ const Portfolio = () => {
           backgroundAttachment: "fixed",
         }}
       >
-        <div className="my-auto w-full text-center">
+        <div className="my-autooo w-full">
           <h1 className="h-16"> </h1>
           <Footer />
         </div>

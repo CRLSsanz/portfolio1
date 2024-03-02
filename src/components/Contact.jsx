@@ -1,5 +1,6 @@
 import React from "react";
 import { useAppContext } from "../context/AppProvider";
+import imgContact from "../images/img-social-media.png";
 
 const Contact = () => {
   const { texts } = useAppContext();
@@ -11,42 +12,50 @@ const Contact = () => {
   };
 
   return (
-    <div className="px-4 mb-4">
+    <div className="px-5 sm:px-20 md:px-5 lg:px-20 xl:px-32 2xl:px-56 mb-20">
       <h1 className="text-2xl py-2 font-semibold text-cyan-500">
         {texts.contactTitle}
       </h1>
-      <p className="text-sm text-gray-300 mb-3">{texts.contactText}</p>
-      <form onSubmit={handleSubmit} className="text-gray-700">
-        <input
-          type="text"
-          className="w-full p-2  border border-cyan-600 rounded mb-3"
-          placeholder="Name"
-        />
-        <input
-          type="email"
-          className="w-full p-2  border border-cyan-600 rounded mb-3"
-          placeholder="Email"
-        />
-        <input
-          type="text"
-          className="w-full p-2  border border-cyan-600 rounded mb-3"
-          placeholder="Subject"
-        />
-        <textarea
-          rows="4"
-          className="w-full p-2  border border-cyan-600 rounded mb-3"
-          placeholder="Message"
-        ></textarea>
-        <div className="flex justify-end">
-          <button
-            type="submit"
-            className="px-4 py-2 border border-cyan-600 text-cyan-500"
-          >
-            {texts.contactSend}
-          </button>
+      <div className="lg:w-[900px] flex flex-col md:flex-row">
+        <div className="md:w-1/2">
+          <p className="text-sm text-gray-300 mb-3">{texts.contactText}</p>
+          <form onSubmit={handleSubmit} className="text-gray-700">
+            <input
+              type="text"
+              className="w-full p-2  border border-cyan-600 rounded mb-3"
+              placeholder="Name"
+            />
+            <input
+              type="number"
+              className="w-full p-2  border border-cyan-600 rounded mb-3"
+              placeholder="Cell Phone"
+            />
+            <input
+              type="email"
+              className="w-full p-2  border border-cyan-600 rounded mb-3"
+              placeholder="Email"
+            />
+            <textarea
+              rows="4"
+              className="w-full p-2  border border-cyan-600 rounded mb-3"
+              placeholder="Message"
+            ></textarea>
+            <div className="flex justify-end">
+              <button
+                type="submit"
+                className="px-4 py-2 border border-cyan-600 text-cyan-500"
+              >
+                {texts.contactSend}
+              </button>
+            </div>
+          </form>
         </div>
-      </form>
+        <div className="md:w-1/2 px-10 opacity-30 md:opacity-80">
+          <img src={imgContact} alt="" srcset="" className="" />
+        </div>
+      </div>
 
+      {/** WHATSAPP */}
       <div className="bg-green-600 rounded-full p-2 fixed bottom-6 right-6 hover:opacity-80 hover:scale-95">
         <a href="https://api.whatsapp.com/send?phone=+393801836002&text=Hello, I am interested in your services.">
           <svg
