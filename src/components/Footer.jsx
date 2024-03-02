@@ -9,9 +9,9 @@ const Footer = () => {
 
   return (
     <div className="px-5 sm:px-20 md:px-5 lg:px-20 xl:px-32 2xl:px-56">
-      <div className="w-full px-10 mb-10">
-        <div className="max-w-[600px] flex flex-col md:flex-row justify-around text-center bg-[#259ca0]/90 rounded-tl-[80px] rounded-br-[80px] rounded-bl-2xl rounded-tr-[40px] py-10 -mt-40 shadow-md">
-          <div className="hidden mb-10">
+      <div className="md:flex md:justify-center px-14 mb-10">
+        <div className="md:w-[700px] flex flex-col md:flex-row justify-evenly text-center bg-gradient-to-br from-teal-500 to-blue-500/80 rounded-tl-[80px] rounded-br-[80px] rounded-bl-2xl rounded-tr-[40px] py-10 -mt-44 shadow-md">
+          <div className="mb-10">
             <h1 className="text-5xl font-numero font-thin">37</h1>
             <h4 className="italic">Projects Delivere!</h4>
           </div>
@@ -42,9 +42,9 @@ const Footer = () => {
       </div>
 
       <div className="flex flex-col md:flex-row justify-between">
-        <div className="lg:w-1/3 mb-5">
+        <div className="md:w-1/3 mb-5">
           <h1 className="text-2xl mb-5">CRLS DEV</h1>
-          <p className="leading-loose">
+          <p className="md:leading-loose">
             Soy un entusiasta de los nuevos retos; me apasiona crear software
             excelente buscando aprovechar mi experiencia y conocimientos.
           </p>
@@ -85,8 +85,8 @@ const Footer = () => {
           <h1 className="text-2xl mb-5">Siguenos</h1>
 
           {/** SVG SOCIAL */}
-          <div class="flex flex-wrap justify-center text-gray-300 mb-10">
-            <div className="bg-transparent border border-gray-300 rounded-full w-8 h-8 flex mr-2">
+          <div class="flex flex-wrap md:flex-col lg:flex-row JJjustify-center text-gray-300 mb-10">
+            <div className="bg-transparent border border-gray-300 rounded-full w-8 h-8 flex mr-2 md:mb-2">
               <svg
                 className="m-auto"
                 stroke="currentColor"
@@ -106,7 +106,7 @@ const Footer = () => {
                 </g>
               </svg>
             </div>
-            <div className="bg-transparent border border-gray-300 rounded-full w-8 h-8 flex mr-2">
+            <div className="bg-transparent border border-gray-300 rounded-full w-8 h-8 flex mr-2 md:mb-2">
               <svg
                 className="m-auto"
                 stroke="currentColor"
@@ -123,7 +123,7 @@ const Footer = () => {
                 </g>
               </svg>
             </div>
-            <div className="bg-transparent border border-gray-300 rounded-full w-8 h-8 flex mr-2">
+            <div className="bg-transparent border border-gray-300 rounded-full w-8 h-8 flex mr-2 md:mb-2">
               <svg
                 className="m-auto"
                 stroke="currentColor"

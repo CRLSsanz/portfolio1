@@ -13,12 +13,12 @@ const Contact = () => {
 
   return (
     <div className="px-5 sm:px-20 md:px-5 lg:px-20 xl:px-32 2xl:px-56 mb-20">
-      <h1 className="text-2xl py-2 font-semibold text-cyan-500">
+      <h1 className="text-3xl lg:text-4xl mb-5 font-semibold text-cyan-500">
         {texts.contactTitle}
       </h1>
       <div className="lg:w-[900px] flex flex-col md:flex-row">
-        <div className="md:w-1/2">
-          <p className="text-sm text-gray-300 mb-3">{texts.contactText}</p>
+        <div className="md:w-1/2 mb-10">
+          <p className="text-sm text-gray-300 mb-5">{texts.contactText}</p>
           <form onSubmit={handleSubmit} className="text-gray-700">
             <input
               type="text"
@@ -43,14 +43,17 @@ const Contact = () => {
             <div className="flex justify-end">
               <button
                 type="submit"
-                className="px-4 py-2 border border-cyan-600 text-cyan-500"
+                class="inline-flex whitespace-nowrap relative items-center justify-center p-0.5 overflow-hidden font-medium rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 text-white focus:ring-4 focus:outline-none focus:ring-blue-300"
               >
-                {texts.contactSend}
+                <span class="relative px-16 py-2.5 transition-all ease-in duration-75 bg-[#151515] rounded-md group-hover:bg-opacity-0">
+                  {texts.contactSend}
+                </span>
               </button>
             </div>
           </form>
         </div>
-        <div className="md:w-1/2 px-10 opacity-30 md:opacity-80">
+
+        <div className="md:w-1/2 mb-20 px-10 md:pr-0 opacity-80 md:opacity-80">
           <img src={imgContact} alt="" srcset="" className="" />
         </div>
       </div>
