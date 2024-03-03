@@ -122,6 +122,17 @@ const Portfolio = () => {
           <Footer />
         </div>
       </section>
+
+      <div className="bg-[#2F3437] text-white text-center text-sm py-4 ">
+        <h1 className="hidden">
+          All Rights Reserved <span className="font-numero">© 2023 </span>
+          CRLSDEV
+        </h1>
+        <h1 className="px-12">
+          <span className="font-numero">© 2023 </span> All Rights Reserved.
+          Developer by CRLSDEV
+        </h1>
+      </div>
     </div>
   );
 };

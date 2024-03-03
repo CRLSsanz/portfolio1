@@ -38,9 +38,11 @@ const Home = () => {
       <div className="flex md:justify-center py-5 xl:py-10">
         <a
           href="#section4"
-          className="flex md:hidden justify-center w-1/2 md:w-1/4 whitespace-nowrap py-3 tracking-wider rounded-tl-lg rounded-br-lg md:border border-r-4 border-l-4 text-cyan-400 border-cyan-500 md:mr-5"
+          className="flex md:hidden whitespace-nowrap items-center justify-center p-0.5 overflow-hidden font-medium rounded-tr-lg rounded-bl-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 text-white focus:ring-4 focus:outline-none focus:ring-blue-300"
         >
-          {texts.homeButton}
+          <span class="px-10 py-3 transition-all ease-in duration-75 bg-[#151515] rounded-md group-hover:bg-opacity-0">
+            {texts.homeButton}
+          </span>
         </a>
 
         <a
