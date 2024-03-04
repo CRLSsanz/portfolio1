@@ -45,24 +45,23 @@ const Footer = () => {
         <div className="md:w-1/3 mb-5">
           <h1 className="text-2xl mb-5">CRLS DEV</h1>
           <p className="md:leading-loose">
-            Soy un entusiasta de los nuevos retos; me apasiona crear software
-            excelente buscando aprovechar mi experiencia y conocimientos.
+            Loosely designed in
+            <span className="font-semibold"> Figma </span> and coded in
+            <span className="font-semibold"> Visual Studio Code </span>
+            by yours truly. Built with
+            <span className="font-semibold"> Next.js </span> and
+            <span className="font-semibold"> Tailwind CSS</span>, deployed with
+            <span className="font-semibold"> Vercel</span>. All text is set in
+            the
+            <span className="font-semibold"> Inter </span> typeface.
           </p>
-        </div>
-
-        <div className="hidden Fflex justify-center">
-          <a href="#section1" className="p-2  animate-bounce">
-            <svg
-              stroke="currentColor"
-              fill="currentColor"
-              viewBox="0 0 511.74 511.74"
-              height="1.5em"
-              width="1.5em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M508.788,371.087L263.455,125.753c-4.16-4.16-10.88-4.16-15.04,0L2.975,371.087c-4.053,4.267-3.947,10.987,0.213,15.04 c4.16,3.947,10.667,3.947,14.827,0l237.867-237.76l237.76,237.76c4.267,4.053,10.987,3.947,15.04-0.213 C512.734,381.753,512.734,375.247,508.788,371.087z"></path>
-            </svg>
-          </a>
+          <p className="hidden Mmd:leading-loose">
+            Soy un desarrollador creativo independiente. Realizo diseños de
+            interacción hasta sistemas de diseño escalables, aplicaciones de una
+            sola página y algo más experimental. Ayudo a personas increíbles a
+            crear proyectos web ambiciosos pero accesibles: cuanto más salvajes,
+            mejor.
+          </p>
         </div>
 
         <div className="mb-5">
