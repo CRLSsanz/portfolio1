@@ -6,13 +6,13 @@ const Work = () => {
   const { texts } = useAppContext();
 
   return (
-    <div className="px-5 sm:px-20 md:px-5 lg:px-20 xl:px-32 2xl:px-56 mb-10 sm:mb-20">
+    <div className="px-5 md:px-10">
       <h1 className="text-3xl lg:text-4xl mb-5 font-semibold text-white">
         {texts.workTitle}
       </h1>
       <p className="text-sm text-gray-200 mb-5">{texts.workText} </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         <div className="bg-[#1A2035] shadow-md shadow-gray-500 rounded-br-3xl rounded-tl-3xl">
           <img
             className="w-full rounded-tl-3xl"

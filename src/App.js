@@ -6,7 +6,7 @@ function App() {
   return (
     <AppProvider>
       <div className="text-white">
-        <div className="w-full fixed z-50 top-0">
+        <div className="hidden w-full fixed z-50 top-0">
           <Navbar />
         </div>
         <Portfolio />

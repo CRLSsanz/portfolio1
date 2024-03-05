@@ -1,3 +1,4 @@
+import Navbar from "../components/Navbar";
 import Home from "../components/Home";
 import About from "../components/About";
 import Work from "../components/Work";
@@ -11,27 +12,32 @@ const Portfolio = () => {
     <div>
       <section
         id="section1"
-        className="min-h-screen md:min-h-[800px] Bbg-[#1A2035] bg-[#151515] flex"
+        className="min-h-[1050px] Xmin-h-screen md:min-h-[800px] Bbg-[#1A2035] bg-[#151515] flex"
       >
-        <div className="md:my-auto w-full">
-          <h1 className="h-16"> </h1>
+        <div className="mx-auto w-full">
+          <h1 className="Hh-16"> </h1>
           <Home />
         </div>
       </section>
 
       <section
         id="section2"
-        className="min-h-[700px] bg-[#1A2035] flex"
+        className="min-h-[700px] bBg-[#1A2035] bg-[#259ca0] flex"
         style={{
-          backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,3)), url(${bag3})`,
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,1)), url(${bag3})`,
           backgroundPosition: "50%",
           backgroundSize: "cover",
           //backgroundAttachment: "fixed",
         }}
       >
-        <div className="my-auto w-full -mt-1">
+        <div className="mx-auto XXw-full -mt-1">
+          <div className="bg-[#151515] h-16"> </div>
+          <h1 className="-mt-16 h-16 sm:h-20 w-full sticky z-50 top-0">
+            <Navbar />
+          </h1>
+
           <svg
-            className="block md:hidden"
+            className="block md:hidden -mt-1"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1440 180"
           >
@@ -42,7 +48,7 @@ const Portfolio = () => {
             ></path>
           </svg>
           <svg
-            className="hidden md:block"
+            className="hidden md:block -mt-1"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1440 70"
           >
@@ -52,12 +58,26 @@ const Portfolio = () => {
               d="M0,15L360,70L1440,15L1440,0L720,0L0,0Z"
             ></path>
           </svg>
-          <h1 className="h-8 sm:h-20"> </h1>
-          <About />
-          <h1 id="section3" className="h-16">
-            {" "}
-          </h1>
-          <Skills />
+
+          <div className="pt-5 lg:w-[1100px] grid grid-cols-1 lg:grid-cols-3">
+            <div className="col-span-2">
+              <About />
+            </div>
+            <div className="lg:sticky lg:top-10">
+              <h1 id="section3" className="h-16">
+                {" "}
+              </h1>
+              <Skills />
+            </div>
+
+            <div className="col-span-2">
+              <h1 id="section4" className="h-16">
+                {" "}
+              </h1>
+              <Work />
+            </div>
+          </div>
+
           <svg
             className="block md:hidden -mb-1"
             xmlns="http://www.w3.org/2000/svg"
@@ -93,7 +113,10 @@ const Portfolio = () => {
         </div>
       </section>
 
-      <section id="section4" className="min-h-[700px] bg-[#259ca0] flex">
+      <section
+        id="section4XX"
+        className="hidden min-h-[700px] bg-[#259ca0] Fflex"
+      >
         <div className="my-autooo w-full">
           <h1 className="h-16"> </h1>
           <Work />
@@ -123,7 +146,7 @@ const Portfolio = () => {
         </div>
       </section>
 
-      <div className="bg-[#2F3437] text-white text-center text-sm py-4 ">
+      <div className="bg-[#151515] text-white text-center text-sm py-4 ">
         <h1 className="hidden">
           All Rights Reserved <span className="font-numero">© 2023 </span>
           CRLSDEV

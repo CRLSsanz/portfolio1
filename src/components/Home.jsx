@@ -8,23 +8,25 @@ const Home = () => {
 
   return (
     <div
-      className="px-5 sm:px-20 md:px-5 lg:px-20 xl:px-32 2xl:px-56
-     text-gray-400"
+      className="h-full p-5 sm:px-10 XXmd:w-[1100px] 
+     text-gray-400 "
     >
-      <div className="h-full flex flex-row mb-20">
-        <div className="w-1/2 md:w-1/4 text-lg md:text-2xl font-semibold tracking-[0.2em] leading-5">
-          CRLS <br /> SANZ
+      <div className="flex flex-row mb-10">
+        <div className="w-1/2 md:w-1/4 text-lg md:text-xl font-semibold tracking-[0.2em] ">
+          <h1 className="w-32 leading-4 md:leading-6">CRLS SANZ</h1>
         </div>
 
-        <div className="w-1/2 md:w-3/4 text-sm md:text-base flex flex-col md:flex-row justify-between">
-          <h1 className="mb-5">
-            FRONTEND DEVELOPER
-            <br /> FOLIO / 2021 — 2023
+        <div className="w-1/2 md:w-3/4 text-xs md:text-base flex flex-col md:flex-row justify-between md:items-center text-end md:text-start">
+          <h1 className="mb-5 md:mb-0">
+            FULLSTACK DEVELOPER
+            <br /> FOLIO /{" "}
+            <span className="font-numero font-light">2021 - 2024</span>
           </h1>
 
-          <h1 className="mb-5">
+          <h1 className="mb-5 md:mb-0">
             AVAILABLE FOR FREELANCE
-            <br /> WORK FROM MARCH 2023
+            <br /> WORK FROM JULY{" "}
+            <span className="font-numero font-light">2024</span>
           </h1>
           <div>
             <button className="py-2 px-10 md:text-xl border rounded-full ">
@@ -34,73 +36,31 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="font-bold text-5xl pb-5 pl-6">DEVELOPER</div>
-      <div
-        className="font-poppin font-bold md:-mx-3 text-7xl leading-[80px] md:text-8xl md:leading-[80px] lg:text-[180px] lg:leading-[150px] rotate-90 md:rotate-0 Wwhitespace-nowrap"
-        style={{ fontFamily: "sans-serif" }}
-      >
-        <span className="hidden">
-          DEVE<span className="text-cyan-600">L</span>OPER
-          <br />
-        </span>
-        FRONT--END <br /> B<span className="text-cyan-600">A</span>CK---END
+      <div className="md:hidden font-bold text-5xl flex flex-row justify-between">
+        <span>D</span>
+        <span>E</span>
+        <span>V</span>
+        <span>E</span>
+        <span>L</span>
+        <span>O</span>
+        <span>P</span>
+        <span>E</span>
+        <span>R</span>
       </div>
-
-      {/**
-      <div className="flex flex-col-reverse lg:flex-row lg:items-center justify-between">
-        <div className="-mt-20 lg:mt-0">
-          <h1 className="hidden mb-5">{texts.homeHello} </h1>
-          <div className="font-semibold mb-5">
-            <h1 className="text-5xl tracking-wider mb-10 md:mb-5">
-              Carlos Sanchez
-            </h1>
-            <h1 className="text-3xl md:text-7xl md:font-extrabold text-cyan-500 tracking-wider">
-              {texts.homeTitle}
-            </h1>
-          </div>
-          <p className="mb-10 md:w-96 md:text-justify">{texts.homeText}</p>
-        </div>
-
-        <div className="flex justify-end opacity-30 md:opacity-80 bg-red-500XX">
-          <img
-            src={foto}
-            alt=""
-            srcset=""
-            className="w-60 md:w-[350px] lg:w-[450px]"
-          />
+      <div className="h-[380px] flex flex-col justify-end ">
+        <div
+          className="font-poppin font-bold w-full md:-mx-3 text-9xl leading-[110px] md:text-8xl md:leading-[80px] lg:text-[180px] lg:leading-[150px] rotate-90 md:rotate-0 whitespace-nowrap"
+          style={{ fontFamily: "sans-serif" }}
+        >
+          <span className="hidden md:inline-block">
+            DEVE<span className="text-cyan-600">L</span>OPER
+            <br />
+          </span>
+          STACK <br />
+          FRONT & <br /> B<span className="text-cyan-600">A</span>
+          CK-END
         </div>
       </div>
-
-{/**  *  /}
-      <div className="flex md:justify-center py-5 xl:py-10">
-        <a
-          href="#section4"
-          className="flex md:hidden whitespace-nowrap items-center justify-center p-0.5 overflow-hidden font-medium rounded-tr-lg rounded-bl-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 text-white focus:ring-4 focus:outline-none focus:ring-blue-300"
-        >
-          <span class="px-10 py-3 transition-all ease-in duration-75 bg-[#151515] rounded-md group-hover:bg-opacity-0">
-            {texts.homeButton}
-          </span>
-        </a>
-
-        <a
-          href="#section4"
-          class="hidden md:inline-flex whitespace-nowrap relative items-center justify-center p-0.5 overflow-hidden font-medium rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 text-white focus:ring-4 focus:outline-none focus:ring-blue-300 mr-5"
-        >
-          <span class="relative px-20 py-3 transition-all ease-in duration-75 bg-[#151515] rounded-md group-hover:bg-opacity-0">
-            {texts.homeButton}
-          </span>
-        </a>
-
-        <a
-          href="#section5"
-          class="hidden md:inline-flex whitespace-nowrap relative items-center justify-center p-0.5 overflow-hidden font-medium rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 text-white focus:ring-4 focus:outline-none focus:ring-blue-300"
-        >
-          <span class="relative px-20 py-3 transition-all ease-in duration-75 bg-[#151515] rounded-md group-hover:bg-opacity-0">
-            Contactame
-          </span>
-        </a>
-      </div>
-{/**  */}
     </div>
   );
 };
