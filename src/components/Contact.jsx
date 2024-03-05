@@ -59,7 +59,7 @@ const Contact = () => {
       </div>
 
       {/** WHATSAPP */}
-      <div className="bg-green-600 rounded-full p-2 fixed bottom-6 right-6 hover:opacity-80 hover:scale-95">
+      <div className="bg-green-600 rounded-full p-2 fixed bottom-6 left-6 hover:opacity-80 hover:scale-95">
         <a href="https://api.whatsapp.com/send?phone=+393801836002&text=Hello, I am interested in your services.">
           <svg
             viewBox="0 0 32 32"

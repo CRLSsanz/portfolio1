@@ -5,12 +5,12 @@ const cargarImagen = require.context("../images", true);
 const About = () => {
   const { texts } = useAppContext();
   return (
-    <div className=" text-gray-600 px-5 md:px-10">
-      <div className=" text-white pl-4 border-l-4 border-cyan-400/50 mb-20">
-        <h1 className="text-3xl lg:text-4xl text-cyan-400 font-bold mb-5">
+    <div className=" text-white px-5 md:px-10">
+      <div className="mb-16">
+        <h1 className="text-3xl xl:text-4xl mb-5 text-white">
           {texts.aboutTitle}
         </h1>
-        <p className="lg:pr-12 mb-10">
+        <p className="text-gray-300 lg:pr-12 mb-5">
           El mundo digital está en constante evolución, tu presencia en línea es
           esencial para el éxito de tu negocio, es por ello te acompañamos desde
           el proceso de definición y construcción de tu marca.
@@ -18,17 +18,16 @@ const About = () => {
         <div className="flex">
           <a
             href="#section4"
-            className="text-center w-full md:w-1/2 rounded font-semibold whitespace-nowrap py-3 tracking-wider text-white bg-gradient-to-r from-cyan-500 to-blue-500"
+            className="text-center text-sm w-full md:w-1/2 rounded-sm font-semibold whitespace-nowrap py-3 tracking-widest text-black hover:text-white bg-gradient-to-r from-cyan-500 to-blue-500"
           >
-            Mas informacion{" "}
-            <span className="hidden 2xl:inline-block"> -{">"} </span>
+            Mas informacion
           </a>
         </div>
       </div>
 
-      <div className="md:grid md:grid-cols-2 md:gap-5">
-        <div className="bg-[#151515]/80 hover:bg-[#151515] text-white rounded-md shadow-lg shadow-black p-5 lg:pt-10 mb-20 md:mb-0">
-          <div className="-mt-10 mb-5">
+      <div className="text-gray-400 md:grid md:grid-cols-2 md:gap-5 md:gap-y-10">
+        <div className="bg-gradient-to-br from-[#1E1F26] to-[#2C303A] Bbg-[#1E1F26] rounded-md shadow-lg shadow-black/80 p-5 lg:pt-10 mb-10 md:mb-0">
+          <div className="-mt-10 lg:-mt-16 mb-5">
             <img
               src={cargarImagen(`./ab-diseweb.png`)}
               alt=""
@@ -45,8 +44,8 @@ const About = () => {
           </p>
         </div>
 
-        <div className="bg-[#151515]/80 hover:bg-[#151515] text-white rounded-md shadow-lg shadow-black p-5 lg:pt-10 mb-20 md:mb-0">
-          <div className="-mt-10 mb-5">
+        <div className="bg-gradient-to-br from-[#1E1F26] to-[#2C303A] Bbg-[#2C303A] rounded-md shadow-lg shadow-black/80 p-5 lg:pt-10 mb-10 md:mb-0">
+          <div className="-mt-10 lg:-mt-16 mb-5">
             <img
               src={cargarImagen(`./ab-shopping.png`)}
               alt=""
@@ -64,8 +63,8 @@ const About = () => {
           </p>
         </div>
 
-        <div className="bg-[#151515]/80 hover:bg-[#151515] text-white rounded-md shadow-lg shadow-black p-5 lg:pt-10 mb-20 md:mb-0">
-          <div className="-mt-10 mb-5">
+        <div className="bg-gradient-to-br from-[#1E1F26] to-[#2C303A] Bbg-[#1A2035] rounded-md shadow-lg shadow-black/80 p-5 lg:pt-10 mb-10 md:mb-0">
+          <div className="-mt-10 lg:-mt-16 mb-5">
             <img
               src={cargarImagen(`./ab-responsive.png`)}
               alt=""
@@ -83,8 +82,8 @@ const About = () => {
           </p>
         </div>
 
-        <div className="bg-[#151515]/80 hover:bg-[#151515] text-white rounded-md shadow-lg shadow-black p-5 lg:pt-10 md:mb-0">
-          <div className="-mt-10 mb-5">
+        <div className="bg-gradient-to-br from-[#1E1F26] to-[#2C303A] Bbg-[#1A2035] rounded-md shadow-lg shadow-black/80 p-5 lg:pt-10 md:mb-0">
+          <div className="-mt-10 lg:-mt-16 mb-5">
             <img
               src={cargarImagen(`./ab-hosting.png`)}
               alt=""

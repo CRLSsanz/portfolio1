@@ -5,14 +5,15 @@ import Work from "../components/Work";
 import Contact from "../components/Contact";
 import Skills from "../components/Skills";
 import Footer from "../components/Footer";
-const bag3 = "https://github.com/CRLSsanz/trade/blob/main/fondo01.jpg?raw=true";
+const bag3 =
+  "Hhttps://github.com/CRLSsanz/trade/blob/main/fondo01.jpg?raw=true";
 
 const Portfolio = () => {
   return (
     <div>
       <section
         id="section1"
-        className="min-h-[1050px] Xmin-h-screen md:min-h-[800px] Bbg-[#1A2035] bg-[#151515] flex"
+        className="min-h-[1050px] XXmd:min-h-screen md:min-h-[700px] Bbg-[#1A2035] bg-[#151515] flex"
       >
         <div className="mx-auto w-full">
           <h1 className="Hh-16"> </h1>
@@ -22,17 +23,17 @@ const Portfolio = () => {
 
       <section
         id="section2"
-        className="min-h-[700px] bBg-[#1A2035] bg-[#259ca0] flex"
+        className="min-h-[700px] bBg-[#1A2035] bg-[#2F3437] Bbg-[#259ca0] flex"
         style={{
-          backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,1)), url(${bag3})`,
+          //backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,1)), url(${bag3})`,
           backgroundPosition: "50%",
           backgroundSize: "cover",
           //backgroundAttachment: "fixed",
         }}
       >
-        <div className="mx-auto XXw-full -mt-1">
+        <div className="Xmx-auto w-full -mt-1">
           <div className="bg-[#151515] h-16"> </div>
-          <h1 className="-mt-16 h-16 sm:h-20 w-full sticky z-50 top-0">
+          <h1 className="-mt-16 h-16 w-full sticky z-50 top-0">
             <Navbar />
           </h1>
 
@@ -59,22 +60,27 @@ const Portfolio = () => {
             ></path>
           </svg>
 
-          <div className="pt-5 lg:w-[1100px] grid grid-cols-1 lg:grid-cols-3">
-            <div className="col-span-2">
-              <About />
-            </div>
-            <div className="lg:sticky lg:top-10">
-              <h1 id="section3" className="h-16">
-                {" "}
-              </h1>
-              <Skills />
-            </div>
+          <div className="flex">
+            <div className="mx-auto XXw-full -mt-1">
+              <div className="py-10 xl:w-[1100px] grid grid-cols-1  lg:grid-cols-3">
+                <div className="col-span-2">
+                  <About />
+                </div>
 
-            <div className="col-span-2">
-              <h1 id="section4" className="h-16">
-                {" "}
-              </h1>
-              <Work />
+                <div className="lg:sticky lg:top-20">
+                  <h1 id="section3" className="h-16">
+                    {" "}
+                  </h1>
+                  <Skills />
+                </div>
+
+                <div className="col-span-2">
+                  <h1 id="section4" className="h-16">
+                    {" "}
+                  </h1>
+                  <Work />
+                </div>
+              </div>
             </div>
           </div>
 
@@ -84,7 +90,7 @@ const Portfolio = () => {
             viewBox="0 0 1440 180"
           >
             <path
-              fill="#259ca0"
+              fill="#1A2035"
               fillOpacity="1"
               d="M0,160L1440,15L1440,180L0,180Z"
             ></path>
@@ -95,7 +101,7 @@ const Portfolio = () => {
             viewBox="0 0 1440 70"
           >
             <path
-              fill="#259ca0"
+              fill="#1A2035"
               fillOpacity="1"
               d="M0,60L1080,15L1440,60L1440,70L720,70L0,70Z"
             ></path>

@@ -7,7 +7,7 @@ const Work = () => {
 
   return (
     <div className="px-5 md:px-10">
-      <h1 className="text-3xl lg:text-4xl mb-5 font-semibold text-white">
+      <h1 className="text-3xl xl:text-4xl mb-5 text-white">
         {texts.workTitle}
       </h1>
       <p className="text-sm text-gray-200 mb-5">{texts.workText} </p>

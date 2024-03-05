@@ -20,15 +20,15 @@ const skills = [
 const Skills = () => {
   const { texts } = useAppContext();
   return (
-    <div className="px-5 md:px-10">
-      <h1 className=" text-3xl lg:text-4xl mb-10 text-cyan-500 font-bold">
+    <div className="px-5 md:px-10 lg:-mt-16 ">
+      <h1 className="text-3xl xl:text-4xl mb-10 text-white">
         {texts.skillTitle}
       </h1>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
         {skills.map((item, index) => (
           <div
             key={index}
-            className="pb-2 pt-3 xl:py-5 rounded bg-white text-gray-700 flex flex-col justify-between items-center active:bg-cyan-600 shadow-lg shadow-gray-300/60"
+            className="pb-2 pt-3 rounded bg-gray-100 text-gray-600 flex flex-col justify-between items-center active:bg-cyan-600 shadow-lg shadow-black/80"
           >
             <img
               className=""
@@ -36,7 +36,7 @@ const Skills = () => {
               style={{ width: `${item.width}` }}
               alt={item.name}
             />
-            <h1 className="uppercase text-sm xl:text-base mt-3">{item.name}</h1>
+            <h1 className="uppercase text-sm mt-3">{item.name}</h1>
           </div>
         ))}
       </div>
