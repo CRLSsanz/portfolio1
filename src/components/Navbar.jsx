@@ -10,7 +10,7 @@ const Navbar = () => {
     <section>
       <div className="w-full flex justify-center bg-black/0 backdrop-blur-2xl">
         <nav className="w-full h-16 px-2 lg:px-5 flex justify-between items-center">
-          <div className="relative ml-4">
+          <div className="hidden relative ml-4">
             <img
               className="shadow-lg border shadow-gray-200/50"
               src={cargarImagen(`./${language}.png`)}
@@ -27,12 +27,12 @@ const Navbar = () => {
               <option value="es">Spanish</option>
             </select>
           </div>
-          <a
+          <div
             href="#section1"
-            className="hidden px-4 text-lg text-gray-100 font-semibold"
+            className="shadow-lg shadow-transparent ml-4 text-transparent"
           >
-            C R L S
-          </a>
+            {" C R L S "}
+          </div>
           <button
             onClick={() => setNavbar(!navbar)}
             className="px-2 active:bg-none active:bg-transparent active:animate-ping focus:outline-none"
@@ -70,51 +70,79 @@ const Navbar = () => {
       </div>
 
       <ul
-        className={`fixed z-50 flex flex-col justify-center text-center text-gray-500 lg:font-semibold bg-gray-100/95 bBg-[#0C87A7ee] border-l-2 border-gray-500/50 top-16 w-[calc(100%-100px)] sm:w-[400px] h-[calc(100%-48px)] lg:h-[calc(100%-56px)] transform transition-all duration-1000 px-8 sm:px-12 lg:px-24 lg:text-lg
+        className={`fixed z-50 text-gray-400 lg:font-semibold bg-gradient-to-r from-black via-black to-black/0 bBg-[#0C87A7ee] top-0 w-[calc(100%-60px)] sm:w-[400px] h-full lg:h-[calc(100%-56px)] transform transition-all duration-500
         ${
           navbar
-            ? " opacity-100 pointer-events-auto right-0"
-            : "opacity-0 pointer-events-none -right-80"
+            ? " opacity-100 pointer-events-auto left-0"
+            : "opacity-0 pointer-events-none -left-80"
         }`}
       >
-        <li className="mb-5">
-          <span className="uppercase text-xs lg:text-base tracking-[0.2em] ">
-            {texts.navbarTitle}
-          </span>
-        </li>
-        <br />
-        <li className="w-full py-4 lg:py-6 hover:font-bold ">
-          <a href="#section2" onClick={() => setNavbar(!navbar)}>
-            {texts.navbarAbout}
-          </a>
-        </li>
-        <li className="w-full border-t border-gray-300 py-4 lg:py-6 hover:font-bold ">
-          <a href="#section3" onClick={() => setNavbar(!navbar)}>
-            {texts.navbarSkills}
-          </a>
-        </li>
-        <li className="w-full border-t border-gray-300 py-4 lg:py-6 hover:font-bold ">
-          <a href="#section4" onClick={() => setNavbar(!navbar)}>
-            {texts.navbarWork}
-          </a>
-        </li>
-        <li className="w-full border-t border-gray-300 py-4 lg:py-6 hover:font-bold ">
-          <a href="#section5" onClick={() => setNavbar(!navbar)}>
-            {texts.navbarContact}
-          </a>
-        </li>
+        <div className="p-8 w-[200px] h-full flex flex-col justify-between bg-black">
+          <div>
+            <li className="mb-5">
+              <span className="uppercase text-xs lg:text-base tracking-[0.2em] ">
+                {texts.navbarTitle}
+              </span>
+            </li>
+            <br />
+            <li className="w-full py-3 lg:py-5 hover:font-bold ">
+              <a href="#section1" onClick={() => setNavbar(!navbar)}>
+                Home
+              </a>
+            </li>
+            <li className="w-full border-t border-gray-950 py-3 lg:py-5 hover:font-bold ">
+              <a href="#section2" onClick={() => setNavbar(!navbar)}>
+                {texts.navbarAbout}
+              </a>
+            </li>
+            <li className="w-full border-t border-gray-950 py-3 lg:py-5 hover:font-bold ">
+              <a href="#section3" onClick={() => setNavbar(!navbar)}>
+                {texts.navbarSkills}
+              </a>
+            </li>
+            <li className="w-full border-t border-gray-950 py-3 lg:py-5 hover:font-bold ">
+              <a href="#section4" onClick={() => setNavbar(!navbar)}>
+                {texts.navbarWork}
+              </a>
+            </li>
+            <li className="w-full border-t border-gray-950 py-3 lg:py-5 hover:font-bold ">
+              <a href="#section5" onClick={() => setNavbar(!navbar)}>
+                {texts.navbarContact}
+              </a>
+            </li>
+          </div>
 
-        <br />
-        <li className="">
-          <a href="http://www.google.com" className="">
-            carlonchosanz@gmail.com
-          </a>
-        </li>
-        <li className="">
-          <a href="http://www.google.com" className="">
-            + Downloader my resumen
-          </a>
-        </li>
+          <div>
+            <div className="relative mb-5">
+              <img
+                className="shadow-lg border shadow-gray-200/50"
+                src={cargarImagen(`./${language}.png`)}
+                //style={{ width: `${item.width}` }}
+                alt="English"
+              />
+              <select
+                className="absolute -top-1 left-2 pl-5 pr-5 appearance-none bg-transparent text-transparent focus:text-gray-200 focus:outline-none"
+                onChange={handleLanguage}
+              >
+                <option value="en">English</option>
+                <option value="fr">Frances</option>
+                <option value="it">Italiano</option>
+                <option value="es">Spanish</option>
+              </select>
+            </div>
+
+            <li className="hidden">
+              <a href="http://www.google.com" className="">
+                contact@crlscode.com
+              </a>
+            </li>
+            <li className="hidden">
+              <a href="http://www.google.com" className="">
+                + Downloader my resumen
+              </a>
+            </li>
+          </div>
+        </div>
       </ul>
     </section>
   );

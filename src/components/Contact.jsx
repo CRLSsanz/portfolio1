@@ -12,11 +12,11 @@ const Contact = () => {
   };
 
   return (
-    <div className="px-5 sm:px-20 md:px-5 lg:px-20 xl:px-32 2xl:px-56 mb-20">
-      <h1 className="text-3xl lg:text-4xl mb-5 font-semibold text-cyan-500">
+    <div className="px-5 md:px-10">
+      <h1 className="text-3xl xl:text-4xl mb-5 text-white">
         {texts.contactTitle}
       </h1>
-      <div className="lg:w-[900px] flex flex-col md:flex-row">
+      <div className="Llg:w-[700px] flex flex-col md:flex-row">
         <div className="md:w-1/2 mb-10">
           <p className="text-sm text-gray-300 mb-5">{texts.contactText}</p>
           <form onSubmit={handleSubmit} className="text-gray-700">
@@ -59,7 +59,7 @@ const Contact = () => {
       </div>
 
       {/** WHATSAPP */}
-      <div className="bg-green-600 rounded-full p-2 fixed bottom-6 left-6 hover:opacity-80 hover:scale-95">
+      <div className="hidden bg-green-600 rounded-full p-2 fixed bottom-6 left-6 hover:opacity-80 hover:scale-95">
         <a href="https://api.whatsapp.com/send?phone=+393801836002&text=Hello, I am interested in your services.">
           <svg
             viewBox="0 0 32 32"

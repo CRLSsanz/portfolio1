@@ -13,7 +13,7 @@ const Portfolio = () => {
     <div>
       <section
         id="section1"
-        className="min-h-[1050px] XXmd:min-h-screen md:min-h-[700px] Bbg-[#1A2035] bg-[#151515] flex"
+        className="min-h-[900px] XXmd:min-h-screen md:min-h-[700px] Bbg-[#1A2035] bg-[#151515] flex"
       >
         <div className="mx-auto w-full">
           <h1 className="Hh-16"> </h1>
@@ -67,7 +67,7 @@ const Portfolio = () => {
                   <About />
                 </div>
 
-                <div className="lg:sticky lg:top-20">
+                <div className="lg:sticky lg:top-0">
                   <h1 id="section3" className="h-16">
                     {" "}
                   </h1>
@@ -79,6 +79,13 @@ const Portfolio = () => {
                     {" "}
                   </h1>
                   <Work />
+                </div>
+
+                <div className="col-span-2">
+                  <h1 id="section4" className="h-16">
+                    {" "}
+                  </h1>
+                  <Contact />
                 </div>
               </div>
             </div>

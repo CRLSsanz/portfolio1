@@ -53,7 +53,8 @@ const translations = {
       "Soy un entusiasta de los nuevos retos; me apasiona crear software excelente buscando aprovechar mi experiencia y conocimientos.",
     homeButton: "Ver Portafolio",
     //ABOUT
-    aboutTitle: "Lo que hago",
+    aboutTitle: "Hello World!",
+    aboutSubTitle: "Lo que hago",
     aboutFrontend:
       "Como desarrollador de JavaScript, tengo experiencia en técnicas HTML5 y CSS3 trabajando con marcos MVC y componentes React.",
     aboutBankend:
@@ -62,10 +63,10 @@ const translations = {
     aboutConsultant:
       "Además de brindar servicios de desarrollo, también puedo ayudarlo a decidir sobre hojas de ruta estratégicas a través de servicios de consultoría.",
     //SKILL
-    skillTitle: "Habilidades",
+    skillTitle: "Stack Tecnologico",
     //WORK
     workTitle: "Proyectos",
-    workText: "Aqui algunos de mis trabajos recientes.",
+    workText: "Estos son algunos de mis proyectos web del último tiempo.",
     workItem1: "Control de Gastos",
     workItem2: "Extructuras MCH",
     workItem3: "Marketing Online",

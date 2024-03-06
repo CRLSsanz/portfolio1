@@ -20,10 +20,13 @@ const skills = [
 const Skills = () => {
   const { texts } = useAppContext();
   return (
-    <div className="px-5 md:px-10 lg:-mt-16 ">
-      <h1 className="text-3xl xl:text-4xl mb-10 text-white">
-        {texts.skillTitle}
-      </h1>
+    <div className="px-5 md:px-10 lg:pt-1">
+      <h1 className="text-3xl mb-5 text-white">{texts.skillTitle}</h1>
+      <p className="text-gray-200 mb-5">
+        Estas son algunas de las tecnologias y habilidades aprendidas a lo largo
+        de mi carrera
+      </p>
+
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
         {skills.map((item, index) => (
           <div

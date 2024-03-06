@@ -37,7 +37,7 @@ const Home = () => {
       </div>
 
       {/** MOVIL */}
-      <div className="sm:py-10 md:hidden font-bold text-5xl flex flex-row justify-between">
+      <div className="sm:py-5 md:hidden font-bold text-6xl flex flex-row justify-between">
         <span>D</span>
         <span>E</span>
         <span>V</span>
@@ -48,9 +48,9 @@ const Home = () => {
         <span>E</span>
         <span>R</span>
       </div>
-      <div className="md:hidden h-[380px] sm:h-[550px] flex flex-col justify-end ">
+      <div className="md:hidden h-[360px] sm:h-[550px] flex flex-col justify-end ">
         <div
-          className="font-poppin font-bold w-full text-9xl leading-[110px]  rotate-90 sm:rotate-0 whitespace-nowrap"
+          className="font-poppin font-bold w-full text-9xl leading-[110px]  rotate-90 sm:rotate-0 whitespace-nowrap tracking-[-0.12em]"
           style={{ fontFamily: "sans-serif" }}
         >
           <span className="hidden sm:block">
