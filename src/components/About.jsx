@@ -21,7 +21,7 @@ const About = () => {
           en Front-End. Programador. Creativo. Especialista caprichoso. Ponente
           Internacional. Ex-Google.
         </p>
-        <div className="text-sm flex flex-wrap items-end mb-5 text-gray-400 tracking-wider">
+        <div className="text-sm flex flex-wrap items-end mb-10 text-gray-400 tracking-wider">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -36,7 +36,7 @@ const About = () => {
               d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z"
             />
           </svg>
-          <h1 className="ml-1 mr-3"> Disponible</h1>
+          <h1 className="ml-1 mr-3 -mb-0.5"> Disponible</h1>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -51,13 +51,13 @@ const About = () => {
               d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
             />
           </svg>
-          <h1 className="ml-1 mr-3"> Enlaces</h1>
+          <h1 className="ml-1 mr-3 -mb-0.5"> Enlaces</h1>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             stroke-width="1.5"
-            stroke="#259ca0"
+            stroke="#09B4D6"
             class="w-5 h-5"
           >
             <path
@@ -66,7 +66,9 @@ const About = () => {
               d="M12 8.25v-1.5m0 1.5c-1.355 0-2.697.056-4.024.166C6.845 8.51 6 9.473 6 10.608v2.513m6-4.871c1.355 0 2.697.056 4.024.166C17.155 8.51 18 9.473 18 10.608v2.513M15 8.25v-1.5m-6 1.5v-1.5m12 9.75-1.5.75a3.354 3.354 0 0 1-3 0 3.354 3.354 0 0 0-3 0 3.354 3.354 0 0 1-3 0 3.354 3.354 0 0 0-3 0 3.354 3.354 0 0 1-3 0L3 16.5m15-3.379a48.474 48.474 0 0 0-6-.371c-2.032 0-4.034.126-6 .371m12 0c.39.049.777.102 1.163.16 1.07.16 1.837 1.094 1.837 2.175v5.169c0 .621-.504 1.125-1.125 1.125H4.125A1.125 1.125 0 0 1 3 20.625v-5.17c0-1.08.768-2.014 1.837-2.174A47.78 47.78 0 0 1 6 13.12M12.265 3.11a.375.375 0 1 1-.53 0L12 2.845l.265.265Zm-3 0a.375.375 0 1 1-.53 0L9 2.845l.265.265Zm6 0a.375.375 0 1 1-.53 0L15 2.845l.265.265Z"
             />
           </svg>
-          <h1 className="ml-1 mr-3"> 29 de Febrero</h1>
+          <h1 className="ml-1 mr-3 -mb-0.5">
+            <span className="font-numero">29</span> de Febrero
+          </h1>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -81,23 +83,32 @@ const About = () => {
               d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
             />
           </svg>
-          <h1 className="ml-1 "> Se unió en enero de 2023</h1>
+          <h1 className="ml-1 -mb-0.5">
+            Se unió en enero de
+            <span className="font-numero"> 2023</span>
+          </h1>
         </div>
 
-        <div className="flex mb-10 xl:mb-20">
+        <div className="flex">
           <a
-            href="#section4"
+            href="#sectionWork"
             className="text-center text-sm w-full md:w-1/2 rounded-sm font-semibold whitespace-nowrap py-3 tracking-widest text-black hover:text-white bg-gradient-to-r from-cyan-500 to-blue-500"
           >
             ¡Da vida a las ideas con código!
           </a>
         </div>
-        <h1 className="text-3xl text-white">{texts.aboutSubTitle}</h1>
       </div>
 
-      <div className="text-gray-400 md:grid md:grid-cols-2 md:gap-5 md:gap-y-10">
-        <div className="bg-gradient-to-br from-[#1E1F26] to-[#2C303A] Bbg-[#1E1F26] rounded-md shadow-lg shadow-black/50 p-7 lg:pt-10 mb-10 md:mb-0">
-          <div className="-mt-14 lg:-mt-16 mb-5">
+      <h1 className="text-3xl text-white mb-5">{texts.aboutSubTitle}</h1>
+      <p className=" text-gray-300 lg:pr-12 mb-16">
+        El mundo digital está en constante evolución, tu presencia en línea es
+        esencial para el éxito de tu negocio, es por ello que te acompañamos
+        desde el proceso de definición y construcción de tu marca.
+      </p>
+
+      <div className="text-gray-400 md:grid md:grid-cols-3 md:gap-5 md:gap-y-10">
+        <div className="bg-gradient-to-br from-[#1E1F26] to-[#2C303A] Bbg-[#1E1F26] rounded-md shadow-lg shadow-black/50 p-5 lg:pt-10 mb-12 md:mb-0">
+          <div className="-mt-14 lg:-mt-[70px] mb-5 ml-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -122,8 +133,8 @@ const About = () => {
           </p>
         </div>
 
-        <div className="bg-gradient-to-br from-[#1E1F26] to-[#2C303A] Bbg-[#2C303A] rounded-md shadow-lg shadow-black/50 p-7 lg:pt-10 mb-10 md:mb-0">
-          <div className="-mt-14 lg:-mt-16 mb-5">
+        <div className="bg-gradient-to-br from-[#1E1F26] to-[#2C303A] Bbg-[#2C303A] rounded-md shadow-lg shadow-black/50 p-5 lg:pt-10 mb-12 md:mb-0">
+          <div className="-mt-14 lg:-mt-[70px] mb-5 ml-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -139,7 +150,7 @@ const About = () => {
               />
             </svg>
           </div>
-          <h1 className="uppercase tracking-wider text-lg font-semibold text-white mb-5">
+          <h1 className="md:w-32 uppercase tracking-wider text-lg font-semibold text-white mb-5">
             Tienda Virtual
           </h1>
           <p className="lg:text-start lg:mb-5">
@@ -149,8 +160,8 @@ const About = () => {
           </p>
         </div>
 
-        <div className="bg-gradient-to-br from-[#1E1F26] to-[#2C303A] Bbg-[#1A2035] rounded-md shadow-lg shadow-black/50 p-7 lg:pt-10 mb-10 md:mb-0">
-          <div className="-mt-14 lg:-mt-16 mb-5">
+        <div className="bg-gradient-to-br from-[#1E1F26] to-[#2C303A] Bbg-[#1A2035] rounded-md shadow-lg shadow-black/50 p-5 lg:pt-10 mb-12 md:mb-0">
+          <div className="-mt-14 lg:-mt-[70px] mb-5 ml-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -166,7 +177,7 @@ const About = () => {
               />
             </svg>
           </div>
-          <h1 className="uppercase tracking-wider text-lg font-semibold text-white lg:h-14">
+          <h1 className="uppercase tracking-wider text-lg font-semibold text-white mb-5">
             Diseño Responsive
           </h1>
           <p className="lg:text-start lg:mb-5">
@@ -176,8 +187,8 @@ const About = () => {
           </p>
         </div>
 
-        <div className="bg-gradient-to-br from-[#1E1F26] to-[#2C303A] Bbg-[#1A2035] rounded-md shadow-lg shadow-black/50 p-7 lg:pt-10 md:mb-0">
-          <div className="-mt-14 lg:-mt-16 mb-5">
+        <div className="bg-gradient-to-br from-[#1E1F26] to-[#2C303A] Bbg-[#1A2035] rounded-md shadow-lg shadow-black/50 p-5 lg:pt-10 md:mb-0">
+          <div className="-mt-14 lg:-mt-[70px] mb-5 ml-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -193,7 +204,7 @@ const About = () => {
               />
             </svg>
           </div>
-          <h1 className="uppercase tracking-wider text-lg font-semibold text-white lg:h-14">
+          <h1 className="uppercase tracking-wider text-lg font-semibold text-white  mb-5">
             Hosting
           </h1>
           <p className="lg:text-start lg:mb-5">

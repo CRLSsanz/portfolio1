@@ -70,43 +70,43 @@ const Navbar = () => {
       </div>
 
       <ul
-        className={`fixed z-50 text-gray-400 lg:font-semibold bg-gradient-to-r from-black via-black to-black/0 bBg-[#0C87A7ee] top-0 w-[calc(100%-60px)] sm:w-[400px] h-full lg:h-[calc(100%-56px)] transform transition-all duration-500
+        className={`fixed z-50 text-gray-400 lg:font-semibold bg-gradient-to-r from-black via-black/90 to-black/0 bBg-[#0C87A7ee] top-0 w-[calc(100%-60px)] sm:w-[400px] h-full lg:h-[calc(100%-56px)] transform transition-all duration-500
         ${
           navbar
             ? " opacity-100 pointer-events-auto left-0"
             : "opacity-0 pointer-events-none -left-80"
         }`}
       >
-        <div className="p-8 w-[200px] h-full flex flex-col justify-between bg-black">
+        <div className="p-6 w-[200px] h-full flex flex-col justify-between Bbg-black bg-gradient-to-r from-black via-black to-black/50">
           <div>
             <li className="mb-5">
               <span className="uppercase text-xs lg:text-base tracking-[0.2em] ">
                 {texts.navbarTitle}
               </span>
-            </li>
+            </li>{" "}
             <br />
             <li className="w-full py-3 lg:py-5 hover:font-bold ">
-              <a href="#section1" onClick={() => setNavbar(!navbar)}>
+              <a href="#sectionHome" onClick={() => setNavbar(!navbar)}>
                 Home
               </a>
             </li>
-            <li className="w-full border-t border-gray-950 py-3 lg:py-5 hover:font-bold ">
-              <a href="#section2" onClick={() => setNavbar(!navbar)}>
+            <li className="w-full border-t border-gray-900 py-3 lg:py-5 hover:font-bold ">
+              <a href="#sectionAbout" onClick={() => setNavbar(!navbar)}>
                 {texts.navbarAbout}
               </a>
             </li>
-            <li className="w-full border-t border-gray-950 py-3 lg:py-5 hover:font-bold ">
-              <a href="#section3" onClick={() => setNavbar(!navbar)}>
+            <li className="w-full border-t border-gray-900 py-3 lg:py-5 hover:font-bold ">
+              <a href="#sectionSkills" onClick={() => setNavbar(!navbar)}>
                 {texts.navbarSkills}
               </a>
             </li>
-            <li className="w-full border-t border-gray-950 py-3 lg:py-5 hover:font-bold ">
-              <a href="#section4" onClick={() => setNavbar(!navbar)}>
+            <li className="w-full border-t border-gray-900 py-3 lg:py-5 hover:font-bold ">
+              <a href="#sectionWork" onClick={() => setNavbar(!navbar)}>
                 {texts.navbarWork}
               </a>
             </li>
-            <li className="w-full border-t border-gray-950 py-3 lg:py-5 hover:font-bold ">
-              <a href="#section5" onClick={() => setNavbar(!navbar)}>
+            <li className="w-full border-t border-gray-900 py-3 lg:py-5 hover:font-bold ">
+              <a href="#sectionContact" onClick={() => setNavbar(!navbar)}>
                 {texts.navbarContact}
               </a>
             </li>

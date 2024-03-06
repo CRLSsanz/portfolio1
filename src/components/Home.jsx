@@ -7,12 +7,9 @@ const Home = () => {
   //const { texts } = useAppContext();
 
   return (
-    <div
-      className="h-full p-5 sm:px-10 XXmd:w-[1100px] 
-     text-gray-400 "
-    >
+    <div className="h-full p-5 sm:px-10 XXmd:w-[1100px] text-gray-400 ">
       <div className="flex flex-row mb-10">
-        <div className="w-1/2 lg:w-1/4 text-lg md:text-xl font-semibold tracking-[0.2em] ">
+        <div className="w-1/2 lg:w-1/4 text-lg font-semibold tracking-[0.2em] ">
           <h1 className="w-32 leading-4 md:leading-6">CRLS SANZ</h1>
         </div>
 
@@ -28,10 +25,13 @@ const Home = () => {
             <br /> WORK FROM JULY{" "}
             <span className="font-numero font-light">2024</span>
           </h1>
-          <div>
-            <button className="py-2 px-10 md:text-xl border rounded-full ">
+          <div className="hover:-mb-1">
+            <a
+              href="#sectionContact"
+              className="py-3 px-10 md:text-lg tracking-wider border rounded-full  hover:text-white hover:font-semibold"
+            >
               CONTACT
-            </button>
+            </a>
           </div>
         </div>
       </div>

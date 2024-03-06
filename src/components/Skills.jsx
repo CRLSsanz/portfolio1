@@ -22,16 +22,16 @@ const Skills = () => {
   return (
     <div className="px-5 md:px-10 lg:pt-1">
       <h1 className="text-3xl mb-5 text-white">{texts.skillTitle}</h1>
-      <p className="text-gray-200 mb-5">
+      <p className="text-gray-300 mb-5">
         Estas son algunas de las tecnologias y habilidades aprendidas a lo largo
         de mi carrera
       </p>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-3 gap-4">
         {skills.map((item, index) => (
           <div
             key={index}
-            className="pb-2 pt-3 rounded bg-gray-100 text-gray-600 flex flex-col justify-between items-center active:bg-cyan-600 shadow-lg shadow-black/80"
+            className="pb-2 pt-3 rounded bg-gray-400 text-black flex flex-col justify-between items-center hover:bg-gray-200 active:bg-cyan-400 shadow-lg shadow-black/50"
           >
             <img
               className=""

@@ -8,7 +8,7 @@ const Contact = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     alert("Sending Form");
-    window.location = "#section1";
+    window.location = "#section6";
   };
 
   return (
@@ -16,38 +16,127 @@ const Contact = () => {
       <h1 className="text-3xl xl:text-4xl mb-5 text-white">
         {texts.contactTitle}
       </h1>
+
+      <div className="flex flex-row">
+        <p className="mb-5 pr-5">
+          ¿Listo para convertir tu visión en una poderosa presencia en línea?
+          Nuestro equipo de expertos está listo para hacerlo realidad.
+        </p>
+
+        <div className="h-60 -mt-14 bg-gray-800 text-cyan-500 text-sm font-semibold p-5 rounded-md flex flex-col justify-between shadow-lg shadow-black/50 mb-5">
+          <a
+            href="tel:+51990441430"
+            className="rounded-full border-2 border-cyan-500 p-2 flex flex-row items-center "
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-8 h-8"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
+              />
+            </svg>
+            <p className="hidden pl-2 text-gray-300">CA</p>
+          </a>
+
+          <a
+            href="mailto:contact@crlscode.com"
+            Subject="Interesado%20en%20el%20desarrollo%20de%20website"
+            className="rounded-full border-2 border-cyan-500 p-2 flex flex-row items-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-8 h-8"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+              />
+            </svg>
+            <p className="hidden pl-2 text-gray-300">EM</p>
+          </a>
+
+          <a
+            className="rounded-full border-2 border-cyan-500 p-2 flex flex-row items-center"
+            href="https://api.whatsapp.com/send?phone=+393801836002&text=Hello, I am interested in your services."
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-8 h-8"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
+              />
+            </svg>
+            <p className="hidden pl-2 text-gray-300">WH</p>
+          </a>
+        </div>
+      </div>
+
+      <p className="mb-5">
+        ¡Contáctanos de forma gratuita y juntos hagamos crecer tu negocio en el
+        mundo digital!
+      </p>
+
       <div className="Llg:w-[700px] flex flex-col md:flex-row">
         <div className="md:w-1/2 mb-10">
           <p className="text-sm text-gray-300 mb-5">{texts.contactText}</p>
-          <form onSubmit={handleSubmit} className="text-gray-700">
+          <form onSubmit={handleSubmit} className="text-gray-200 font-numero">
             <input
               type="text"
-              className="w-full p-2  border border-cyan-600 rounded mb-3"
+              className="w-full p-2 focus:outline-none bg-gray-800 border-b border-r border-cyan-600 mb-3"
               placeholder="Name"
             />
             <input
               type="number"
-              className="w-full p-2  border border-cyan-600 rounded mb-3"
+              className="w-full p-2 focus:outline-none bg-gray-800 border-b border-r border-cyan-600 mb-3"
               placeholder="Cell Phone"
             />
             <input
               type="email"
-              className="w-full p-2  border border-cyan-600 rounded mb-3"
+              className="w-full p-2 focus:outline-none bg-gray-800 border-b border-r border-cyan-600 mb-3"
               placeholder="Email"
             />
             <textarea
               rows="4"
-              className="w-full p-2  border border-cyan-600 rounded mb-3"
+              className="w-full p-2 focus:outline-none bg-gray-800 border-b border-r border-cyan-600 mb-3"
               placeholder="Message"
             ></textarea>
-            <div className="flex justify-end">
+
+            <div className="hidden Fflex justify-end">
               <button
                 type="submit"
                 class="inline-flex whitespace-nowrap relative items-center justify-center p-0.5 overflow-hidden font-medium rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 text-white focus:ring-4 focus:outline-none focus:ring-blue-300"
               >
-                <span class="relative px-16 py-2.5 transition-all ease-in duration-75 bg-[#151515] rounded-md group-hover:bg-opacity-0">
+                <span class="relative px-16 py-2.5 transition-all ease-in duration-75 bg-[#1A2035] rounded-md group-hover:bg-opacity-0">
                   {texts.contactSend}
                 </span>
+              </button>
+            </div>
+
+            <div className="flex">
+              <button
+                type="submit"
+                className="text-center text-sm w-full md:w-1/2 rounded-sm font-semibold whitespace-nowrap py-3 tracking-widest text-black hover:text-white bg-gradient-to-r from-cyan-500 to-blue-500"
+              >
+                ¡Enviar Mensaje!
               </button>
             </div>
           </form>

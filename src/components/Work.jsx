@@ -10,10 +10,10 @@ const Work = () => {
       <h1 className="text-3xl xl:text-4xl mb-5 text-white">
         {texts.workTitle}
       </h1>
-      <p className="text-sm text-gray-200 mb-5">{texts.workText} </p>
+      <p className=" text-gray-300 mb-5">{texts.workText} </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-        <div className="bg-[#1A2035] shadow-md shadow-gray-500 rounded-br-3xl rounded-tl-3xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="bg-[#1A2035] shadow-lg shadow-black rounded-br-3xl rounded-tl-3xl">
           <img
             className="w-full rounded-tl-3xl"
             src={cargarImagen(`./work1.jpg`)}
@@ -37,7 +37,7 @@ const Work = () => {
           </div>
         </div>
 
-        <div className="bg-gray-100 text-gray-700 shadow-md shadow-gray-500 rounded-br-3xl rounded-tl-3xl">
+        <div className="bg-gray-100 text-gray-700 shadow-lg shadow-black rounded-br-3xl rounded-tl-3xl">
           <img
             className="w-full rounded-tl-3xl"
             src={cargarImagen(`./work2.jpg`)}
@@ -57,7 +57,7 @@ const Work = () => {
           </div>
         </div>
 
-        <div className="hidden shadow-md shadow-gray-500">
+        <div className="hidden shadow-lg shadow-black">
           <img
             className="w-full"
             src={cargarImagen(`./work3.jpg`)}
@@ -66,7 +66,7 @@ const Work = () => {
           />
         </div>
 
-        <div className="bg-[#1A2035] shadow-md shadow-gray-500 rounded-br-3xl rounded-tl-3xl">
+        <div className="bg-[#1A2035] shadow-lg shadow-black rounded-br-3xl rounded-tl-3xl">
           <img
             className="w-full rounded-tl-3xl"
             src={cargarImagen(`./work4.jpg`)}
@@ -85,7 +85,7 @@ const Work = () => {
           </div>
         </div>
 
-        <div className="hidden shadow-md shadow-gray-500">
+        <div className="hidden shadow-lg shadow-black">
           <img
             className="w-full"
             src={cargarImagen(`./work5.jpg`)}
@@ -94,7 +94,7 @@ const Work = () => {
           />
         </div>
 
-        <div className="bg-gray-100 text-gray-700 shadow-md shadow-gray-500 rounded-br-3xl rounded-tl-3xl">
+        <div className="bg-gray-100 text-gray-700 shadow-lg shadow-black rounded-br-3xl rounded-tl-3xl">
           <img
             className="w-full rounded-tl-3xl"
             src={cargarImagen(`./work6.jpg`)}

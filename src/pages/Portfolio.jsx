@@ -12,8 +12,8 @@ const Portfolio = () => {
   return (
     <div>
       <section
-        id="section1"
-        className="min-h-[900px] XXmd:min-h-screen md:min-h-[700px] Bbg-[#1A2035] bg-[#151515] flex"
+        id="sectionHome"
+        className="min-h-[850px] XXmd:min-h-screen md:min-h-[700px] Bbg-[#1A2035] bg-[#151515] flex"
       >
         <div className="mx-auto w-full">
           <h1 className="Hh-16"> </h1>
@@ -22,7 +22,7 @@ const Portfolio = () => {
       </section>
 
       <section
-        id="section2"
+        id="sectionAbout"
         className="min-h-[700px] bBg-[#1A2035] bg-[#2F3437] Bbg-[#259ca0] flex"
         style={{
           //backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,1)), url(${bag3})`,
@@ -68,14 +68,14 @@ const Portfolio = () => {
                 </div>
 
                 <div className="lg:sticky lg:top-0">
-                  <h1 id="section3" className="h-16">
+                  <h1 id="sectionSkills" className="h-16">
                     {" "}
                   </h1>
                   <Skills />
                 </div>
 
                 <div className="col-span-2">
-                  <h1 id="section4" className="h-16">
+                  <h1 id="sectionWork" className="h-16">
                     {" "}
                   </h1>
                   <Work />
@@ -136,7 +136,7 @@ const Portfolio = () => {
         </div>
       </section>
 
-      <section id="section5" className="min-h-[800px] bg-[#1A2035] flex">
+      <section id="sectionContact" className="min-h-[800px] bg-[#1A2035] flex">
         <div className="lg:mx-auto">
           <h1 className="h-16"> </h1>
           <Contact />
@@ -164,9 +164,9 @@ const Portfolio = () => {
           All Rights Reserved <span className="font-numero">© 2023 </span>
           CRLSDEV
         </h1>
-        <h1 className="px-12">
-          <span className="font-numero">© 2023 </span> All Rights Reserved.
-          Developer by CRLSDEV
+        <h1 className="px-12 tracking-wider">
+          <span className="font-numero font-extralight">©2020-2024</span> | All
+          Rights Reserved. Developer by CRLSCODE
         </h1>
       </div>
     </div>
