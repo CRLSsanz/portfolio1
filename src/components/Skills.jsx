@@ -27,7 +27,7 @@ const Skills = () => {
         de mi carrera
       </p>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-3 gap-4">
         {skills.map((item, index) => (
           <div
             key={index}

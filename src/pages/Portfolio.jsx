@@ -5,15 +5,14 @@ import Work from "../components/Work";
 import Contact from "../components/Contact";
 import Skills from "../components/Skills";
 import Footer from "../components/Footer";
-const bag3 =
-  "Hhttps://github.com/CRLSsanz/trade/blob/main/fondo01.jpg?raw=true";
+const bag3 = "https://github.com/CRLSsanz/trade/blob/main/fondo01.jpg?raw=true";
 
 const Portfolio = () => {
   return (
     <div>
       <section
         id="sectionHome"
-        className="min-h-[850px] XXmd:min-h-screen md:min-h-[700px] Bbg-[#1A2035] bg-[#151515] flex"
+        className="min-h-[800px] XXmd:min-h-screen md:min-h-[700px] Bbg-[#1A2035] bg-[#151515] flex"
       >
         <div className="mx-auto w-full">
           <h1 className="Hh-16"> </h1>
@@ -32,7 +31,7 @@ const Portfolio = () => {
         }}
       >
         <div className="Xmx-auto w-full -mt-1">
-          <div className="bg-[#151515] h-16"> </div>
+          <div className="bg-[#151515] h-20"> </div>
           <h1 className="-mt-16 h-16 w-full sticky z-50 top-0">
             <Navbar />
           </h1>
@@ -81,7 +80,7 @@ const Portfolio = () => {
                   <Work />
                 </div>
 
-                <div className="col-span-2">
+                <div className="hidden col-span-2">
                   <h1 id="section4" className="h-16">
                     {" "}
                   </h1>
@@ -137,7 +136,7 @@ const Portfolio = () => {
       </section>
 
       <section id="sectionContact" className="min-h-[800px] bg-[#1A2035] flex">
-        <div className="lg:mx-auto">
+        <div className="mx-auto Xw-full">
           <h1 className="h-16"> </h1>
           <Contact />
         </div>
@@ -147,10 +146,10 @@ const Portfolio = () => {
         id="section6"
         className="bg-[#259ca0] flex"
         style={{
-          backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${bag3})`,
-          backgroundPosition: "30%",
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.95)), url(${bag3})`,
+          backgroundPosition: "50% 20%",
           backgroundSize: "cover",
-          backgroundAttachment: "fixed",
+          //backgroundAttachment: "fixed",
         }}
       >
         <div className="my-autooo w-full">
@@ -159,7 +158,8 @@ const Portfolio = () => {
         </div>
       </section>
 
-      <div className="bg-[#151515] text-white text-center text-sm py-4 ">
+      {/** FOOTER */}
+      <div className="bg-[#111111] text-white text-center text-sm py-4 ">
         <h1 className="hidden">
           All Rights Reserved <span className="font-numero">© 2023 </span>
           CRLSDEV

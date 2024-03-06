@@ -12,7 +12,7 @@ const Work = () => {
       </h1>
       <p className=" text-gray-300 mb-5">{texts.workText} </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-8">
         <div className="bg-[#1A2035] shadow-lg shadow-black rounded-br-3xl rounded-tl-3xl">
           <img
             className="w-full rounded-tl-3xl"
@@ -57,7 +57,7 @@ const Work = () => {
           </div>
         </div>
 
-        <div className="hidden shadow-lg shadow-black">
+        <div className="hidden md:inline-block shadow-lg shadow-black">
           <img
             className="w-full"
             src={cargarImagen(`./work3.jpg`)}

@@ -37,6 +37,8 @@ const translations = {
     contactTitle: "Contact me",
     contactText:
       "I am currently available for freelance work. If you have a project that you want to start or think you need my help, contact me and I will help you.",
+    contactForm:
+      "Fill in your info in the form below and I look forward to hearing from you!",
     contactSend: "Send Message!",
   },
   es: {
@@ -76,6 +78,8 @@ const translations = {
     contactTitle: "Contáctame",
     contactText:
       "Actualmente estoy disponible para trabajo independiente. Si tiene un proyecto que desea comenzar o cree que necesita mi ayuda, contactame y te ayudare.",
+    contactForm:
+      "Complete su información en el formulario a continuación y espero tener noticias suyas.",
     contactSend: "Enviar Mensaje!",
   },
   fr: {

@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div className=" text-white px-5 md:px-10">
       <div className="mb-10">
-        <div className=" -mt-20 mb-5">
+        <div className=" -mt-20 md:-mt-16 lg:-mt-20 mb-5">
           <img
             src={cargarImagen(`./foto3.jpg`)}
             alt=""
