@@ -10,17 +10,13 @@ const About = () => {
         <div className=" -mt-20 md:-mt-16 lg:-mt-20 mb-5">
           <img
             src={cargarImagen(`./foto3.jpg`)}
-            alt=""
+            alt="perfil"
             srcset=""
-            className="w-32 h-32 border-4 border-gray-500 rounded-full"
+            className="w-32 h-32 border-4 border-white rounded-full shadow-md shadow-white/50"
           />
         </div>
-        <h1 className="text-3xl mb-2 text-white">{texts.aboutTitle}</h1>
-        <p className="text-gray-300 lg:pr-12 mb-5">
-          Me llamo Carlos Sanchez y soy Desarrollador full stack, especializado
-          en Front-End. Programador. Creativo. Especialista caprichoso. Ponente
-          Internacional. Ex-Google.
-        </p>
+        <h1 className="text-3xl mb-2 text-white">{texts.abTitle}</h1>
+        <p className="text-gray-300 lg:pr-12 mb-5">{texts.abTitleText}</p>
         <div className="text-sm flex flex-wrap items-end mb-10 text-gray-400 tracking-wider">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -36,22 +32,7 @@ const About = () => {
               d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z"
             />
           </svg>
-          <h4 className="ml-1 mr-3 -mb-0.5"> Disponible</h4>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-5 h-5"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
-            />
-          </svg>
-          <h4 className="ml-1 mr-3 -mb-0.5"> Enlaces</h4>
+          <h4 className="ml-1 mr-3 -mb-0.5"> {texts.abInfo1}</h4>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -63,11 +44,26 @@ const About = () => {
             <path
               stroke-linecap="round"
               stroke-linejoin="round"
+              d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
+            />
+          </svg>
+          <h4 className="ml-1 mr-3 -mb-0.5"> {texts.abInfo2}</h4>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-5 h-5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
               d="M12 8.25v-1.5m0 1.5c-1.355 0-2.697.056-4.024.166C6.845 8.51 6 9.473 6 10.608v2.513m6-4.871c1.355 0 2.697.056 4.024.166C17.155 8.51 18 9.473 18 10.608v2.513M15 8.25v-1.5m-6 1.5v-1.5m12 9.75-1.5.75a3.354 3.354 0 0 1-3 0 3.354 3.354 0 0 0-3 0 3.354 3.354 0 0 1-3 0 3.354 3.354 0 0 0-3 0 3.354 3.354 0 0 1-3 0L3 16.5m15-3.379a48.474 48.474 0 0 0-6-.371c-2.032 0-4.034.126-6 .371m12 0c.39.049.777.102 1.163.16 1.07.16 1.837 1.094 1.837 2.175v5.169c0 .621-.504 1.125-1.125 1.125H4.125A1.125 1.125 0 0 1 3 20.625v-5.17c0-1.08.768-2.014 1.837-2.174A47.78 47.78 0 0 1 6 13.12M12.265 3.11a.375.375 0 1 1-.53 0L12 2.845l.265.265Zm-3 0a.375.375 0 1 1-.53 0L9 2.845l.265.265Zm6 0a.375.375 0 1 1-.53 0L15 2.845l.265.265Z"
             />
           </svg>
           <h4 className="ml-1 mr-3 -mb-0.5">
-            <span className="fam-number">29</span> de Febrero
+            <span className="fam-number">{texts.abInfo3N}</span> {texts.abInfo3}
           </h4>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -84,8 +80,8 @@ const About = () => {
             />
           </svg>
           <h4 className="ml-1 -mb-0.5">
-            Se unió en enero de
-            <span className="fam-number"> 2023</span>
+            {texts.abInfo4}
+            <span className="fam-number"> {texts.abInfo4N}</span>
           </h4>
         </div>
 
@@ -94,17 +90,13 @@ const About = () => {
             href="#sectionWork"
             className="text-center text-sm w-full md:w-1/2 rounded-sm font-semibold whitespace-nowrap py-3 tracking-widest text-black hover:text-white bg-gradient-to-r from-cyan-500 to-blue-500"
           >
-            ¡Da vida a las ideas con código!
+            {texts.abBotton}
           </a>
         </div>
       </div>
 
-      <h2 className="text-3xl text-white mb-5">{texts.aboutSubTitle}</h2>
-      <p className=" text-gray-300 lg:pr-12 mb-16">
-        El mundo digital está en constante evolución, tu presencia en línea es
-        esencial para el éxito de tu negocio, es por ello que te acompañamos
-        desde el proceso de definición y construcción de tu marca.
-      </p>
+      <h2 className="text-3xl text-white mb-5">{texts.abSubTitle}</h2>
+      <p className=" text-gray-300 lg:pr-12 mb-16">{texts.abSubTitleText}</p>
 
       <div className="text-gray-400 md:grid md:grid-cols-3 md:gap-5 md:gap-y-10">
         <div className="bg-gradient-to-br from-[#1E1F26] to-[#2C303A] Bbg-[#1E1F26] rounded-md shadow-lg shadow-black/50 p-5 lg:pt-10 mb-12 md:mb-0">
@@ -125,12 +117,9 @@ const About = () => {
             </svg>
           </div>
           <h2 className="tracking-wider text-xl text-white mb-5">
-            Desarrollo y Diseño Web
+            {texts.abDo1title}
           </h2>
-          <p className="lg:text-start lg:mb-5">
-            Creo sitios web de calidad con un diseño que refleje la esencia de
-            tu negocio, proporcionando una presencia en línea que destaque.
-          </p>
+          <p className="lg:text-start lg:mb-5">{texts.abDo1text}</p>
         </div>
 
         <div className="bg-gradient-to-br from-[#1E1F26] to-[#2C303A] Bbg-[#2C303A] rounded-md shadow-lg shadow-black/50 p-5 lg:pt-10 mb-12 md:mb-0">
@@ -151,13 +140,9 @@ const About = () => {
             </svg>
           </div>
           <h2 className="md:w-32 tracking-wider text-xl text-white mb-5">
-            Tienda Virtual
+            {texts.abDo2title}
           </h2>
-          <p className="lg:text-start lg:mb-5">
-            Desarrollo tu tienda online con un diseño atractivo y efectivo,
-            integrada con múltiples formas de pago, para que puedas multiplicar
-            tus ventas.
-          </p>
+          <p className="lg:text-start lg:mb-5">{texts.abDo2text}</p>
         </div>
 
         <div className="bg-gradient-to-br from-[#1E1F26] to-[#2C303A] Bbg-[#1A2035] rounded-md shadow-lg shadow-black/50 p-5 lg:pt-10 mb-12 md:mb-0">
@@ -178,13 +163,9 @@ const About = () => {
             </svg>
           </div>
           <h2 className="tracking-wider text-xl text-white mb-5">
-            Diseño Responsive
+            {texts.abDo3title}
           </h2>
-          <p className="lg:text-start lg:mb-5">
-            Creo sitios web que se ven geniales en cualquier dispositivo,
-            mejorando la experiencia de usuario y la visibilidad en los
-            buscadores.
-          </p>
+          <p className="lg:text-start lg:mb-5">{texts.abDo3text}</p>
         </div>
 
         <div className="bg-gradient-to-br from-[#1E1F26] to-[#2C303A] Bbg-[#1A2035] rounded-md shadow-lg shadow-black/50 p-5 lg:pt-10 md:mb-0">
@@ -204,11 +185,10 @@ const About = () => {
               />
             </svg>
           </div>
-          <h2 className="tracking-wider text-xl text-white  mb-5">Hosting</h2>
-          <p className="lg:text-start lg:mb-5">
-            Me encargo de alojar tu sitio web al mejor precio del mercado, con
-            almacenamiento en SSD y certificado SSL.
-          </p>
+          <h2 className="tracking-wider text-xl text-white  mb-5">
+            {texts.abDo4title}
+          </h2>
+          <p className="lg:text-start lg:mb-5">{texts.abDo4text}</p>
         </div>
       </div>
     </div>

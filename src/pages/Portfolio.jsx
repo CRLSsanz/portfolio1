@@ -96,7 +96,7 @@ const Portfolio = () => {
             viewBox="0 0 1440 180"
           >
             <path
-              fill="#1A2035"
+              fill="#151515"
               fillOpacity="1"
               d="M0,160L1440,15L1440,180L0,180Z"
             ></path>
@@ -107,7 +107,7 @@ const Portfolio = () => {
             viewBox="0 0 1440 70"
           >
             <path
-              fill="#1A2035"
+              fill="#151515"
               fillOpacity="1"
               d="M0,60L1080,15L1440,60L1440,70L720,70L0,70Z"
             ></path>
@@ -135,10 +135,15 @@ const Portfolio = () => {
         </div>
       </section>
 
-      <section id="sectionContact" className="min-h-[800px] bg-[#1A2035] flex">
+      <section
+        id="sectionContact"
+        className="Hmin-h-[800px] bg-[#151515] Bbg-[#1A2035] flex"
+      >
         <div className="mx-auto Xw-full">
-          <h1 className="h-16"> </h1>
-          <Contact />
+          <div className="py-10 xl:w-[1100px]">
+            <h1 className="h-16"> </h1>
+            <Contact />
+          </div>
         </div>
       </section>
 
@@ -146,7 +151,7 @@ const Portfolio = () => {
         id="section6"
         className="bg-[#259ca0] flex"
         style={{
-          backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.95)), url(${bag3})`,
+          backgroundImage: `linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.95)), url(${bag3})`,
           backgroundPosition: "50% 20%",
           backgroundSize: "cover",
           //backgroundAttachment: "fixed",
@@ -159,7 +164,7 @@ const Portfolio = () => {
       </section>
 
       {/** FOOTER */}
-      <div className="bg-[#050505] text-white text-center text-sm py-4 ">
+      <div className="BBbg-[#050505] bg-gray-200 text-gray-800 text-center text-sm py-4 ">
         <h4 className="hidden">
           All Rights Reserved <span className="fam-number">© 2023 </span>
           CRLSDEV

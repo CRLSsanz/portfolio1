@@ -12,133 +12,111 @@ const Contact = () => {
   };
 
   return (
-    <div className="max-w-[700px] px-5 md:px-10">
+    <div className="w-full px-5 md:px-10">
       <h1 className="text-3xl xl:text-4xl mb-5 text-white">
         {texts.contactTitle}
       </h1>
 
-      <div className="flex flex-row mb-10 md:mb-0">
-        <div className="mb-5 md:pr-32">
-          <p className="text-gray-300 pr-5 mb-5">
-            ¡Contáctanos de forma gratuita y juntos hagamos crecer tu negocio en
-            el mundo digital! <br /> Nuestro equipo de expertos está listo para
-            hacerlo realidad.
-          </p>
-          <h1 className="md:-ml-8 Bborder-l-2 text-cyan-600">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-6 h-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-              />
-            </svg>
-          </h1>
-        </div>
-
-        <div className="h-60 -mt-14 flex flex-row ">
-          <div className="hidden p-3 Fflex flex-col justify-around text-end">
-            <h1>CA</h1>
-            <h1>EM</h1>
-            <h1>WH</h1>
+      <div className="flex flex-col md:flex-row">
+        <div className="md:w-1/2 mb-10 md:mb-0">
+          <div className="md:pr-20 xl:pr-32 mb-5">
+            <p className="text-gray-300 text-justify">{texts.contactText}</p>
           </div>
-          <div className=" Gbg-gray-800 text-cyan-500 text-sm font-semibold p-5 rounded-md flex flex-col justify-between Sshadow-lg shadow-black/50">
-            <a
-              href="tel:+51990441430"
-              className="rounded-full border-2 border-cyan-500 p-2 flex flex-row items-center "
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-8 h-8"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
-                />
-              </svg>
-              <p className="hidden pl-2 text-gray-300">CA</p>
-            </a>
 
-            <a
-              href="mailto:carlossandev@gmail.com"
-              Subject="Interesado%20en%20el%20desarrollo%20de%20website"
-              className="rounded-full border-2 border-cyan-500 p-2 flex flex-row items-center"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-8 h-8"
+          <div className="h-60 flex flex-row ">
+            <div className="Bbg-gray-800 text-cyan-500 text-sm font-semibold p-5 -ml-5 rounded-md flex flex-col justify-between Sshadow-lg shadow-black/50">
+              <a
+                href="tel:+51990441430"
+                className="rounded-full border-2 border-cyan-500 p-2 flex flex-row items-center"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
-                />
-              </svg>
-              <p className="hidden pl-2 text-gray-300">EM</p>
-            </a>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-8 h-8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
+                  />
+                </svg>
+              </a>
 
-            <a
-              className="rounded-full border-2 border-cyan-500 p-2 flex flex-row items-center"
-              href="https://api.whatsapp.com/send?phone=+393801836002&text=Hello, I am interested in your services."
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-8 h-8"
+              <a
+                href="mailto:carlossandev@gmail.com"
+                Subject="Interesado%20en%20el%20desarrollo%20de%20website"
+                className="rounded-full border-2 border-cyan-500 p-2 flex flex-row items-center"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
-                />
-              </svg>
-              <p className="hidden pl-2 text-gray-300">WH</p>
-            </a>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-8 h-8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                  />
+                </svg>
+              </a>
+
+              <a
+                className="rounded-full border-2 border-cyan-500 p-2 flex flex-row items-center"
+                href="https://api.whatsapp.com/send?phone=+393801836002&text=Hello, I am interested in your services."
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-8 h-8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <div className="text-gray-200 py-2.5 flex flex-col justify-around text-start">
+              <h2>Call me</h2>
+              <h2>Send an Email</h2>
+              <h2>whatsapp live</h2>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div className="Llg:w-[700px] flex flex-col md:flex-row items-center">
-        <div className="md:w-1/2 mb-10">
-          <p className="text-sm text-gray-400 mb-5">{texts.contactForm}</p>
-          <form onSubmit={handleSubmit} className="text-gray-200">
+        <div className="w-full md:w-1/2 mb-10">
+          <p className="text-gray-400 mb-5 md:pr-10">{texts.contactForm}</p>
+          <form onSubmit={handleSubmit} className="text-gray-300 fam-general">
             <input
               type="text"
-              className="w-full p-2 focus:outline-none bg-transparent rounded-md border-2 border-cyan-900 mb-3"
-              placeholder="Name"
+              className="w-full py-2.5 px-4 focus:outline-none bg-transparent rounded-md border-2 border-gray-700 mb-3"
+              placeholder="Your name"
             />
             <input
               type="number"
-              className="w-full p-2 fam-number focus:outline-none bg-transparent rounded-md border-2 border-cyan-900 mb-3"
-              placeholder="Cell Phone"
+              className="w-full xl:w-1/2 py-2.5 px-4 focus:outline-none bg-transparent rounded-md border-2 border-gray-700 mb-3"
+              placeholder="Your telephone"
             />
             <input
               type="email"
-              className="w-full p-2 focus:outline-none bg-transparent rounded-md border-2 border-cyan-900 mb-3"
-              placeholder="Email"
+              className="w-full py-2.5 px-4 focus:outline-none bg-transparent rounded-md border-2 border-gray-700 mb-3"
+              placeholder="Your email"
             />
             <textarea
-              rows="4"
-              className="w-full p-2 focus:outline-none bg-transparent rounded-md border-2 border-cyan-900 mb-8"
-              placeholder="Message"
+              rows="3"
+              className="w-full py-2.5 px-4 focus:outline-none bg-transparent rounded-md border-2 border-gray-700 mb-8"
+              placeholder="your message"
             ></textarea>
 
             <div className="hidden Fflex justify-end">
@@ -155,17 +133,17 @@ const Contact = () => {
             <div className="flex">
               <button
                 type="submit"
-                className="text-center text-sm w-full Xmd:w-1/2 rounded-sm font-semibold whitespace-nowrap py-3 tracking-widest text-black hover:text-white bg-gradient-to-r from-cyan-500 to-blue-500"
+                className="text-center text-sm w-full xl:w-1/2 rounded-sm font-semibold whitespace-nowrap py-3 tracking-widest text-black hover:text-white bg-gradient-to-r from-cyan-500 to-blue-500"
               >
                 ¡Enviar Mensaje!
               </button>
             </div>
           </form>
         </div>
+      </div>
 
-        <div className="md:w-1/2 mb-20 md:mb-0 px-10 md:pr-0 opacity-80 md:opacity-80">
-          <img src={imgContact} alt="" srcset="" className="" />
-        </div>
+      <div className="hidden Fflex justify-center opacity-10 md:opacity-20 pointer-events-none -mt-44 md:-mt-36">
+        <img src={imgContact} alt="" srcset="" className="w-[400px]" />
       </div>
 
       {/** WHATSAPP */}

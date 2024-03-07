@@ -15,16 +15,36 @@ const translations = {
       "An enthusiast of new challenges. I am passionate about creating excellent software seeking to leverage my experience and knowledge to make the web and your apps a little better..",
     homeButton: "View Work",
     //ABOUT
-    aboutTitle: "What I do",
-    aboutFrontend:
-      "As a JavaScript developer, I have experience in HTML5 and CSS3 techniques working with MVC frameworks and React components.",
-    aboutBankend:
-      "Using php frameworks or creating custom code with NodeJS, I've written services that support thousands of users, including REST APIs, eLearning applications, and more.",
-    aboutConsultantTitle: "Consultant",
-    aboutConsultant:
-      "In addition to providing development services, I can also help you decide on strategic roadmaps through consulting services.",
+    abTitle: "Hello World!",
+    abTitleText:
+      "My name is Carlos Sanchez and I am a full stack Developer, specialized in Front-End. Programmer. Creative. Whimsical specialist. International Speaker. Ex-Google.",
+    abInfo1: "Available",
+    abInfo2: "links",
+    abInfo3: "February",
+    abInfo3N: "29th",
+    abInfo4: "Joined Jan",
+    abInfo4N: "2023",
+    abBotton: "Brings ideas to life with code!",
+    abSubTitle: "What i do",
+    abSubTitleText:
+      "The digital world is constantly evolving, your online presence is essential for the success of your business, which is why we accompany you from the process of defining and building your brand.",
+
+    abDo1title: "Web Development and Design",
+    abDo1text:
+      "I create quality websites with a design that reflects the essence of your business, providing an online presence that stands out.",
+    abDo2title: "On-line shop",
+    abDo2text:
+      "Develop your online store with an attractive and effective design, integrated with multiple payment methods, so you can multiply your sales.",
+    abDo3title: "Responsive Design",
+    abDo3text:
+      "I create websites that look great on any device, improving user experience and search engine visibility.",
+    abDo4title: "Hosting",
+    abDo4text:
+      "I take care of hosting your website at the best price on the market, with SSD storage and SSL certificate.",
     //SKILL
     skillTitle: "Skills",
+    skillText:
+      "These are some of the technologies and skills learned throughout my career",
     //WORK
     workTitle: "Work",
     workText: "Check out some of my recent work",
@@ -36,7 +56,7 @@ const translations = {
     //CONTACT
     contactTitle: "Contact me",
     contactText:
-      "I am currently available for freelance work. If you have a project that you want to start or think you need my help, contact me and I will help you.",
+      "Contact us for free and together let's grow your business in the digital world! Our team of experts is ready to make it happen.",
     contactForm:
       "Fill in your info in the form below and I look forward to hearing from you!",
     contactSend: "Send Message!",
@@ -45,8 +65,8 @@ const translations = {
     //NAVBAR
     navbarTitle: "Navegación",
     navbarAbout: "Sobre mi",
-    navbarSkills: "Habilidades",
-    navbarWork: "Trabajo",
+    navbarSkills: "Tecnologia",
+    navbarWork: "Proyectos",
     navbarContact: "Contacto",
     //HOME
     homeHello: "Hola mi nombre es",
@@ -55,17 +75,36 @@ const translations = {
       "Soy un entusiasta de los nuevos retos; me apasiona crear software excelente buscando aprovechar mi experiencia y conocimientos.",
     homeButton: "Ver Portafolio",
     //ABOUT
-    aboutTitle: "Hello World!",
-    aboutSubTitle: "Lo que hago",
-    aboutFrontend:
-      "Como desarrollador de JavaScript, tengo experiencia en técnicas HTML5 y CSS3 trabajando con marcos MVC y componentes React.",
-    aboutBankend:
-      "Usando marcos de php o creando código personalizado con NodeJS, he escrito servicios que admiten miles de usuarios, incluidas API REST, aplicaciones de aprendizaje electrónico y más.",
-    aboutConsultantTitle: "Consultor",
-    aboutConsultant:
-      "Además de brindar servicios de desarrollo, también puedo ayudarlo a decidir sobre hojas de ruta estratégicas a través de servicios de consultoría.",
+    abTitle: "Hello World!",
+    abTitleText:
+      "Me llamo Carlos Sanchez y soy Desarrollador full stack, especializado en Front-End. Programador. Creativo. Especialista caprichoso. Ponente Internacional. Ex-Google.",
+    abInfo1: "Disponible",
+    abInfo2: "Enlaces",
+    abInfo3: "de Febrero",
+    abInfo3N: "29",
+    abInfo4: "Se unió en enero de",
+    abInfo4N: "2023",
+    abBotton: "¡Da vida a las ideas con código!",
+    abSubTitle: "What i do",
+    abSubTitleText:
+      "El mundo digital está en constante evolución, tu presencia en línea es esencial para el éxito de tu negocio, es por ello que te acompañamos desde el proceso de definición y construcción de tu marca.",
+
+    abDo1title: "Desarrollo y Diseño Web",
+    abDo1text:
+      "Creo sitios web de calidad con un diseño que refleje la esencia de tu negocio, proporcionando una presencia en línea que destaque.",
+    abDo2title: "Tienda Virtual",
+    abDo2text:
+      "Desarrollo tu tienda online con un diseño atractivo y efectivo, integrada con múltiples formas de pago, para que puedas multiplicar tus ventas.",
+    abDo3title: "Diseño Responsive",
+    abDo3text:
+      "Creo sitios web que se ven geniales en cualquier dispositivo, mejorando la experiencia de usuario y la visibilidad en los buscadores.",
+    abDo4title: "Hosting",
+    abDo4text:
+      "Me encargo de alojar tu sitio web al mejor precio del mercado, con almacenamiento en SSD y certificado SSL.",
     //SKILL
     skillTitle: "Stack Tecnologico",
+    skillText:
+      "Estas son algunas de las tecnologías y habilidades aprendidas a lo largo de mi carrera",
     //WORK
     workTitle: "Proyectos",
     workText: "Estos son algunos de mis proyectos web del último tiempo.",
@@ -77,7 +116,7 @@ const translations = {
     //CONTACT
     contactTitle: "Contáctame",
     contactText:
-      "Actualmente estoy disponible para trabajo independiente. Si tiene un proyecto que desea comenzar o cree que necesita mi ayuda, contactame y te ayudare.",
+      "¡Contáctanos de forma gratuita y juntos hagamos crecer tu negocio en el mundo digital! Nuestro equipo de expertos está listo para hacerlo realidad.",
     contactForm:
       "Complete su información en el formulario a continuación y espero tener noticias suyas.",
     contactSend: "Enviar Mensaje!",
@@ -96,16 +135,36 @@ const translations = {
       "Adepte des nouveaux défis. Je suis passionné par la création d'excellents logiciels cherchant à profiter de mon expérience et de mes connaissances pour améliorer un peu le web et ses applications",
     homeButton: "Voir le travail",
     //ABOUT
-    aboutTitle: "Ce que je fais",
-    aboutFrontend:
-      "En tant que développeur JavaScript, j'ai de l'expérience dans les techniques HTML5 et CSS3 en travaillant avec les frameworks MVC et les composants React.",
-    aboutBankend:
-      "En utilisant des frameworks php ou en créant du code personnalisé avec NodeJS, j'ai écrit des services qui prennent en charge des milliers d'utilisateurs, notamment des API REST, des applications d'apprentissage en ligne, etc.",
-    aboutConsultantTitle: "Consultant",
-    aboutConsultant:
-      "En plus de fournir des services de développement, je peux également vous aider à décider des feuilles de route stratégiques grâce à des services de conseil.",
+    abTitle: "Hello World!",
+    abTitleText:
+      "My name is Carlos Sanchez and I am a full stack Developer, specialized in Front-End. Programmer. Creative. Whimsical specialist. International Speaker. Ex-Google.",
+    abInfo1: "Available",
+    abInfo2: "links",
+    abInfo3: "February",
+    abInfo3N: "29th",
+    abInfo4: "Joined Jan",
+    abInfo4N: "2023",
+    abBotton: "Brings ideas to life with code!",
+    abSubTitle: "What i do",
+    abSubTitleText:
+      "The digital world is constantly evolving, your online presence is essential for the success of your business, which is why we accompany you from the process of defining and building your brand.",
+
+    abDo1title: "Web Development and Design",
+    abDo1text:
+      "I create quality websites with a design that reflects the essence of your business, providing an online presence that stands out.",
+    abDo2title: "On-line shop",
+    abDo2text:
+      "Develop your online store with an attractive and effective design, integrated with multiple payment methods, so you can multiply your sales.",
+    abDo3title: "Responsive Design",
+    abDo3text:
+      "I create websites that look great on any device, improving user experience and search engine visibility.",
+    abDo4title: "Hosting",
+    abDo4text:
+      "I take care of hosting your website at the best price on the market, with SSD storage and SSL certificate.",
     //SKILL
     skillTitle: "Compétences",
+    skillText:
+      "These are some of the technologies and skills learned throughout my career",
     //WORK
     workTitle: "Travail",
     workText: "Découvrez quelques-uns de mes travaux récents.",
@@ -117,7 +176,9 @@ const translations = {
     //CONTACT
     contactTitle: "Contactez-moi",
     contactText:
-      "Je suis actuellement disponible pour un travail indépendant. Si vous avez un projet que vous souhaitez démarrer ou pensez avoir besoin de mon aide, contactez-moi et je vous aiderai.",
+      "Contact us for free and together let's grow your business in the digital world! Our team of experts is ready to make it happen.",
+    contactForm:
+      "Fill in your info in the form below and I look forward to hearing from you!",
     contactSend: "Envoyer Message!",
   },
   it: {
@@ -134,16 +195,37 @@ const translations = {
       "Un appassionato di nuove sfide. Sono appassionato di creare software eccellente cercando di sfruttare la mia esperienza e conoscenza per migliorare un po' il web e le sue applicazioni.",
     homeButton: "Vedere il lavoro",
     //ABOUT
-    aboutTitle: "Cosa faccio",
-    aboutFrontend:
-      "Come sviluppatore JavaScript, ho esperienza nelle tecniche HTML5 e CSS3 lavorando con framework MVC e componenti React.",
-    aboutBankend:
-      "Utilizzando framework php o creando codice personalizzato con NodeJS, ho scritto servizi che supportano migliaia di utenti, tra cui API REST, applicazioni di eLearning e altro ancora.",
-    aboutConsultantTitle: "Consulente",
-    aboutConsultant:
-      "Oltre a fornire servizi di sviluppo, posso anche aiutarti a decidere su roadmap strategiche attraverso servizi di consulenza.",
+    abTitle: "Hello World!",
+    abTitleText:
+      "My name is Carlos Sanchez and I am a full stack Developer, specialized in Front-End. Programmer. Creative. Whimsical specialist. International Speaker. Ex-Google.",
+    abInfo1: "Available",
+    abInfo2: "links",
+    abInfo3: "February",
+    abInfo3N: "29th",
+    abInfo4: "Joined Jan",
+    abInfo4N: "2023",
+    abBotton: "Brings ideas to life with code!",
+    abSubTitle: "What i do",
+    abSubTitleText:
+      "The digital world is constantly evolving, your online presence is essential for the success of your business, which is why we accompany you from the process of defining and building your brand.",
+
+    abDo1title: "Web Development and Design",
+    abDo1text:
+      "I create quality websites with a design that reflects the essence of your business, providing an online presence that stands out.",
+    abDo2title: "On-line shop",
+    abDo2text:
+      "Develop your online store with an attractive and effective design, integrated with multiple payment methods, so you can multiply your sales.",
+    abDo3title: "Responsive Design",
+    abDo3text:
+      "I create websites that look great on any device, improving user experience and search engine visibility.",
+    abDo4title: "Hosting",
+    abDo4text:
+      "I take care of hosting your website at the best price on the market, with SSD storage and SSL certificate.",
     //SKILL
     skillTitle: "Abilità",
+    skillText:
+      "These are some of the technologies and skills learned throughout my career",
+
     //WORK
     workTitle: "Lavoro",
     workText: "Guarda alcuni dei miei ultimi lavori.",
@@ -155,7 +237,9 @@ const translations = {
     //CONTACT
     contactTitle: "Contattami",
     contactText:
-      "Attualmente sono disponibile per lavoro freelance. Se hai un progetto che vuoi avviare o pensi di aver bisogno del mio aiuto, contattami e ti aiuterò.",
+      "Contact us for free and together let's grow your business in the digital world! Our team of experts is ready to make it happen.",
+    contactForm:
+      "Fill in your info in the form below and I look forward to hearing from you!",
     contactSend: "Invia Messaggio!",
   },
 };

@@ -22,10 +22,7 @@ const Skills = () => {
   return (
     <div className="px-5 md:px-10 lg:pt-1">
       <h1 className="text-3xl mb-5 text-white">{texts.skillTitle}</h1>
-      <p className="text-gray-300 mb-5">
-        Estas son algunas de las tecnologias y habilidades aprendidas a lo largo
-        de mi carrera
-      </p>
+      <p className="text-gray-300 mb-5">{texts.skillText}</p>
 
       <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-3 gap-4">
         {skills.map((item, index) => (
@@ -39,7 +36,7 @@ const Skills = () => {
               style={{ width: `${item.width}` }}
               alt={item.name}
             />
-            <h1 className="capitalize text-sm mt-3">{item.name}</h1>
+            <h1 className="capitalize mt-3">{item.name}</h1>
           </div>
         ))}
       </div>

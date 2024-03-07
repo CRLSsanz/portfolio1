@@ -43,7 +43,7 @@ const Footer = () => {
 
       <div className="text-gray-400 flex flex-col md:flex-row justify-between">
         <div className="md:w-1/3 mb-5">
-          <h1 className="text-gray-50 fam-logo tracking-wider text-2xl mb-5">
+          <h1 className="text-gray-50 fam-logo font-bold tracking-wider text-2xl mb-5">
             CRL<span className="text-cyan-400">S</span> CODE
           </h1>
           <p className="md:leading-loose">
@@ -129,7 +129,7 @@ const Footer = () => {
           <h2 className="text-gray-200 text-2xl mb-5">Siguenos</h2>
 
           {/** SVG SOCIAL */}
-          <div class="flex flex-wrap md:flex-col lg:flex-row JJjustify-center text-gray-300 mb-10">
+          <div class="flex flex-wrap md:flex-col lg:flex-row JJjustify-center mb-10">
             <div className="bg-transparent border border-gray-300 rounded-full w-8 h-8 flex mr-2 md:mb-2">
               <svg
                 className="m-auto"
