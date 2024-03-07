@@ -9,22 +9,22 @@ const Home = () => {
   return (
     <div className="h-full p-5 sm:px-10 XXmd:w-[1100px] text-gray-400 ">
       <div className="flex flex-row mb-10">
-        <div className="w-1/2 lg:w-1/4 text-lg font-semibold tracking-[0.2em] ">
-          <h1 className="w-32 leading-4 md:leading-6">CRLS SANZ</h1>
+        <div className="w-1/2 lg:w-1/4 lg:text-lg tracking-widest ">
+          <h1 className="w-32 fam-logo leading-4 md:leading-6">CRLS SANZ</h1>
         </div>
 
         <div className="w-1/2 lg:w-3/4 text-xs md:text-base flex flex-col lg:flex-row justify-between lg:items-center text-end md:text-start">
-          <h1 className="mb-5 lg:mb-0">
+          <h4 className="mb-5 lg:mb-0">
             FULLSTACK DEVELOPER
             <br /> FOLIO /{" "}
             <span className="font-numero font-light">2021 - 2024</span>
-          </h1>
+          </h4>
 
-          <h1 className="mb-5 lg:mb-0">
+          <h4 className="mb-5 lg:mb-0">
             AVAILABLE FOR FREELANCE
             <br /> WORK FROM JULY{" "}
             <span className="font-numero font-light">2024</span>
-          </h1>
+          </h4>
           <div className="hover:-mb-1">
             <a
               href="#sectionContact"

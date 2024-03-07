@@ -31,7 +31,7 @@ const Skills = () => {
         {skills.map((item, index) => (
           <div
             key={index}
-            className="pb-2 pt-3 rounded bg-gray-400 text-black flex flex-col justify-between items-center hover:bg-gray-200 active:bg-cyan-400 shadow-lg shadow-black/50"
+            className="pb-2 pt-3 rounded bg-gray-500 text-black flex flex-col justify-between items-center hover:bg-gray-200 active:bg-cyan-400 shadow-lg shadow-black/50"
           >
             <img
               className=""
@@ -39,7 +39,7 @@ const Skills = () => {
               style={{ width: `${item.width}` }}
               alt={item.name}
             />
-            <h1 className="uppercase text-sm mt-3">{item.name}</h1>
+            <h1 className="capitalize text-sm mt-3">{item.name}</h1>
           </div>
         ))}
       </div>

@@ -22,8 +22,8 @@ const Work = () => {
           />
           <div className="p-4">
             <div className="flex justify-between mb-2">
-              <h1>{texts.workItem1}</h1>
-              <h1>{texts.workView}</h1>
+              <h4>{texts.workItem1}</h4>
+              <h4>{texts.workView}</h4>
             </div>
             <div className="text-gray-500 flex flex-wrap">
               <h1 className="p-1 px-2 bg-white rounded mr-1 mb-1">
@@ -46,8 +46,8 @@ const Work = () => {
           />
           <div className="p-4">
             <div className="flex justify-between mb-2">
-              <h1>{texts.workItem2}</h1>
-              <h1>{texts.workView}</h1>
+              <h4>{texts.workItem2}</h4>
+              <h4>{texts.workView}</h4>
             </div>
             <div className="text-gray-100 flex flex-wrap">
               <h1 className="p-1 px-2 bg-gray-800 rounded mr-1">Html</h1>
@@ -75,8 +75,8 @@ const Work = () => {
           />
           <div className="p-4">
             <div className="flex justify-between mb-2">
-              <h1>{texts.workItem3}</h1>
-              <h1>{texts.workView}</h1>
+              <h4>{texts.workItem3}</h4>
+              <h4>{texts.workView}</h4>
             </div>
             <div className="text-gray-500 flex flex-wrap">
               <h1 className="p-1 px-2 bg-white rounded mr-1">Html</h1>
@@ -103,8 +103,8 @@ const Work = () => {
           />
           <div className="p-4">
             <div className="flex justify-between mb-2">
-              <h1>{texts.workItem4}</h1>
-              <h1>{texts.workView}</h1>
+              <h4>{texts.workItem4}</h4>
+              <h4>{texts.workView}</h4>
             </div>
             <div className="text-gray-100 flex flex-wrap">
               <h1 className="p-1 px-2 bg-gray-800 rounded mr-1 mb-1">React</h1>

@@ -80,9 +80,9 @@ const Navbar = () => {
         <div className="p-6 w-[200px] h-full flex flex-col justify-between Bbg-black bg-gradient-to-r from-black via-black to-black/50">
           <div>
             <li className="mb-5">
-              <span className="uppercase text-xs lg:text-base tracking-[0.2em] ">
+              <h2 className="text-sm lg:text-base tracking-[0.2em] ">
                 {texts.navbarTitle}
-              </span>
+              </h2>
             </li>{" "}
             <br />
             <li className="w-full py-3 lg:py-5 hover:font-bold ">
@@ -105,15 +105,12 @@ const Navbar = () => {
                 {texts.navbarWork}
               </a>
             </li>
-            <li className="w-full border-t border-gray-900 py-3 lg:py-5 hover:font-bold ">
+            <li className="w-full border-t border-gray-900 py-3 lg:py-5 hover:font-bold mb-5">
               <a href="#sectionContact" onClick={() => setNavbar(!navbar)}>
                 {texts.navbarContact}
               </a>
             </li>
-          </div>
-
-          <div>
-            <div className="relative mb-5">
+            <div className="relative">
               <img
                 className="shadow-lg border shadow-gray-200/50"
                 src={cargarImagen(`./${language}.png`)}
@@ -130,18 +127,18 @@ const Navbar = () => {
                 <option value="es">Spanish</option>
               </select>
             </div>
-
-            <li className="hidden">
-              <a href="http://www.google.com" className="">
-                contact@crlscode.com
-              </a>
-            </li>
-            <li className="hidden">
-              <a href="http://www.google.com" className="">
-                + Downloader my resumen
-              </a>
-            </li>
           </div>
+
+          <h4 className="fam-logo">
+            <a href="http://www.google.com" className="">
+              crls code
+            </a>
+          </h4>
+          <li className="hidden">
+            <a href="http://www.google.com" className="">
+              + Downloader my resumen
+            </a>
+          </li>
         </div>
       </ul>
     </section>

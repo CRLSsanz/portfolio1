@@ -32,9 +32,9 @@ const Portfolio = () => {
       >
         <div className="Xmx-auto w-full -mt-1">
           <div className="bg-[#151515] h-20"> </div>
-          <h1 className="-mt-16 h-16 w-full sticky z-50 top-0">
+          <div className="-mt-16 h-16 w-full sticky z-50 top-0">
             <Navbar />
-          </h1>
+          </div>
 
           <svg
             className="block md:hidden -mt-1"
@@ -159,15 +159,15 @@ const Portfolio = () => {
       </section>
 
       {/** FOOTER */}
-      <div className="bg-[#111111] text-white text-center text-sm py-4 ">
-        <h1 className="hidden">
-          All Rights Reserved <span className="font-numero">© 2023 </span>
+      <div className="bg-[#050505] text-white text-center text-sm py-4 ">
+        <h4 className="hidden">
+          All Rights Reserved <span className="fam-number">© 2023 </span>
           CRLSDEV
-        </h1>
-        <h1 className="px-12 tracking-wider">
-          <span className="font-numero font-extralight">©2020-2024</span> | All
+        </h4>
+        <h4 className="px-12 tracking-wider">
+          © <span className="fam-number font-extralight">2020-2024</span> | All
           Rights Reserved. Developer by CRLSCODE
-        </h1>
+        </h4>
       </div>
     </div>
   );

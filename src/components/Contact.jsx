@@ -19,12 +19,27 @@ const Contact = () => {
 
       <div className="flex flex-row mb-10 md:mb-0">
         <div className="mb-5 md:pr-32">
-          <h1 className="border-l-2 border-cyan-600 h-8 mb-5"> </h1>
-          <p className="pr-5">
+          <p className="text-gray-300 pr-5 mb-5">
             ¡Contáctanos de forma gratuita y juntos hagamos crecer tu negocio en
             el mundo digital! <br /> Nuestro equipo de expertos está listo para
             hacerlo realidad.
           </p>
+          <h1 className="md:-ml-8 Bborder-l-2 text-cyan-600">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+              />
+            </svg>
+          </h1>
         </div>
 
         <div className="h-60 -mt-14 flex flex-row ">
@@ -33,7 +48,7 @@ const Contact = () => {
             <h1>EM</h1>
             <h1>WH</h1>
           </div>
-          <div className=" bg-gray-800 text-cyan-500 text-sm font-semibold p-5 rounded-md flex flex-col justify-between shadow-lg shadow-black/50">
+          <div className=" Gbg-gray-800 text-cyan-500 text-sm font-semibold p-5 rounded-md flex flex-col justify-between Sshadow-lg shadow-black/50">
             <a
               href="tel:+51990441430"
               className="rounded-full border-2 border-cyan-500 p-2 flex flex-row items-center "
@@ -56,7 +71,7 @@ const Contact = () => {
             </a>
 
             <a
-              href="mailto:contact@crlscode.com"
+              href="mailto:carlossandev@gmail.com"
               Subject="Interesado%20en%20el%20desarrollo%20de%20website"
               className="rounded-full border-2 border-cyan-500 p-2 flex flex-row items-center"
             >
@@ -103,26 +118,26 @@ const Contact = () => {
 
       <div className="Llg:w-[700px] flex flex-col md:flex-row items-center">
         <div className="md:w-1/2 mb-10">
-          <p className="text-sm text-gray-300 mb-5">{texts.contactForm}</p>
-          <form onSubmit={handleSubmit} className="text-gray-200 font-numero">
+          <p className="text-sm text-gray-400 mb-5">{texts.contactForm}</p>
+          <form onSubmit={handleSubmit} className="text-gray-200">
             <input
               type="text"
-              className="w-full p-2 focus:outline-none bg-transparent border-b border-l border-cyan-600 mb-3"
+              className="w-full p-2 focus:outline-none bg-transparent rounded-md border-2 border-cyan-900 mb-3"
               placeholder="Name"
             />
             <input
               type="number"
-              className="w-full p-2 focus:outline-none bg-transparent border-b border-r border-cyan-600 mb-3"
+              className="w-full p-2 fam-number focus:outline-none bg-transparent rounded-md border-2 border-cyan-900 mb-3"
               placeholder="Cell Phone"
             />
             <input
               type="email"
-              className="w-full p-2 focus:outline-none bg-transparent border-b border-l border-cyan-600 mb-3"
+              className="w-full p-2 focus:outline-none bg-transparent rounded-md border-2 border-cyan-900 mb-3"
               placeholder="Email"
             />
             <textarea
               rows="4"
-              className="w-full p-2 focus:outline-none bg-transparent border-b border-r border-cyan-600 mb-3"
+              className="w-full p-2 focus:outline-none bg-transparent rounded-md border-2 border-cyan-900 mb-8"
               placeholder="Message"
             ></textarea>
 

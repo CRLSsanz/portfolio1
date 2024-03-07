@@ -2,25 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
-/* fuente para numeros*/
+/* fuente para numeros y letras*/
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
-/*para letras son separadas*/
+/*solo letras son separadas*/
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
-/*font Waterfall */
+/*font  */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bebas Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
+
+/*
+    Bruno Ace SC - logo letras 
+    Bebas+Neue / Para titulos EXTRA-GRANDES alto y delgado
+    
+    Orbitron - para titutlos H1 (opcion1)
+    Turret Road - para titutlos H1 (opcion2)
+    Anta       / titutlo negrita. texto robotico (opcion3)
+    
+    Satisfy, Waterfall, Sofia / corrida y inclinado
+
+h1 - Ysabeau SC    
+h2 - Ysabeau SC / h2 solo subtitulo y titulo (imprenta y minusculas)
+h3 - Montserrat Alternates / solo para los numeros
+h4 - vacio
+
+HTML  - Raleway (solo letras)    
+#  - Montserrat Alternates / solo para los numeros
+
+
+*/
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 html {
   font-family: "Raleway", sans-serif;
   scroll-behavior: smooth;
 }
 
+h1 {
+  font-family: "Ysabeau SC", sans-serif;
+  /*font-size: 2rem;*/
+}
+h2 {
+  font-family: "Ysabeau SC", sans-serif;
+}
+
 .font-numero {
   font-family: "Inter", sans-serif;
 }
 
-.font-bebas {
-  font-family: "Bebas Neue", sans-serif;
+.fam-number {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.fam-logo {
+  font-family: "Bruno Ace SC", sans-serif;
 }
