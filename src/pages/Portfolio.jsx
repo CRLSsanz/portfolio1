@@ -12,7 +12,7 @@ const Portfolio = () => {
     <div>
       <section
         id="sectionHome"
-        className="min-h-[850px] XXmd:min-h-screen md:min-h-[700px] Bbg-[#1A2035] bg-[#151515] flex"
+        className="min-h-[840px] 860 XXmd:min-h-screen md:min-h-[700px] Bbg-[#1A2035] bg-[#151515] flex"
       >
         <div className="mx-auto w-full">
           <h1 className="Hh-16"> </h1>

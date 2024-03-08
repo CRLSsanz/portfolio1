@@ -37,7 +37,7 @@ const Home = () => {
       </div>
 
       {/** MOVIL */}
-      <div className="mr-4 sm:py-5 md:hidden tracking-[-0.3em] font-bold text-[65px] flex flex-row justify-between">
+      <div className="mr-5 sm:py-5 md:hidden tracking-[-0.3em] font-bold text-[65px] flex flex-row justify-between">
         <span>D</span>
         <span>E</span>
         <span>V</span>
@@ -49,30 +49,30 @@ const Home = () => {
         <span>R</span>
       </div>
 
-      <div className="-mt-5 bbg-red-500 md:hidden w-[100vw] h-[100vw] flex flex-col justify-center -mx-5 rotate-90">
+      <div className="-mt-4 Xbg-red-500 w-[calc(100vw-9px)] h-[calc(100vw-9px)] flex flex-col justify-center rotate-90 -mx-5">
         <div
           className="bbg-red-200 font-bold text-[140px] whitespace-nowrap tracking-[-0.12em] fam-home h-full grid grid-rows-3"
           style={{ fontFamily: "sans-serif" }}
         >
-          <div className="relative bbg-cyan-200 whitespace-nowrap">
+          <div className="relative Xbg-cyan-400/30 whitespace-nowrap">
             <div className="absolute top-0 Xtext-7xl leading-none">
-              STA<span className="text-cyan-600">C</span>K
+              ST<span className="text-cyan-600">A</span>CK
             </div>
           </div>
 
-          <div className="relative bbg-green-400 whitespace-nowrap">
-            <div className="absolute bbg-red-300 bottom-0 flex flex-col h-full items-center justify-center Xtext-[220px]">
+          <div className="relative Xbg-green-400 whitespace-nowrap">
+            <div className="absolute Xbg-red-300 bottom-0 flex flex-col h-full items-center justify-center Xtext-[220px]">
               <div>
-                FRONT<span className="Xtext-cyan-600 ml-10">&</span>
+                <span className="Xtext-cyan-600 mr-2">F</span>RONT
+                <span className="Xtext-gray-400/80 text-[120px] ml-10">&</span>
               </div>
             </div>
           </div>
 
-          <div className="relative bbg-cyan-400/50 whitespace-nowrap">
+          <div className="relative Xbg-cyan-400/50 whitespace-nowrap">
             <div className="absolute bottom-0 Xtext-7xl leading-none">
-              B<span className="">A</span>
-              <span className="text-cyan-600">C</span>
-              K-END
+              B<span className="">A</span>CK-E
+              <span className="text-gray-400 -mr-5">N</span>D
             </div>
           </div>
         </div>
