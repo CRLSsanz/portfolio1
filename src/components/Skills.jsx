@@ -34,7 +34,7 @@ const Skills = () => {
             key={index}
             className="rounded bg-gray-500/10 text-gray-300 flex flex-col justify-between items-center hover:bg-gray-600 hover:cursor-pointer active:bg-cyan-600 shadow shadow-gray-950/50"
           >
-            <div className="h-20 flex items-center xl:hidden">
+            <div className="h-20 flex items-center lg:hidden xl:flex">
               <img
                 className=""
                 src={cargarImagen(`./${item.name}.png`)}
@@ -42,7 +42,7 @@ const Skills = () => {
                 alt={item.name}
               />
             </div>
-            <h1 className="capitalize pb-3 xl:pt-3">{item.name}</h1>
+            <h1 className="capitalize pb-3 lg:pt-3 xl:pt-0">{item.name}</h1>
           </div>
         ))}
       </div>

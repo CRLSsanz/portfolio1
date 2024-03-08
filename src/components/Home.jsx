@@ -49,13 +49,13 @@ const Home = () => {
         <span>R</span>
       </div>
 
-      <div className="-mt-4 Xbg-red-500 w-[calc(100vw-9px)] h-[calc(100vw-9px)] flex flex-col justify-center rotate-90 -mx-5">
+      <div className="-mt-4 md:hidden Xbg-red-500 w-[calc(100vw-10px)] h-[calc(100vw-10px)] flex flex-col justify-center rotate-90 -mx-5 pb-1">
         <div
           className="bbg-red-200 font-bold text-[140px] whitespace-nowrap tracking-[-0.12em] fam-home h-full grid grid-rows-3"
           style={{ fontFamily: "sans-serif" }}
         >
           <div className="relative Xbg-cyan-400/30 whitespace-nowrap">
-            <div className="absolute top-0 Xtext-7xl leading-none">
+            <div className="absolute -top-0.5 Xtext-7xl leading-none">
               ST<span className="text-cyan-600">A</span>CK
             </div>
           </div>
@@ -63,14 +63,14 @@ const Home = () => {
           <div className="relative Xbg-green-400 whitespace-nowrap">
             <div className="absolute Xbg-red-300 bottom-0 flex flex-col h-full items-center justify-center Xtext-[220px]">
               <div>
-                <span className="Xtext-cyan-600 mr-2">F</span>RONT
+                <span className="Xtext-cyan-600 mr-1">F</span>RONT
                 <span className="Xtext-gray-400/80 text-[120px] ml-10">&</span>
               </div>
             </div>
           </div>
 
           <div className="relative Xbg-cyan-400/50 whitespace-nowrap">
-            <div className="absolute bottom-0 Xtext-7xl leading-none">
+            <div className="absolute -bottom-0.5 Xtext-7xl leading-none">
               B<span className="">A</span>CK-E
               <span className="text-gray-400 -mr-5">N</span>D
             </div>
@@ -110,14 +110,13 @@ const Home = () => {
      */}
 
       {/** DESKTOP - MD*/}
-      <div className="hidden md:inline-block w-full mb-10">
+      <div className="hidden md:inline-block text-gray-500 w-full mb-10">
         <div
-          className="FFfont-poppins font-bold 
-          md:text-[110px] lg:text-[150px] xl:text-[200px] 
-          md:leading-[100px] lg:leading-[150px] xl:leading-[190px] 2xl:leading-[230px] tracking-[-0.15em]"
-          style={{ fontFamily: "sans-serif" }}
+          className="fam-home md:text-[350px] 
+          leading-none tracking-[-0.02em]"
+          //style={{ fontFamily: "sans-serif" }}
         >
-          <div className="flex flex-row xl:mb-5 2xl:mb-10">
+          <div className="flex flex-row">
             <span>D</span>
             <span>E</span>
             <span>V</span>
@@ -129,13 +128,13 @@ const Home = () => {
             <span>R</span>
           </div>
 
-          <div className="flex flex-row justify-between text-[160px] lg:text-[210px] xl:text-[310px]">
+          <div className="flex flex-row justify-between">
             <span>FRONT</span>
             <span className="text-cyan-600">-</span>
-            <span>&</span>
+            <span>END</span>
           </div>
 
-          <div className="flex flex-row justify-between text-[150px] lg:text-[210px] xl:text-[270px] ">
+          <div className="hidden Fflex flex-row justify-between text-[150px] lg:text-[210px] xl:text-[270px] ">
             <span> </span>
             <span className="">
               B<span className="text-cyan-600">A</span>

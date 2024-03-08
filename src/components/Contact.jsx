@@ -24,7 +24,7 @@ const Contact = () => {
           </div>
 
           <div className="w-full ">
-            <div className="Xbg-gray-800 text-cyan-500 text-sm font-medium py-5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-1 gap-y-5 Sshadow-lg shadow-black/50">
+            <div className="Xbg-gray-800 text-cyan-500 font-medium py-5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-1 gap-y-5 Sshadow-lg shadow-black/50">
               <a
                 href="tel:+51990441430"
                 className="rounded-full Xborder border-cyan-500 p-2 flex flex-row items-center"
