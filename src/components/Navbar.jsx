@@ -79,12 +79,12 @@ const Navbar = () => {
       >
         <div className="p-6 w-[200px] h-full flex flex-col justify-between Bbg-black bg-gradient-to-r from-black via-black to-black/50">
           <div>
-            <li className="mb-5">
+            <li className="mb-10">
               <h2 className="text-sm lg:text-base tracking-[0.2em] ">
                 {texts.navbarTitle}
               </h2>
             </li>
-            <br />
+
             <li className="w-full py-3 lg:py-5 hover:font-bold ">
               <a href="#sectionHome" onClick={() => setNavbar(!navbar)}>
                 Home
@@ -105,7 +105,7 @@ const Navbar = () => {
                 {texts.navbarWork}
               </a>
             </li>
-            <li className="w-full border-t border-gray-900 py-3 lg:py-5 hover:font-bold mb-5">
+            <li className="w-full border-t border-gray-900 py-3 lg:py-5 hover:font-bold mb-10">
               <a href="#sectionContact" onClick={() => setNavbar(!navbar)}>
                 {texts.navbarContact}
               </a>
@@ -128,7 +128,7 @@ const Navbar = () => {
                   />
                 </svg>
               </div>
-              <span className="uppercase ml-2">{language}</span>
+              <span className="uppercase ml-1 -tracking-wider">{language}</span>
               <img
                 className="hidden shadow-lg border shadow-gray-200/50"
                 src={cargarImagen(`./${language}.png`)}
@@ -136,7 +136,7 @@ const Navbar = () => {
                 alt="English"
               />
               <select
-                className="absolute top-0 left-10 px-5 appearance-none bg-transparent text-transparent focus:text-transparent focus:outline-none"
+                className="Bbg-red-300 absolute top-0 left-2 px-4 appearance-none bg-transparent text-transparent focus:text-transparent focus:outline-none hover:cursor-pointer"
                 onChange={handleLanguage}
               >
                 <option value="en">English</option>
@@ -147,14 +147,17 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div className="flex flex-row justify-between">
-            <h4 className="fam-logo">
+          <div className="Xbg-red-800 w-44 h-44 -mx-4 -rotate-90 flex flex-col justify-between">
+            <h4 className=" fam-logo">
               <a href="#footer" className="">
                 crls code
               </a>
             </h4>
-            <div className="Bbg-red-400 rotate-90 p-2">
-              <span className="flex -mt-2 -ml-20  animate-bounce active:font-bold">
+            <div className="flex Xbg-red-400 ">
+              <span
+                className="Xbg-cyan-400 -mb-5 animate-bounce active:font-bold"
+                onClick={() => setNavbar(!navbar)}
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -162,12 +165,11 @@ const Navbar = () => {
                   stroke-width="2.5"
                   stroke="currentColor"
                   class="w-6 h-6 cursor-pointer"
-                  onClick={() => setNavbar(!navbar)}
                 >
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+                    d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"
                   />
                 </svg>
               </span>

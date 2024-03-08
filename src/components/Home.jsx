@@ -8,7 +8,7 @@ const Home = () => {
 
   return (
     <div className="h-full p-5 sm:px-10 XXmd:w-[1100px] text-gray-400 ">
-      <div className="flex flex-row mb-10">
+      <div className="flex flex-row mb-5">
         <div className="w-1/2 lg:w-1/4 lg:text-lg tracking-widest ">
           <h1 className="w-32 fam-logo leading-4 md:leading-6">CRLS CODE</h1>
         </div>
@@ -17,18 +17,18 @@ const Home = () => {
           <h4 className="mb-5 lg:mb-0">
             FULLSTACK DEVELOPER
             <br /> FOLIO /{" "}
-            <span className="font-numero font-light">2021 - 2024</span>
+            <span className="fam-number font-light">2021 - 2024</span>
           </h4>
 
           <h4 className="mb-5 lg:mb-0">
             AVAILABLE FOR FREELANCE
             <br /> WORK FROM JULY{" "}
-            <span className="font-numero font-light">2024</span>
+            <span className="fam-number font-light">2024</span>
           </h4>
-          <div className="hover:-mb-1">
+          <div className="flex justify-end md:justify-start  hover:-mb-1">
             <a
               href="#sectionContact"
-              className="py-3 px-10 md:text-lg tracking-wider border rounded-full  hover:text-white hover:font-semibold"
+              className="py-3 px-10 md:text-lg tracking-wider border border-gray-400 rounded-full  hover:text-white hover:font-semibold"
             >
               CONTACT
             </a>
@@ -37,6 +37,48 @@ const Home = () => {
       </div>
 
       {/** MOVIL */}
+      <div className="mr-4 sm:py-5 md:hidden tracking-[-0.3em] font-bold text-[65px] flex flex-row justify-between">
+        <span>D</span>
+        <span>E</span>
+        <span>V</span>
+        <span>E</span>
+        <span>L</span>
+        <span>O</span>
+        <span>P</span>
+        <span>E</span>
+        <span>R</span>
+      </div>
+
+      <div className="-mt-5 bbg-red-500 md:hidden w-[100vw] h-[100vw] flex flex-col justify-center -mx-5 rotate-90">
+        <div
+          className="bbg-red-200 font-bold text-[140px] whitespace-nowrap tracking-[-0.12em] fam-home h-full grid grid-rows-3"
+          style={{ fontFamily: "sans-serif" }}
+        >
+          <div className="relative bbg-cyan-200 whitespace-nowrap">
+            <div className="absolute top-0 Xtext-7xl leading-none">
+              STA<span className="text-cyan-600">C</span>K
+            </div>
+          </div>
+
+          <div className="relative bbg-green-400 whitespace-nowrap">
+            <div className="absolute bbg-red-300 bottom-0 flex flex-col h-full items-center justify-center Xtext-[220px]">
+              <div>
+                FRONT<span className="Xtext-cyan-600 ml-10">&</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="relative bbg-cyan-400/50 whitespace-nowrap">
+            <div className="absolute bottom-0 Xtext-7xl leading-none">
+              B<span className="">A</span>
+              <span className="text-cyan-600">C</span>
+              K-END
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/** MOVIL * /}
       <div className="sm:py-5 md:hidden font-bold text-6xl flex flex-row justify-between">
         <span>D</span>
         <span>E</span>
@@ -64,7 +106,8 @@ const Home = () => {
           <span className="hidden sm:block"> </span>
           END
         </div>
-      </div>
+      </div> 
+     */}
 
       {/** DESKTOP - MD*/}
       <div className="hidden md:inline-block w-full mb-10">

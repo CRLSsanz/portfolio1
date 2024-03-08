@@ -34,6 +34,7 @@ HTML  - Raleway (solo letras)
 */
 @import url("https://fonts.googleapis.com/css2?family=Ysabeau+SC&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 * {
   margin: 0;
@@ -64,4 +65,8 @@ h2 {
 
 .fam-logo {
   font-family: "Bruno Ace SC", sans-serif;
+}
+
+.fam-home {
+  font-family: "Bebas Neue", sans-serif;
 }

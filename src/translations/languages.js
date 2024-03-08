@@ -65,7 +65,8 @@ const translations = {
     //NAVBAR
     navbarTitle: "Navegación",
     navbarAbout: "Sobre mi",
-    navbarSkills: "Tecnologia",
+    navbarDoit: "Lo que hago",
+    navbarSkills: "Tecnologias",
     navbarWork: "Proyectos",
     navbarContact: "Contacto",
     //HOME

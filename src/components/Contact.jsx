@@ -89,8 +89,8 @@ const Contact = () => {
 
             <div className="text-gray-200 py-0.5 flex flex-col justify-around text-start">
               <h2>Call me</h2>
-              <h2>Send an Email</h2>
-              <h2>whatsapp live</h2>
+              <h2>Send an email</h2>
+              <h2>Whatsapp live</h2>
             </div>
           </div>
         </div>
@@ -116,7 +116,7 @@ const Contact = () => {
             <textarea
               rows="3"
               className="w-full py-2.5 px-4 focus:outline-none bg-transparent rounded-md border-2 border-gray-700 mb-8"
-              placeholder="your message"
+              placeholder="Your message"
             ></textarea>
 
             <div className="hidden Fflex justify-end">
@@ -133,7 +133,7 @@ const Contact = () => {
             <div className="flex">
               <button
                 type="submit"
-                className="text-center text-sm w-full xl:w-1/2 rounded-sm font-semibold whitespace-nowrap py-3 tracking-widest text-black hover:text-white bg-gradient-to-r from-cyan-500 to-blue-500"
+                className="text-center text-sm w-full xl:w-1/2 rounded-sm whitespace-nowrap py-3 tracking-widest text-white  bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-l hover:to-purple-500"
               >
                 ¡Enviar Mensaje!
               </button>

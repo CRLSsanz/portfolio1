@@ -88,7 +88,7 @@ const About = () => {
         <div className="flex">
           <a
             href="#sectionWork"
-            className="text-center text-sm w-full md:w-1/2 rounded-sm font-semibold whitespace-nowrap py-3 tracking-widest text-black hover:text-white bg-gradient-to-r from-cyan-500 to-blue-500"
+            className="text-center text-sm w-full md:w-1/2 rounded-sm whitespace-nowrap py-3 tracking-widest text-white  bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-l hover:to-purple-500"
           >
             {texts.abBotton}
           </a>
