@@ -99,15 +99,15 @@ const About = () => {
       <p className=" text-gray-300 lg:pr-12 mb-16">{texts.abSubTitleText}</p>
 
       <div className="text-gray-400 md:grid md:grid-cols-3 md:gap-5 md:gap-y-10">
-        <div className="bg-gradient-to-br from-[#1E1F26] to-[#2C303A] Bbg-[#1E1F26] rounded-md shadow-lg shadow-black/50 p-5 lg:pt-10 mb-12 md:mb-0">
+        <div className="bg-gradient-to-br from-[#1E1F26]/80 to-[#2C303A]/10 Bbg-[#1E1F26] rounded-md shadow shadow-gray-950 p-5 lg:pt-10 mb-14 md:mb-0">
           <div className="-mt-14 lg:-mt-[70px] mb-5 ml-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="1.5"
+              stroke-width="1.0"
               stroke="currentColor"
-              class="w-16 h-16 p-0.5 rounded-md bg-[#2F3437]/80"
+              class="w-16 h-16 p-0.5 rounded-md bg-[#2F3437]/95"
             >
               <path
                 stroke-linecap="round"
@@ -122,13 +122,13 @@ const About = () => {
           <p className="lg:text-start lg:mb-5">{texts.abDo1text}</p>
         </div>
 
-        <div className="bg-gradient-to-br from-[#1E1F26] to-[#2C303A] Bbg-[#2C303A] rounded-md shadow-lg shadow-black/50 p-5 lg:pt-10 mb-12 md:mb-0">
+        <div className="bg-gradient-to-br from-[#1E1F26]/80 to-[#2C303A]/10 Bbg-[#2C303A] rounded-md shadow shadow-gray-950 p-5 lg:pt-10 mb-14 md:mb-0">
           <div className="-mt-14 lg:-mt-[70px] mb-5 ml-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="1.5"
+              stroke-width="1.0"
               stroke="currentColor"
               class="w-16 h-16 p-0.5 rounded-md bg-[#2F3437]"
             >
@@ -145,15 +145,15 @@ const About = () => {
           <p className="lg:text-start lg:mb-5">{texts.abDo2text}</p>
         </div>
 
-        <div className="bg-gradient-to-br from-[#1E1F26] to-[#2C303A] Bbg-[#1A2035] rounded-md shadow-lg shadow-black/50 p-5 lg:pt-10 mb-12 md:mb-0">
+        <div className="bg-gradient-to-br from-[#1E1F26]/80 to-[#2C303A]/10 Bbg-[#1A2035] rounded-md shadow shadow-gray-950 p-5 lg:pt-10 mb-14 md:mb-0">
           <div className="-mt-14 lg:-mt-[70px] mb-5 ml-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="1.5"
+              stroke-width="1.0"
               stroke="currentColor"
-              class="w-16 h-16 p-0.5 rounded-md bg-[#2F3437]/80"
+              class="w-16 h-16 p-0.5 rounded-md bg-[#2F3437]/95"
             >
               <path
                 stroke-linecap="round"
@@ -168,15 +168,15 @@ const About = () => {
           <p className="lg:text-start lg:mb-5">{texts.abDo3text}</p>
         </div>
 
-        <div className="bg-gradient-to-br from-[#1E1F26] to-[#2C303A] Bbg-[#1A2035] rounded-md shadow-lg shadow-black/50 p-5 lg:pt-10 md:mb-0">
+        <div className="bg-gradient-to-br from-[#1E1F26]/80 to-[#2C303A]/10 Bbg-[#1A2035] rounded-md shadow shadow-gray-950 p-5 lg:pt-10 md:mb-0">
           <div className="-mt-14 lg:-mt-[70px] mb-5 ml-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="1.5"
+              stroke-width="1.0"
               stroke="currentColor"
-              class="w-16 h-16 p-0.5 rounded-md bg-[#2F3437]/80"
+              class="w-16 h-16 p-0.5 rounded-md bg-[#2F3437]/95"
             >
               <path
                 stroke-linecap="round"

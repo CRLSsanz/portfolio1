@@ -12,7 +12,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-full px-5 md:px-10">
+    <div className="w-full px-5 md:px-10 mb-10">
       <h1 className="text-3xl xl:text-4xl mb-5 text-white">
         {texts.contactTitle}
       </h1>
@@ -24,10 +24,10 @@ const Contact = () => {
           </div>
 
           <div className="h-60 flex flex-row ">
-            <div className="Bbg-gray-800 text-cyan-500 text-sm font-semibold p-5 -ml-5 rounded-md flex flex-col justify-between Sshadow-lg shadow-black/50">
+            <div className="Bbg-gray-800 text-cyan-500 text-sm font-semibold p-5 rounded-md flex flex-col justify-between Sshadow-lg shadow-black/50">
               <a
                 href="tel:+51990441430"
-                className="rounded-full border-2 border-cyan-500 p-2 flex flex-row items-center"
+                className="rounded-full border border-cyan-500 p-2 flex flex-row items-center"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -35,7 +35,7 @@ const Contact = () => {
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="w-8 h-8"
+                  class="w-6 h-6"
                 >
                   <path
                     stroke-linecap="round"
@@ -48,7 +48,7 @@ const Contact = () => {
               <a
                 href="mailto:carlossandev@gmail.com"
                 Subject="Interesado%20en%20el%20desarrollo%20de%20website"
-                className="rounded-full border-2 border-cyan-500 p-2 flex flex-row items-center"
+                className="rounded-full border border-cyan-500 p-2 flex flex-row items-center"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +56,7 @@ const Contact = () => {
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="w-8 h-8"
+                  class="w-6 h-6"
                 >
                   <path
                     stroke-linecap="round"
@@ -67,7 +67,7 @@ const Contact = () => {
               </a>
 
               <a
-                className="rounded-full border-2 border-cyan-500 p-2 flex flex-row items-center"
+                className="rounded-full border border-cyan-500 p-2 flex flex-row items-center"
                 href="https://api.whatsapp.com/send?phone=+393801836002&text=Hello, I am interested in your services."
               >
                 <svg
@@ -76,7 +76,7 @@ const Contact = () => {
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="w-8 h-8"
+                  class="w-6 h-6"
                 >
                   <path
                     stroke-linecap="round"
@@ -87,7 +87,7 @@ const Contact = () => {
               </a>
             </div>
 
-            <div className="text-gray-200 py-2.5 flex flex-col justify-around text-start">
+            <div className="text-gray-200 py-0.5 flex flex-col justify-around text-start">
               <h2>Call me</h2>
               <h2>Send an Email</h2>
               <h2>whatsapp live</h2>
@@ -96,7 +96,7 @@ const Contact = () => {
         </div>
 
         <div className="w-full md:w-1/2 mb-10">
-          <p className="text-gray-400 mb-5 md:pr-10">{texts.contactForm}</p>
+          <p className="text-gray-300 mb-5 md:pr-10">{texts.contactForm}</p>
           <form onSubmit={handleSubmit} className="text-gray-300 fam-general">
             <input
               type="text"

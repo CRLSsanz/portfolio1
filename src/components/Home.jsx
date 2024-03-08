@@ -10,7 +10,7 @@ const Home = () => {
     <div className="h-full p-5 sm:px-10 XXmd:w-[1100px] text-gray-400 ">
       <div className="flex flex-row mb-10">
         <div className="w-1/2 lg:w-1/4 lg:text-lg tracking-widest ">
-          <h1 className="w-32 fam-logo leading-4 md:leading-6">CRLS SANZ</h1>
+          <h1 className="w-32 fam-logo leading-4 md:leading-6">CRLS CODE</h1>
         </div>
 
         <div className="w-1/2 lg:w-3/4 text-xs md:text-base flex flex-col lg:flex-row justify-between lg:items-center text-end md:text-start">

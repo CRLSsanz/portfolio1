@@ -136,7 +136,7 @@ const Navbar = () => {
                 alt="English"
               />
               <select
-                className="absolute top-0 left-10 px-5 appearance-none bg-transparent text-black focus:text-gray-200 focus:outline-none"
+                className="absolute top-0 left-10 px-5 appearance-none bg-transparent text-transparent focus:text-transparent focus:outline-none"
                 onChange={handleLanguage}
               >
                 <option value="en">English</option>
@@ -154,7 +154,7 @@ const Navbar = () => {
               </a>
             </h4>
             <div className="Bbg-red-400 rotate-90 p-2">
-              <span className="hidden md:flex -mt-2 -ml-10  animate-bounce">
+              <span className="flex -mt-2 -ml-20  animate-bounce active:font-bold">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"

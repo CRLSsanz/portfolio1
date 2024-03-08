@@ -41,10 +41,10 @@ const Footer = () => {
         </a>
       </div>
 
-      <div className="text-gray-400 flex flex-col md:flex-row justify-between">
+      <div className="text-gray-500 flex flex-col md:flex-row justify-between">
         <div className="md:w-1/3 mb-5">
-          <h1 className="text-gray-50 fam-logo font-bold tracking-wider text-2xl mb-5">
-            CRL<span className="text-cyan-400">S</span> CODE
+          <h1 className="text-gray-100 fam-logo font-bold tracking-wider text-2xl mb-5">
+            CRL<span className="text-cyan-500">S</span> CODE
           </h1>
           <p className="md:leading-loose">
             Loosely designed in
@@ -67,7 +67,7 @@ const Footer = () => {
         </div>
 
         <div className="mb-5">
-          <h2 className="text-gray-200 text-2xl mb-5">Navega</h2>
+          <h2 className="text-gray-200 text-2xl mb-5">Navegate</h2>
           <h4 className="leading-loose">
             Home <br /> About <br /> Skills <br /> Work <br /> Contact
           </h4>
@@ -126,7 +126,7 @@ const Footer = () => {
         </div>
 
         <div className="mb-10">
-          <h2 className="text-gray-200 text-2xl mb-5">Siguenos</h2>
+          <h2 className="text-gray-200 text-2xl mb-5">Follow</h2>
 
           {/** SVG SOCIAL */}
           <div class="flex flex-wrap md:flex-col lg:flex-row JJjustify-center mb-10">

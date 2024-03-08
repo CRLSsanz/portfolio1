@@ -66,7 +66,7 @@ const Portfolio = () => {
                   <About />
                 </div>
 
-                <div className="lg:sticky lg:top-0">
+                <div className="lg:sticky lg:top-0 lg:h-full">
                   <h1 id="sectionSkills" className="h-16">
                     {" "}
                   </h1>
@@ -140,7 +140,7 @@ const Portfolio = () => {
         className="Hmin-h-[800px] bg-[#151515] Bbg-[#1A2035] flex"
       >
         <div className="mx-auto Xw-full">
-          <div className="py-10 xl:w-[1100px]">
+          <div className="xl:w-[1100px]">
             <h1 className="h-16"> </h1>
             <Contact />
           </div>
@@ -164,11 +164,7 @@ const Portfolio = () => {
       </section>
 
       {/** FOOTER */}
-      <div className="BBbg-[#050505] bg-gray-200 text-gray-800 text-center text-sm py-4 ">
-        <h4 className="hidden">
-          All Rights Reserved <span className="fam-number">© 2023 </span>
-          CRLSDEV
-        </h4>
+      <div className="BBbg-[#050505] bg-gray-200 text-gray-500 text-center text-sm py-4 ">
         <h4 className="px-12 tracking-wider">
           © <span className="fam-number font-extralight">2020-2024</span> | All
           Rights Reserved. Developer by CRLSCODE

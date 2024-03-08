@@ -13,7 +13,7 @@ const Work = () => {
       <p className=" text-gray-300 mb-5">{texts.workText} </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-8">
-        <div className="bg-[#1A2035] shadow-lg shadow-black rounded-br-3xl rounded-tl-3xl">
+        <div className="bg-[#1A2035] shadow-md shadow-black/90 rounded-br-3xl rounded-tl-3xl">
           <img
             className="w-full rounded-tl-3xl"
             src={cargarImagen(`./work1.jpg`)}
@@ -37,7 +37,7 @@ const Work = () => {
           </div>
         </div>
 
-        <div className="bg-gray-100 text-gray-700 shadow-lg shadow-black rounded-br-3xl rounded-tl-3xl">
+        <div className="bg-gray-100 text-gray-700 shadow-md shadow-black/90 rounded-br-3xl rounded-tl-3xl">
           <img
             className="w-full rounded-tl-3xl"
             src={cargarImagen(`./work2.jpg`)}
@@ -57,7 +57,7 @@ const Work = () => {
           </div>
         </div>
 
-        <div className="hidden md:inline-block shadow-lg shadow-black">
+        <div className="hidden md:inline-block shadow-md shadow-black/90">
           <img
             className="w-full"
             src={cargarImagen(`./work3.jpg`)}
@@ -66,7 +66,7 @@ const Work = () => {
           />
         </div>
 
-        <div className="bg-[#1A2035] shadow-lg shadow-black rounded-br-3xl rounded-tl-3xl">
+        <div className="bg-[#1A2035] shadow-md shadow-black/90 rounded-br-3xl rounded-tl-3xl">
           <img
             className="w-full rounded-tl-3xl"
             src={cargarImagen(`./work4.jpg`)}
@@ -85,7 +85,7 @@ const Work = () => {
           </div>
         </div>
 
-        <div className="hidden shadow-lg shadow-black">
+        <div className="hidden shadow-md shadow-black/90">
           <img
             className="w-full"
             src={cargarImagen(`./work5.jpg`)}
@@ -94,7 +94,7 @@ const Work = () => {
           />
         </div>
 
-        <div className="bg-gray-100 text-gray-700 shadow-lg shadow-black rounded-br-3xl rounded-tl-3xl">
+        <div className="bg-gray-100 text-gray-700 shadow-md shadow-black/90 rounded-br-3xl rounded-tl-3xl">
           <img
             className="w-full rounded-tl-3xl"
             src={cargarImagen(`./work6.jpg`)}

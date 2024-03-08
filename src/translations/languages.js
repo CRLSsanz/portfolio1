@@ -85,7 +85,7 @@ const translations = {
     abInfo4: "Se unió en enero de",
     abInfo4N: "2023",
     abBotton: "¡Da vida a las ideas con código!",
-    abSubTitle: "What i do",
+    abSubTitle: "Lo que hago",
     abSubTitleText:
       "El mundo digital está en constante evolución, tu presencia en línea es esencial para el éxito de tu negocio, es por ello que te acompañamos desde el proceso de definición y construcción de tu marca.",
 
