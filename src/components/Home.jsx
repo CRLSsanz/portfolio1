@@ -37,7 +37,7 @@ const Home = () => {
       </div>
 
       {/** MOVIL */}
-      <div className="mr-5 sm:py-5 md:hidden tracking-[-0.3em] font-bold text-[65px] flex flex-row justify-between">
+      <div className="mr-5 px-2 sm:py-5 md:hidden tracking-[-0.3em] font-bold text-[65px] flex flex-row justify-between">
         <span>D</span>
         <span>E</span>
         <span>V</span>
@@ -49,12 +49,12 @@ const Home = () => {
         <span>R</span>
       </div>
 
-      <div className="-mt-4 md:hidden Xbg-red-500 w-[calc(100vw-10px)] h-[calc(100vw-10px)] flex flex-col justify-center rotate-90 -mx-5 pb-1">
+      <div className="md:hidden Xbg-red-500 w-[calc(100vw-25px)] h-[calc(100vw-25px)] flex flex-col justify-center rotate-90 -mx-2">
         <div
-          className="bbg-red-200 font-bold text-[140px] whitespace-nowrap tracking-[-0.12em] fam-home h-full grid grid-rows-3"
+          className="Xbg-red-200 font-bold text-[130px] whitespace-nowrap tracking-[-0.12em] fam-home h-full grid grid-rows-3"
           style={{ fontFamily: "sans-serif" }}
         >
-          <div className="relative Xbg-cyan-400/30 whitespace-nowrap">
+          <div className="relative Bbg-cyan-400/30 whitespace-nowrap">
             <div className="absolute -top-0.5 Xtext-7xl leading-none">
               ST<span className="text-cyan-600">A</span>CK
             </div>
@@ -69,10 +69,10 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="relative Xbg-cyan-400/50 whitespace-nowrap">
-            <div className="absolute -bottom-0.5 Xtext-7xl leading-none">
-              B<span className="">A</span>CK-E
-              <span className="text-gray-400 -mr-5">N</span>D
+          <div className="relative Bbg-cyan-400/50 whitespace-nowrap">
+            <div className="absolute Bbg-yellow-400 -bottom-0.5 Xtext-7xl leading-none">
+              BAC<span className="text-gray-400/70">K</span>-EN
+              <span className="">D</span>
             </div>
           </div>
         </div>

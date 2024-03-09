@@ -12,7 +12,7 @@ const About = () => {
             src={cargarImagen(`./foto3.jpg`)}
             alt="perfil"
             srcset=""
-            className="w-32 h-32 border-4 border-white rounded-full shadow-md shadow-white/50"
+            className="w-32 h-32 border-4 border-white rounded-full shadow-md shadow-gray-950"
           />
         </div>
         <h1 className="text-3xl mb-2 text-white">{texts.abTitle}</h1>
@@ -88,7 +88,7 @@ const About = () => {
         <div className="flex">
           <a
             href="#sectionWork"
-            className="text-center text-sm w-full md:w-1/2 rounded-sm whitespace-nowrap py-3 tracking-widest text-white  bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-l hover:to-purple-500"
+            className="text-center text-sm w-full md:w-1/2 rounded-sm whitespace-nowrap py-3 tracking-widest text-white  bg-gradient-to-r from-purple-700 to-cyan-500 hover:bg-gradient-to-bl hover:to-blue-500"
           >
             {texts.abBotton}
           </a>
