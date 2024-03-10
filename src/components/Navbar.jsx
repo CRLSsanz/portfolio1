@@ -77,7 +77,7 @@ const Navbar = () => {
             : "opacity-0 pointer-events-none -left-80"
         }`}
       >
-        <div className="p-6 w-[200px] h-full flex flex-col justify-between Bbg-black bg-gradient-to-r from-black via-black to-black/50">
+        <div className="p-6 w-[200px] h-full flex flex-col justify-between Bbg-black bg-gradient-to-r from-black via-black to-black/30">
           <div>
             <li className="mb-10">
               <h2 className="text-sm lg:text-base tracking-[0.2em] ">
@@ -147,7 +147,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div className="Xbg-red-800 w-44 h-44 -mx-4 -rotate-90 flex flex-col justify-between">
+          <div className="Xbg-red-800 w-48 h-48 -mx-4 -rotate-90 flex flex-col justify-between">
             <h4 className=" fam-logo">
               <a href="#footer" className="">
                 crls code
@@ -155,7 +155,7 @@ const Navbar = () => {
             </h4>
             <div className="flex Xbg-red-400 ">
               <span
-                className="Xbg-cyan-400 -mb-5 animate-bounce active:font-bold"
+                className="text-white -mb-5 Xanimate-bounce active:font-bold"
                 onClick={() => setNavbar(!navbar)}
               >
                 <svg

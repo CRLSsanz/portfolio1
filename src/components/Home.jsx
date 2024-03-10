@@ -63,7 +63,8 @@ const Home = () => {
           <div className="relative Xbg-green-400 whitespace-nowrap">
             <div className="absolute Xbg-red-300 bottom-0 flex flex-col h-full items-center justify-center Xtext-[220px]">
               <div>
-                <span className="Xtext-cyan-600 mr-1">F</span>RONT
+                <span className="Xtext-cyan-600 mr-1">F</span>RO
+                <span className="border-b-2 border-cyan-600">NT</span>
                 <span className="Xtext-gray-400/80 text-[120px] ml-10">&</span>
               </div>
             </div>
@@ -71,7 +72,7 @@ const Home = () => {
 
           <div className="relative Bbg-cyan-400/50 whitespace-nowrap">
             <div className="absolute Bbg-yellow-400 -bottom-0.5 Xtext-7xl leading-none">
-              BAC<span className="text-gray-400/70">K</span>-EN
+              B<span className="Xborder-t-2 border-cyan-600">AC</span>K-EN
               <span className="">D</span>
             </div>
           </div>
@@ -110,36 +111,50 @@ const Home = () => {
      */}
 
       {/** DESKTOP - MD*/}
-      <div className="hidden md:inline-block text-gray-500 w-full mb-10">
-        <div
-          className="fam-home md:text-[350px] 
-          leading-none tracking-[-0.02em]"
-          //style={{ fontFamily: "sans-serif" }}
-        >
-          <div className="flex flex-row">
-            <span>D</span>
-            <span>E</span>
-            <span>V</span>
-            <span>E</span>
-            <span className="text-cyan-600">L</span>
-            <span>O</span>
-            <span>P</span>
-            <span>E</span>
-            <span>R</span>
-          </div>
+      <div className="hidden md:max-w-[730px] lg:max-w-[1240px] xl:max-w-[1300px] md:flex mx-auto">
+        <div className="w-full h-full text-gray-500 ">
+          <div
+            className="fam-home md:text-[220px] lg:text-[330px] xl:text-[370px] 
+          leading-none h-[700px] grid grid-rows-3"
+            //style={{ fontFamily: "sans-serif" }}
+          >
+            <div className="relative Xbg-blue-200">
+              <div className="absolute w-full top-0 tracking-[-0.05em] flex flex-row justify-between whitespace-nowrap xl:pl-36">
+                <span>FRONT</span>
+                <span className="w-full flex my-auto">
+                  <span className="md:h-6 lg:h-8 xl:h-10 w-full bg-gray-500"></span>
+                </span>
+                <span className="-ml-5">END</span>
+              </div>
+            </div>
 
-          <div className="flex flex-row justify-between">
-            <span>FRONT</span>
-            <span className="text-cyan-600">-</span>
-            <span>END</span>
-          </div>
+            <div className="xl:-ml-5 xl:w-52 xl:h-52 Xbg-red-500 -tracking-[0.05em] flex flex-row md:justify-center lg:justify-start xl:justify-center lg:pt-5 xl:pt-0 lg:pl-1.5 xl:pl-0 lg:text-[180px] xl:text-[200px] xl:-rotate-90">
+              <span>D</span>
+              <span>E</span>
+              <span>V</span>
+              <span className="Xtext-purple-700">E</span>
+              <span>L</span>
+              <span>O</span>
+              <span>P</span>
+              <span>E</span>
+              <span>R</span>
+            </div>
 
-          <div className="hidden Fflex flex-row justify-between text-[150px] lg:text-[210px] xl:text-[270px] ">
-            <span> </span>
-            <span className="">
-              B<span className="text-cyan-600">A</span>
-              <span>CK-END</span>
-            </span>
+            <div className="relative Xbg-orange-300">
+              <div className="absolute bottom-0 tracking-[-0.05em] w-full flex flex-row justify-between whitespace-nowrap xl:pl-36">
+                <span>
+                  <span className="tracking-[-0.06em]">
+                    B<span className="text-cyan-600">A</span>
+                    <span>CK</span>
+                  </span>
+                  -<span className="-ml-2">END</span>
+                </span>
+
+                <span className="tracking-normal Xbg-yellow-200 text-xl">
+                  hola
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
