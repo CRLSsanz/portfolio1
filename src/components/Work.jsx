@@ -7,10 +7,12 @@ const Work = () => {
 
   return (
     <div className="px-5 md:px-10">
-      <h1 className="text-3xl xl:text-4xl mb-5 text-white">
+      <h1 className="text-3xl xl:text-4xl mb-5 text-white dark:text-gray-900">
         {texts.workTitle}
       </h1>
-      <p className=" text-gray-300 mb-5">{texts.workText} </p>
+      <p className=" text-gray-300 dark:text-gray-500 mb-5">
+        {texts.workText}{" "}
+      </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-8">
         <div className="bg-[#1A2035] shadow-md shadow-black/90 rounded-br-3xl rounded-tl-3xl">

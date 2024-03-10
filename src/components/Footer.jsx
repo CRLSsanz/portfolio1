@@ -130,7 +130,7 @@ const Footer = () => {
 
           {/** SVG SOCIAL */}
           <div class="flex flex-wrap md:flex-col lg:flex-row JJjustify-center mb-10">
-            <div className="bg-transparent border border-gray-300 rounded-full w-8 h-8 flex mr-2 md:mb-2">
+            <div className="bg-transparent border border-gray-500 rounded-full w-8 h-8 flex mr-2 md:mb-2">
               <svg
                 className="m-auto"
                 stroke="currentColor"
@@ -150,7 +150,7 @@ const Footer = () => {
                 </g>
               </svg>
             </div>
-            <div className="bg-transparent border border-gray-300 rounded-full w-8 h-8 flex mr-2 md:mb-2">
+            <div className="bg-transparent border border-gray-500 rounded-full w-8 h-8 flex mr-2 md:mb-2">
               <svg
                 className="m-auto"
                 stroke="currentColor"
@@ -167,7 +167,7 @@ const Footer = () => {
                 </g>
               </svg>
             </div>
-            <div className="bg-transparent border border-gray-300 rounded-full w-8 h-8 flex mr-2 md:mb-2">
+            <div className="bg-transparent border border-gray-500 rounded-full w-8 h-8 flex mr-2 md:mb-2">
               <svg
                 className="m-auto"
                 stroke="currentColor"
@@ -184,7 +184,7 @@ const Footer = () => {
               </svg>
             </div>
             {/** prueba */}
-            <div className="bg-transparent border border-gray-300 rounded-full w-8 h-8 flex mr-0">
+            <div className="bg-transparent border border-gray-500 rounded-full w-8 h-8 flex mr-0">
               <svg
                 className="m-auto"
                 fill="currentColor"

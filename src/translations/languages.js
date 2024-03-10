@@ -19,7 +19,7 @@ const translations = {
     abTitleText:
       "My name is Carlos Sanchez and I am a full stack Developer, specialized in Front-End. Programmer. Creative. Whimsical specialist. International Speaker. Ex-Google.",
     abInfo1: "Available",
-    abInfo2: "links",
+    abInfo2: "Links",
     abInfo3: "February",
     abInfo3N: "29th",
     abInfo4: "Joined Jan",

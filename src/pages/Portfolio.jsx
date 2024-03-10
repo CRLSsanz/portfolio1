@@ -5,14 +5,18 @@ import Work from "../components/Work";
 import Contact from "../components/Contact";
 import Skills from "../components/Skills";
 import Footer from "../components/Footer";
+import { useAppContext } from "../context/AppProvider";
+
 const bag3 = "https://github.com/CRLSsanz/trade/blob/main/fondo01.jpg?raw=true";
 
 const Portfolio = () => {
+  const { darkMode } = useAppContext();
+
   return (
-    <div>
+    <div className={`${darkMode && "dark"}`}>
       <section
         id="sectionHome"
-        className="min-h-[830px] 860 XXmd:min-h-screen md:min-h-[700px] Bbg-[#1A2035] bg-[#151515] flex"
+        className="min-h-[830px] 860 XXmd:min-h-screen md:min-h-[700px] Bbg-[#1A2035] bg-[#151515] dark:bg-gray-300 flex"
       >
         <div className="mx-auto w-full">
           <h1 className="Hh-16"> </h1>
@@ -22,7 +26,7 @@ const Portfolio = () => {
 
       <section
         id="sectionAbout"
-        className="min-h-[700px] bBg-[#1A2035] bg-[#2F3437] Bbg-[#259ca0] flex"
+        className="min-h-[700px] bBg-[#1A2035] bg-[#2F3437] dark:bg-gray-100 Bbg-[#259ca0] flex"
         style={{
           //backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,1)), url(${bag3})`,
           backgroundPosition: "50%",
@@ -31,29 +35,29 @@ const Portfolio = () => {
         }}
       >
         <div className="Xmx-auto w-full -mt-1">
-          <div className="bg-[#151515] h-20"> </div>
+          <div className="bg-[#151515] dark:bg-gray-300 h-20"> </div>
           <div className="-mt-16 h-16 w-full sticky z-50 top-0">
             <Navbar />
           </div>
 
           <svg
-            className="block md:hidden -mt-1"
+            className="block md:hidden text-[#151515] dark:text-gray-300 -mt-1"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1440 180"
           >
             <path
-              fill="#151515"
+              fill="currentColor"
               fillOpacity="1"
               d="M0,15L1440,170L1440,0L0,0Z"
             ></path>
           </svg>
           <svg
-            className="hidden md:block -mt-1"
+            className="hidden text-[#151515] dark:text-gray-300 md:block -mt-1"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1440 70"
           >
             <path
-              fill="#151515"
+              fill="currentColor"
               fillOpacity="1"
               d="M0,15L360,70L1440,15L1440,0L720,0L0,0Z"
             ></path>

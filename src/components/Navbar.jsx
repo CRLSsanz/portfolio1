@@ -4,68 +4,95 @@ const cargarImagen = require.context("../images", true);
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
-  const { texts, language, handleLanguage } = useAppContext();
+  const { texts, language, handleLanguage, darkMode, toggleDarkMode } =
+    useAppContext();
 
   return (
     <section>
       <div className="w-full flex justify-center bg-black/0 backdrop-blur-2xl">
         <nav className="w-full h-16 px-2 lg:px-5 flex justify-between items-center">
-          <div className="hidden relative ml-4">
-            <img
-              className="shadow-lg border shadow-gray-200/50"
-              src={cargarImagen(`./${language}.png`)}
-              //style={{ width: `${item.width}` }}
-              alt="English"
-            />
-            <select
-              className="absolute -top-1 left-2 pl-5 pr-5 appearance-none bg-transparent text-transparent focus:text-gray-200 focus:outline-none"
-              onChange={handleLanguage}
-            >
-              <option value="en">English</option>
-              <option value="fr">Frances</option>
-              <option value="it">Italiano</option>
-              <option value="es">Spanish</option>
-            </select>
-          </div>
           <div
             href="#section1"
             className="shadow-lg shadow-transparent ml-4 text-transparent"
           >
             {" C R L S "}
           </div>
-          <button
-            onClick={() => setNavbar(!navbar)}
-            className="px-2 active:bg-none active:bg-transparent active:animate-ping focus:outline-none"
-          >
-            {navbar ? (
-              <svg
-                fill="currentColor"
-                className="py-2 mr-2"
-                width="25px"
-                viewBox="0 0 16 16"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="m14.41 3.27-.82-.94L8 7.17 2.41 2.33l-.82.94L7.05 8l-5.46 4.73.82.94L8 8.83l5.59 4.84.82-.94L8.95 8l5.46-4.73z" />
-              </svg>
-            ) : (
-              <svg
-                width="40px"
-                height="40px"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  id="Vector"
-                  d="M5 15H19M5 9H19"
+
+          <div className="text-gray-200 dark:text-gray-700 flex flex-row items-center">
+            <div
+              className="p-2 active:bg-none active:bg-transparent active:animate-ping focus:outline-none"
+              onClick={toggleDarkMode}
+            >
+              {darkMode ? (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
                   stroke="currentColor"
-                  strokeWidth="1"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            )}
-          </button>
+                  class="w-6 h-6 text-gray-700"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+                  />
+                </svg>
+              ) : (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6 text-gray-200"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+                  />
+                </svg>
+              )}
+            </div>
+
+            <button
+              onClick={() => setNavbar(!navbar)}
+              className="p-2 mr-2 active:bg-none active:bg-transparent active:animate-ping focus:outline-none"
+            >
+              {navbar ? (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.2"
+                  stroke="currentColor"
+                  class="w-8 h-8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18 18 6M6 6l12 12"
+                  />
+                </svg>
+              ) : (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.2"
+                  stroke="currentColor"
+                  class="w-8 h-8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 9h16.5m-16.5 6.75h16.5"
+                  />
+                </svg>
+              )}
+            </button>
+          </div>
         </nav>
       </div>
 

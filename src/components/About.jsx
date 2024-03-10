@@ -5,19 +5,23 @@ const cargarImagen = require.context("../images", true);
 const About = () => {
   const { texts } = useAppContext();
   return (
-    <div className=" text-white px-5 md:px-10">
+    <div className=" text-white dark:text-gray-800 px-5 md:px-10 ">
       <div className="mb-10">
         <div className=" -mt-20 md:-mt-16 lg:-mt-20 mb-5">
           <img
             src={cargarImagen(`./foto3.jpg`)}
             alt="perfil"
             srcset=""
-            className="w-32 h-32 border-4 border-white rounded-full shadow-md shadow-gray-950"
+            className="w-32 h-32 border-4 border-white dark:border-gray-900 rounded-full shadow-md shadow-gray-950"
           />
         </div>
-        <h1 className="text-3xl mb-2 text-white">{texts.abTitle}</h1>
-        <p className="text-gray-300 lg:pr-12 mb-5">{texts.abTitleText}</p>
-        <div className="text-sm flex flex-wrap items-end mb-10 text-gray-400 tracking-wider">
+        <h1 className="text-3xl mb-2 text-white dark:text-gray-900">
+          {texts.abTitle}
+        </h1>
+        <p className="text-gray-300 dark:text-gray-700 lg:pr-12 mb-5">
+          {texts.abTitleText}
+        </p>
+        <div className="text-sm flex flex-wrap items-end mb-10 text-gray-400 dark:text-gray-500 tracking-wider">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -39,7 +43,7 @@ const About = () => {
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="w-5 h-5 text-cyan-300"
+            class="w-5 h-5 text-cyan-300 dark:text-cyan-500"
           >
             <path
               stroke-linecap="round"
@@ -95,11 +99,15 @@ const About = () => {
         </div>
       </div>
 
-      <h2 className="text-3xl text-white mb-5">{texts.abSubTitle}</h2>
-      <p className=" text-gray-300 lg:pr-12 mb-16">{texts.abSubTitleText}</p>
+      <h2 className="text-3xl text-white dark:text-gray-900 mb-5">
+        {texts.abSubTitle}
+      </h2>
+      <p className=" text-gray-300 dark:text-gray-700 lg:pr-12 mb-16">
+        {texts.abSubTitleText}
+      </p>
 
-      <div className="text-gray-400 md:grid md:grid-cols-3 md:gap-5 md:gap-y-10">
-        <div className="relative bg-gradient-to-br from-[#1E1F26]/80 to-[#2C303A]/10 Bbg-[#1E1F26] rounded-md shadow shadow-gray-950 p-5 lg:pt-10 mb-14 md:mb-0">
+      <div className="text-gray-400 dark:text-gray-500 md:grid md:grid-cols-3 md:gap-5 md:gap-y-10">
+        <div className="relative bg-gradient-to-br from-[#1E1F26]/80 to-[#2C303A]/10 dark:from-gray-200 dark:gray-200 Bbg-[#1E1F26] rounded-md shadow shadow-gray-950 dark:shadow-gray-950/50 p-5 lg:pt-10 mb-14 md:mb-0">
           <div className="-mt-14 lg:-mt-[70px] mb-5 ml-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -107,7 +115,7 @@ const About = () => {
               viewBox="0 0 24 24"
               stroke-width="1.0"
               stroke="currentColor"
-              class="w-16 h-16 p-0.5 rounded-md bg-[#2F3437]/95"
+              class="w-16 h-16 p-0.5 rounded-md bg-[#2F3437]/95 dark:bg-gray-100"
             >
               <path
                 stroke-linecap="round"
@@ -116,14 +124,14 @@ const About = () => {
               />
             </svg>
           </div>
-          <h2 className="tracking-wider text-xl text-white mb-5">
+          <h2 className="tracking-wider text-xl text-white dark:text-gray-700 mb-5">
             {texts.abDo1title}
           </h2>
           <p className="lg:text-start lg:mb-5">{texts.abDo1text}</p>
           <div className="xl:hidden absolute w-0.5 h-7 bottom-0 right-7 bg-gradient-to-b from-cyan-400 to-purple-500"></div>
         </div>
 
-        <div className="relative bg-gradient-to-br from-[#1E1F26]/80 to-[#2C303A]/10 Bbg-[#2C303A] rounded-md shadow shadow-gray-950 p-5 lg:pt-10 mb-14 md:mb-0">
+        <div className="relative bg-gradient-to-br from-[#1E1F26]/80 to-[#2C303A]/10 dark:from-gray-200 dark:gray-200 Bbg-[#1E1F26] rounded-md shadow shadow-gray-950 dark:shadow-gray-950/50 p-5 lg:pt-10 mb-14 md:mb-0">
           <div className="-mt-14 lg:-mt-[70px] mb-5 ml-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -131,7 +139,7 @@ const About = () => {
               viewBox="0 0 24 24"
               stroke-width="1.0"
               stroke="currentColor"
-              class="w-16 h-16 p-0.5 rounded-md bg-[#2F3437]"
+              class="w-16 h-16 p-0.5 rounded-md bg-[#2F3437]/95 dark:bg-gray-100"
             >
               <path
                 stroke-linecap="round"
@@ -140,14 +148,14 @@ const About = () => {
               />
             </svg>
           </div>
-          <h2 className="md:w-32 tracking-wider text-xl text-white mb-5">
+          <h2 className="md:w-32 tracking-wider text-xl text-white dark:text-gray-700 mb-5">
             {texts.abDo2title}
           </h2>
           <p className="lg:text-start lg:mb-5">{texts.abDo2text}</p>
           <div className="xl:hidden absolute w-0.5 h-7 bottom-0 right-7 bg-gradient-to-b from-cyan-400 to-purple-500"></div>
         </div>
 
-        <div className="relative bg-gradient-to-br from-[#1E1F26]/80 to-[#2C303A]/10 Bbg-[#1A2035] rounded-md shadow shadow-gray-950 p-5 lg:pt-10 mb-14 md:mb-0">
+        <div className="relative bg-gradient-to-br from-[#1E1F26]/80 to-[#2C303A]/10 dark:from-gray-200 dark:gray-200 Bbg-[#1E1F26] rounded-md shadow shadow-gray-950 dark:shadow-gray-950/50 p-5 lg:pt-10 mb-14 md:mb-0">
           <div className="-mt-14 lg:-mt-[70px] mb-5 ml-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -155,7 +163,7 @@ const About = () => {
               viewBox="0 0 24 24"
               stroke-width="1.0"
               stroke="currentColor"
-              class="w-16 h-16 p-0.5 rounded-md bg-[#2F3437]/95"
+              class="w-16 h-16 p-0.5 rounded-md bg-[#2F3437]/95 dark:bg-gray-100"
             >
               <path
                 stroke-linecap="round"
@@ -164,14 +172,14 @@ const About = () => {
               />
             </svg>
           </div>
-          <h2 className="tracking-wider text-xl text-white mb-5">
+          <h2 className="tracking-wider text-xl text-white dark:text-gray-700 mb-5">
             {texts.abDo3title}
           </h2>
           <p className="lg:text-start lg:mb-5">{texts.abDo3text}</p>
           <div className="xl:hidden absolute w-0.5 h-7 bottom-0 right-7 bg-gradient-to-b from-cyan-400 to-purple-500"></div>
         </div>
 
-        <div className="relative bg-gradient-to-br from-[#1E1F26]/80 to-[#2C303A]/10 Bbg-[#1A2035] rounded-md shadow shadow-gray-950 p-5 lg:pt-10 md:mb-0">
+        <div className="relative bg-gradient-to-br from-[#1E1F26]/80 to-[#2C303A]/10 dark:from-gray-200 dark:gray-200 Bbg-[#1E1F26] rounded-md shadow shadow-gray-950 dark:shadow-gray-950/50 p-5 lg:pt-10 md:mb-0">
           <div className="-mt-14 lg:-mt-[70px] mb-5 ml-2 ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -179,7 +187,7 @@ const About = () => {
               viewBox="0 0 24 24"
               stroke-width="1.0"
               stroke="currentColor"
-              class="w-16 h-16 p-0.5 rounded-md bg-[#2F3437]/95"
+              class="w-16 h-16 p-0.5 rounded-md bg-[#2F3437]/95 dark:bg-gray-100"
             >
               <path
                 stroke-linecap="round"
@@ -188,7 +196,7 @@ const About = () => {
               />
             </svg>
           </div>
-          <h2 className="tracking-wider text-xl text-white  mb-5">
+          <h2 className="tracking-wider text-xl text-white dark:text-gray-700  mb-5">
             {texts.abDo4title}
           </h2>
           <p className="lg:text-start lg:mb-5">{texts.abDo4text}</p>

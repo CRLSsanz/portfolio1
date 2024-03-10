@@ -30,9 +30,15 @@ const AppProvider = ({ children }) => {
       setTexts(translations.en);
     }
   };
+  const [darkMode, setDarkMode] = useState(false);
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
   //2
   return (
-    <AppContext.Provider value={{ language, texts, handleLanguage }}>
+    <AppContext.Provider
+      value={{ language, texts, handleLanguage, darkMode, toggleDarkMode }}
+    >
       {children}
     </AppContext.Provider>
   );

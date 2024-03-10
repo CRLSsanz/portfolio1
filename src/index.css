@@ -37,6 +37,10 @@ HTML  - Raleway (solo letras)
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 * {
+  @apply transition-colors duration-300;
+}
+
+.asterisco {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
