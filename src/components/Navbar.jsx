@@ -20,7 +20,7 @@ const Navbar = () => {
 
           <div className="text-gray-200 dark:text-gray-700 flex flex-row items-center">
             <div
-              className="p-2 active:bg-none active:bg-transparent active:animate-ping focus:outline-none"
+              className="p-2 active:bg-none active:bg-transparent active:animate-ping focus:outline-none cursor-pointer"
               onClick={toggleDarkMode}
             >
               {darkMode ? (
@@ -58,7 +58,7 @@ const Navbar = () => {
 
             <button
               onClick={() => setNavbar(!navbar)}
-              className="p-2 mr-2 active:bg-none active:bg-transparent active:animate-ping focus:outline-none"
+              className="p-2 mr-1 active:bg-none active:bg-transparent active:animate-ping focus:outline-none"
             >
               {navbar ? (
                 <svg
@@ -97,14 +97,14 @@ const Navbar = () => {
       </div>
 
       <ul
-        className={`fixed z-50 text-gray-400 lg:font-semibold bg-gradient-to-r from-black via-black/90 to-black/0 bBg-[#0C87A7ee] top-0 w-[calc(100%-60px)] sm:w-[400px] h-full Xlg:h-[calc(100%-56px)] transform transition-all duration-500
+        className={`fixed z-50 text-white lg:font-semibold bg-gradient-to-r from-black via-black/90 dark:via-black/30 to-black/0 bBg-[#0C87A7ee] top-0 w-[calc(100%-60px)] sm:w-[400px] h-full Xlg:h-[calc(100%-56px)] transform transition-all duration-500
         ${
           navbar
             ? " opacity-100 pointer-events-auto left-0"
             : "opacity-0 pointer-events-none -left-80"
         }`}
       >
-        <div className="p-6 w-[200px] h-full flex flex-col justify-between Bbg-black bg-gradient-to-r from-black via-black to-black/30">
+        <div className="p-6 w-[200px] h-full flex flex-col justify-between Bbg-black bg-gradient-to-r from-cyan-600 to-cyan-600">
           <div>
             <li className="mb-10">
               <h2 className="text-sm lg:text-base tracking-[0.2em] ">
@@ -117,22 +117,22 @@ const Navbar = () => {
                 Home
               </a>
             </li>
-            <li className="w-full border-t border-gray-900 py-3 lg:py-5 hover:font-bold ">
+            <li className="w-full border-t border-gray-900/10 py-3 lg:py-5 hover:font-bold ">
               <a href="#sectionAbout" onClick={() => setNavbar(!navbar)}>
                 {texts.navbarAbout}
               </a>
             </li>
-            <li className="w-full border-t border-gray-900 py-3 lg:py-5 hover:font-bold ">
+            <li className="w-full border-t border-gray-900/10 py-3 lg:py-5 hover:font-bold ">
               <a href="#sectionSkills" onClick={() => setNavbar(!navbar)}>
                 {texts.navbarSkills}
               </a>
             </li>
-            <li className="w-full border-t border-gray-900 py-3 lg:py-5 hover:font-bold ">
+            <li className="w-full border-t border-gray-900/10 py-3 lg:py-5 hover:font-bold ">
               <a href="#sectionWork" onClick={() => setNavbar(!navbar)}>
                 {texts.navbarWork}
               </a>
             </li>
-            <li className="w-full border-t border-gray-900 py-3 lg:py-5 hover:font-bold mb-10">
+            <li className="w-full border-t border-gray-900/10 py-3 lg:py-5 hover:font-bold mb-10">
               <a href="#sectionContact" onClick={() => setNavbar(!navbar)}>
                 {texts.navbarContact}
               </a>
@@ -180,9 +180,9 @@ const Navbar = () => {
                 crls code
               </a>
             </h4>
-            <div className="flex Xbg-red-400 ">
+            <div className="w-14 Xbg-red-400 p-4 cursor-pointer -ml-4">
               <span
-                className="text-white -mb-5 Xanimate-bounce active:font-bold"
+                className="flex text-white active:bg-none active:bg-transparent focus:outline-non"
                 onClick={() => setNavbar(!navbar)}
               >
                 <svg
@@ -191,7 +191,7 @@ const Navbar = () => {
                   viewBox="0 0 24 24"
                   stroke-width="2.5"
                   stroke="currentColor"
-                  class="w-6 h-6 cursor-pointer"
+                  class="w-6 h-6"
                 >
                   <path
                     stroke-linecap="round"

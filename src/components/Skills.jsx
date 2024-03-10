@@ -34,7 +34,7 @@ const Skills = () => {
         {skills.map((item, index) => (
           <div
             key={index}
-            className="rounded bg-gray-500/10 text-gray-300 dark:text-gray-500 flex flex-col justify-between items-center hover:bg-gray-600 hover:cursor-pointer active:bg-cyan-600 shadow shadow-gray-950/50"
+            className="rounded bg-gray-500/10 text-gray-300 dark:text-gray-600 flex flex-col justify-between items-center hover:bg-gray-600 dark:hover:text-gray-100 hover:cursor-pointer active:bg-cyan-600 active:dark:text-gray-100 shadow shadow-gray-950/50"
           >
             <div className="h-20 flex items-center lg:hidden xl:flex">
               <img
