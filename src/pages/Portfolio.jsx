@@ -13,10 +13,10 @@ const Portfolio = () => {
   const { darkMode } = useAppContext();
 
   return (
-    <div className={`${darkMode && "dark"}`}>
+    <div className={`${darkMode && "dark"} 2xl:pl-48 bg-cyan-500 `}>
       <section
         id="sectionHome"
-        className="min-h-[830px] 860 XXmd:min-h-screen md:min-h-[700px] Bbg-[#1A2035] bg-[#151515] dark:bg-gray-300 flex"
+        className="min-h-[820px] 860 XXmd:min-h-screen md:min-h-[700px] Bbg-[#1A2035] bg-[#151515] dark:bg-gray-300 flex"
       >
         <div className="mx-auto w-full">
           <h1 className="Hh-16"> </h1>
@@ -168,11 +168,11 @@ const Portfolio = () => {
       </section>
 
       {/** FOOTER */}
-      <div className="BBbg-[#050505] bg-gray-50 text-gray-500 text-center text-sm py-4 ">
+      <div className="BBbg-[#050505] bg-gray-50 text-gray-400 text-center text-sm py-4 ">
         <h4 className="px-12 tracking-wider">
           © <span className="fam-number font-extralight">2020-2024</span> Sanz™
           All Rights Reserved.{" "}
-          <span className="hidden md:inline-block">Designed by CRLSCODE</span>
+          <span className="hidden">Designed by CRLSCODE</span>
         </h4>
       </div>
     </div>

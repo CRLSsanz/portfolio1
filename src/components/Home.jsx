@@ -8,12 +8,12 @@ const Home = () => {
 
   return (
     <div className="h-full p-5 sm:px-10 XXmd:w-[1100px] text-gray-400 dark:text-gray-500 ">
-      <div className="flex flex-row mb-5">
-        <div className="w-1/2 lg:w-1/4 lg:text-lg tracking-widest ">
+      <div className="w-full lg:max-w-[1300px] flex flex-row mb-5 mx-auto">
+        <div className="w-1/2 lg:w-1/4 lg:text-base tracking-widest ">
           <h1 className="w-32 fam-logo leading-4 md:leading-6">CRLS CODE</h1>
         </div>
 
-        <div className="w-1/2 lg:w-3/4 text-xs md:text-base flex flex-col lg:flex-row justify-between lg:items-center text-end md:text-start">
+        <div className="w-1/2 lg:w-3/4 text-xs md:text-sm flex flex-col lg:flex-row justify-between lg:items-center text-end md:text-start">
           <h4 className="mb-5 lg:mb-0">
             FULLSTACK DEVELOPER
             <br /> FOLIO /{" "}
@@ -25,10 +25,10 @@ const Home = () => {
             <br /> WORK FROM JULY{" "}
             <span className="fam-number font-light">2024</span>
           </h4>
-          <div className="flex justify-end md:justify-start  hover:-mb-1">
+          <div className="z-50 flex justify-end md:justify-start">
             <a
               href="#sectionContact"
-              className="py-3 px-10 md:text-lg tracking-wider border border-gray-400 rounded-full  hover:text-white hover:font-semibold"
+              className="py-1 px-8 md:text-lg tracking-wider border border-gray-400 rounded-full hover:shadow-md hover:shadow-white/50 hover:dark:shadow-black/30 cursor-pointer"
             >
               CONTACT
             </a>
@@ -64,7 +64,7 @@ const Home = () => {
             <div className="absolute Xbg-red-300 bottom-0 flex flex-col h-full items-center justify-center Xtext-[220px]">
               <div>
                 <span className="Xtext-cyan-600 mr-1">F</span>RO
-                <span className="border-b-2 border-cyan-600">NT</span>
+                <span className="text-gray-500/90">NT</span>
                 <span className="Xtext-gray-400/80 text-[120px] ml-10">&</span>
               </div>
             </div>
@@ -72,7 +72,8 @@ const Home = () => {
 
           <div className="relative Bbg-cyan-400/50 whitespace-nowrap">
             <div className="absolute Bbg-yellow-400 -bottom-0.5 Xtext-7xl leading-none">
-              B<span className="Xborder-t-2 border-cyan-600">AC</span>K-EN
+              <span className="text-gray-400/80">B</span>
+              ACK<span className="Xborder-t-2 text-cyan-600">-</span>EN
               <span className="">D</span>
             </div>
           </div>
@@ -151,7 +152,7 @@ const Home = () => {
                 </span>
 
                 <span className="tracking-normal Xbg-yellow-200 text-xl">
-                  hola
+                  <div> </div>
                 </span>
               </div>
             </div>

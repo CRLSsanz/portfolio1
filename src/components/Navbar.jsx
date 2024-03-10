@@ -9,8 +9,8 @@ const Navbar = () => {
 
   return (
     <section>
-      <div className="w-full flex justify-center bg-black/0 backdrop-blur-2xl">
-        <nav className="w-full h-16 px-2 lg:px-5 flex justify-between items-center">
+      <div className="w-full  flex justify-center bg-black/0 backdrop-blur-2xl">
+        <nav className="w-full  h-16 px-2 lg:px-5 flex justify-between items-center">
           <div
             href="#section1"
             className="shadow-lg shadow-transparent ml-4 text-transparent"
@@ -58,7 +58,7 @@ const Navbar = () => {
 
             <button
               onClick={() => setNavbar(!navbar)}
-              className="p-2 mr-1 active:bg-none active:bg-transparent active:animate-ping focus:outline-none"
+              className="2xl:hidden p-2 mr-1 active:bg-none active:bg-transparent active:animate-ping focus:outline-none"
             >
               {navbar ? (
                 <svg
@@ -101,7 +101,7 @@ const Navbar = () => {
         ${
           navbar
             ? " opacity-100 pointer-events-auto left-0"
-            : "opacity-0 pointer-events-none -left-80"
+            : "opacity-0 pointer-events-none -left-80  2xl:opacity-100 2xl:pointer-events-auto 2xl:left-0"
         }`}
       >
         <div className="p-6 w-[200px] h-full flex flex-col justify-between Bbg-black bg-gradient-to-r from-cyan-600 to-cyan-600">
@@ -180,7 +180,7 @@ const Navbar = () => {
                 crls code
               </a>
             </h4>
-            <div className="w-14 Xbg-red-400 p-4 cursor-pointer -ml-4">
+            <div className="2xl:hidden w-14 Xbg-red-400 p-4 cursor-pointer -ml-4">
               <span
                 className="flex text-white active:bg-none active:bg-transparent focus:outline-non"
                 onClick={() => setNavbar(!navbar)}
@@ -189,7 +189,7 @@ const Navbar = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke-width="2.5"
+                  stroke-width="1.5"
                   stroke="currentColor"
                   class="w-6 h-6"
                 >
