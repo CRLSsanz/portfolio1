@@ -24,17 +24,26 @@ const skills = [
 const Skills = () => {
   const { texts } = useAppContext();
   return (
-    <div className="px-5 md:px-10 xl:pr-0 lg:pt-1 overflow-hidden ">
-      <h1 className="text-3xl mb-5 text-white dark:text-gray-900">
+    <div className="px-5 pb-1 md:px-10 xl:pr-0 lg:pt-1 overflow-hidden ">
+      <h1
+        data-aos="fade-left"
+        className="text-3xl mb-5 text-white dark:text-gray-700"
+      >
         {texts.skillTitle}
       </h1>
-      <p className="text-gray-300 dark:text-gray-500 mb-5">{texts.skillText}</p>
+      <p
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        className="text-gray-300 dark:text-gray-500 mb-5"
+      >
+        {texts.skillText}
+      </p>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2 gap-4 mb-10">
         {skills.map((item, index) => (
           <div
             key={index}
-            data-aos="fade-left"
+            data-aos="zoom-in-up"
             data-aos-duration="1000"
             className="rounded bg-gray-500/10 text-gray-300 dark:text-gray-600 flex flex-row items-center hover:bg-gray-600 dark:hover:text-gray-100 hover:cursor-pointer active:bg-cyan-600 active:dark:text-gray-100 shadow shadow-gray-950/50"
           >
@@ -46,7 +55,7 @@ const Skills = () => {
                 alt={item.name}
               />
             </div>
-            <h1 className="capitalize lg:py-2 lg:px-5 2xl:p-0">{item.name}</h1>
+            <h2 className="capitalize lg:py-2 lg:px-5 2xl:p-0">{item.name}</h2>
           </div>
         ))}
       </div>

@@ -6,40 +6,64 @@ const About = () => {
   const { texts } = useAppContext();
 
   const card = [
-    { name: texts.abDo1title, width: "40px" },
-    { name: texts.abDo2title, width: "40px" },
-    { name: texts.abDo3title, width: "40px" },
-    { name: texts.abDo4title, width: "40px" },
+    {
+      id: "01",
+      title: texts.abDo1title,
+      text: texts.abDo1text,
+      link: "Leer màs",
+      svg: "M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25",
+    },
+    {
+      id: "02",
+      title: texts.abDo2title,
+      text: texts.abDo2text,
+      link: "Leer màs",
+      svg: "M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z",
+    },
+    {
+      id: "03",
+      title: texts.abDo3title,
+      text: texts.abDo3text,
+      link: "Leer màs",
+      svg: "M2.25 7.125C2.25 6.504 2.754 6 3.375 6h6c.621 0 1.125.504 1.125 1.125v3.75c0 .621-.504 1.125-1.125 1.125h-6a1.125 1.125 0 0 1-1.125-1.125v-3.75ZM14.25 8.625c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v8.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-8.25ZM3.75 16.125c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-2.25Z",
+    },
+    {
+      id: "04",
+      title: texts.abDo4title,
+      text: texts.abDo4text,
+      link: "Leer màs",
+      svg: "M12 16.5V9.75m0 0 3 3m-3-3-3 3M6.75 19.5a4.5 4.5 0 0 1-1.41-8.775 5.25 5.25 0 0 1 10.233-2.33 3 3 0 0 1 3.758 3.848A3.752 3.752 0 0 1 18 19.5H6.75Z",
+    },
   ];
 
   return (
     <div className=" text-white dark:text-gray-800 px-5 md:px-10">
-      <div className=" -mt-20 md:-mt-16 lg:-mt-20 mb-5">
+      <div className="-mt-20 md:-mt-16 lg:-mt-20 mb-5">
         <img
           src={cargarImagen(`./foto3.jpg`)}
           alt="perfil"
           srcset=""
-          className="w-32 h-32 border-4 border-white dark:border-gray-900 rounded-full shadow-md shadow-gray-950"
+          className="w-32 h-32 border-4 border-white dark:border-gray-700 rounded-full shadow-md shadow-gray-950"
         />
       </div>
-      <div className="mb-10 overflow-hidden">
+      <div className="overflow-hidden -m-1 p-1">
         <h1
           data-aos="fade-left"
-          className="text-3xl mb-2 text-white dark:text-gray-900"
+          className="text-3xl mb-2 text-white dark:text-gray-700"
         >
           {texts.abTitle}
         </h1>
         <p
           data-aos="fade-left"
           data-aos-duration="2000"
-          className="text-gray-300 dark:text-gray-700 lg:pr-12 mb-5"
+          className="text-gray-300 dark:text-gray-500 lg:pr-12 mb-5"
         >
           {texts.abTitleText}
         </p>
         <div
           data-aos="fade-left"
           data-aos-duration="3000"
-          className="text-sm flex flex-wrap items-end mb-10 text-gray-400 dark:text-gray-500 tracking-wider"
+          className="text-sm flex flex-wrap items-end mb-10 text-gray-400 tracking-wider"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -107,12 +131,11 @@ const About = () => {
             <span className="fam-number"> {texts.abInfo4N}</span>
           </h4>
         </div>
-
+        {/** BOTTON */}
         <div
-          data-aos="zoom-in-right"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
-          className="flex"
+          data-aos="zoom-in-left"
+          data-aos-duration="1000"
+          className="flex mb-10"
         >
           <a
             href="#sectionWork"
@@ -121,93 +144,71 @@ const About = () => {
             {texts.abBotton}
           </a>
         </div>
-      </div>
-
-      <div className="overflow-hidden">
+        {/** SUBTITULO */}
         <h2
           data-aos="fade-left"
           data-aos-duration="1000"
-          className="text-3xl text-white dark:text-gray-900 mb-5"
+          className="text-3xl text-white font-medium dark:text-gray-700 mb-5"
         >
           {texts.abSubTitle}
         </h2>
         <p
           data-aos="fade-left"
           data-aos-duration="2000"
-          className=" text-gray-300 dark:text-gray-700 lg:pr-12 mb-16"
+          className=" text-gray-300 dark:text-gray-500 lg:pr-12 mb-16"
         >
           {texts.abSubTitleText}
         </p>
-      </div>
 
-      <div className="hidden">
-        {card.map((item, index) => (
-          <h1 key={index}>{item.name}</h1>
-        ))}
-      </div>
-
-      <div className="pt-7 overflow-hidden">
+        <div className="hidden">
+          {card.map((item, index) => (
+            <h1 key={index}>{item.name}</h1>
+          ))}
+        </div>
+        {/** 4 CARD */}
         <div className=" text-gray-400 dark:text-gray-500 md:grid md:grid-cols-3 md:gap-5 md:gap-y-10">
-          <div
-            data-aos="fade-up-left"
-            className="relative card-color p-5 lg:pt-10 mb-14 md:mb-0"
-          >
-            <div className="-mt-14 lg:-mt-[70px] mb-5 ml-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.0"
-                stroke="currentColor"
-                class="w-16 h-16 p-0.5 rounded-md bg-[#2F3437]/95 dark:bg-gray-100"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25"
-                />
-              </svg>
+          {card.map((item, index) => (
+            <div
+              data-aos="zoom-in-up"
+              className="relative card-color p-5 lg:pt-10 mb-14 md:mb-0"
+            >
+              <div className="flex flex-row justify-between">
+                <div className="-mt-14 lg:-mt-[70px] mb-5 ml-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.0"
+                    stroke="currentColor"
+                    class="w-16 h-16 p-0.5 rounded-md bg-[#2F3437]/95 dark:bg-gray-100"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d={item.svg}
+                    />
+                  </svg>
+                </div>
+                <h2 className="fam-number text-4xl text-white dark:text-gray-700 my-2 lg:-mt-2">
+                  {item.id}
+                </h2>
+              </div>
+              <h2 className="tracking-wider text-xl text-white dark:text-gray-700 mb-5">
+                {item.title}
+              </h2>
+              <p className="lg:text-start pb-10">{item.text}</p>
+              <span className="absolute bottom-5 left-5 text-cyan-500 text-sm cursor-pointer border-b border-cyan-500/40">
+                {item.link}
+              </span>
+              <div className="xl:hidden absolute w-0.5 h-7 bottom-0 right-7 bg-gradient-to-b from-cyan-400 to-purple-500"></div>
             </div>
-            <h2 className="tracking-wider text-xl text-white dark:text-gray-700 mb-5">
-              {texts.abDo1title}
-            </h2>
-            <p className="lg:text-start lg:mb-5">{texts.abDo1text}</p>
-            <div className="xl:hidden absolute w-0.5 h-7 bottom-0 right-7 bg-gradient-to-b from-cyan-400 to-purple-500"></div>
-          </div>
+          ))}
 
           <div
-            data-aos="fade-up-left"
-            data-aos-duration="1000"
-            className="relative card-color p-5 lg:pt-10 mb-14 md:mb-0"
-          >
-            <div className="-mt-14 lg:-mt-[70px] mb-5 ml-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.0"
-                stroke="currentColor"
-                class="w-16 h-16 p-0.5 rounded-md bg-[#2F3437]/95 dark:bg-gray-100"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z"
-                />
-              </svg>
-            </div>
-            <h2 className="md:w-32 tracking-wider text-xl text-white dark:text-gray-700 mb-5">
-              {texts.abDo2title}
-            </h2>
-            <p className="lg:text-start lg:mb-5">{texts.abDo2text}</p>
-            <div className="xl:hidden absolute w-0.5 h-7 bottom-0 right-7 bg-gradient-to-b from-cyan-400 to-purple-500"></div>
-          </div>
-
-          <div
-            data-aos="fade-up-left"
+            data-aos="zoom-in-up"
             data-aos-duration="2000"
             data-du
-            className="relative card-color p-5 lg:pt-10 mb-14 md:mb-0"
+            className="hidden relative card-color p-5 lg:pt-10 mb-14 md:mb-0"
           >
             <div className="-mt-14 lg:-mt-[70px] mb-5 ml-2">
               <svg
@@ -229,34 +230,6 @@ const About = () => {
               {texts.abDo3title}
             </h2>
             <p className="lg:text-start lg:mb-5">{texts.abDo3text}</p>
-            <div className="xl:hidden absolute w-0.5 h-7 bottom-0 right-7 bg-gradient-to-b from-cyan-400 to-purple-500"></div>
-          </div>
-
-          <div
-            data-aos="fade-up-left"
-            data-aos-duration="1000"
-            className="relative card-color p-5 lg:pt-10 md:mb-0"
-          >
-            <div className="-mt-14 lg:-mt-[70px] mb-5 ml-2 ">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.0"
-                stroke="currentColor"
-                class="w-16 h-16 p-0.5 rounded-md bg-[#2F3437]/95 dark:bg-gray-100"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M12 16.5V9.75m0 0 3 3m-3-3-3 3M6.75 19.5a4.5 4.5 0 0 1-1.41-8.775 5.25 5.25 0 0 1 10.233-2.33 3 3 0 0 1 3.758 3.848A3.752 3.752 0 0 1 18 19.5H6.75Z"
-                />
-              </svg>
-            </div>
-            <h2 className="tracking-wider text-xl text-white dark:text-gray-700  mb-5">
-              {texts.abDo4title}
-            </h2>
-            <p className="lg:text-start lg:mb-5">{texts.abDo4text}</p>
             <div className="xl:hidden absolute w-0.5 h-7 bottom-0 right-7 bg-gradient-to-b from-cyan-400 to-purple-500"></div>
           </div>
         </div>

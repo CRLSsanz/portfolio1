@@ -65,19 +65,21 @@ const Portfolio = () => {
 
           <div className="flex">
             <div className="mx-auto XXw-full -mt-1">
-              <div className="py-10 xl:w-[1100px] grid grid-cols-1  lg:grid-cols-3">
-                <div className="col-span-2">
-                  <About />
+              <div className="py-10 xl:w-[1100px] flex flex-col">
+                <div className="lg:flex lg:flex-row">
+                  <div className="lg:basis-2/3">
+                    <About />
+                  </div>
+
+                  <div className="lg:basis-1/3 lg:sticky lg:top-0 lg:h-full">
+                    <h1 id="sectionSkills" className="h-16">
+                      {" "}
+                    </h1>
+                    <Skills />
+                  </div>
                 </div>
 
-                <div className="lg:sticky lg:top-0 lg:h-full">
-                  <h1 id="sectionSkills" className="h-16">
-                    {" "}
-                  </h1>
-                  <Skills />
-                </div>
-
-                <div className="col-span-2">
+                <div className="">
                   <h1 id="sectionWork" className="h-16">
                     {" "}
                   </h1>

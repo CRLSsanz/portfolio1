@@ -93,6 +93,7 @@ const translations = {
     abDo1title: "Desarrollo y Diseño Web",
     abDo1text:
       "Creo sitios web de calidad con un diseño que refleje la esencia de tu negocio, proporcionando una presencia en línea que destaque.",
+    //abDoLink: "Ver mas",
     abDo2title: "Tienda Virtual",
     abDo2text:
       "Desarrollo tu tienda online con un diseño atractivo y efectivo, integrada con múltiples formas de pago, para que puedas multiplicar tus ventas.",

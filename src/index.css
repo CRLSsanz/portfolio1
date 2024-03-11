@@ -35,6 +35,7 @@ HTML  - Raleway (solo letras)
 @import url("https://fonts.googleapis.com/css2?family=Ysabeau+SC&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
 
 * {
   @apply transition-colors duration-300;
@@ -53,6 +54,7 @@ html {
 
 h1 {
   font-family: "Ysabeau SC", sans-serif;
+  font-weight: 600;
   /*font-size: 2rem;*/
 }
 h2 {
@@ -76,7 +78,7 @@ h2 {
 }
 
 .card-color {
-  @apply rounded bg-gradient-to-br from-[#1E1F26]/80 to-[#2C303A]/10 dark:from-gray-200 text-gray-400 dark:text-gray-600 hover:bg-gray-500/50 dark:hover:bg-gray-300 shadow shadow-gray-950 dark:shadow-gray-950/50 hover:cursor-pointer;
+  @apply rounded bg-gradient-to-tl from-gray-500/10 to-gray-500/10 dark:to-gray-200 text-gray-400 dark:text-gray-400 hover:to-gray-500/30 dark:hover:to-gray-300 shadow shadow-gray-950 dark:shadow-gray-950/50;
 }
 
 @keyframes show {
