@@ -34,6 +34,7 @@ const Skills = () => {
         {skills.map((item, index) => (
           <div
             key={index}
+            data-aos="fade-left"
             className="rounded bg-gray-500/10 text-gray-300 dark:text-gray-600 flex flex-row items-center hover:bg-gray-600 dark:hover:text-gray-100 hover:cursor-pointer active:bg-cyan-600 active:dark:text-gray-100 shadow shadow-gray-950/50"
           >
             <div className="h-16 2xl:h-14 w-14 flex items-center justify-center lg:hidden 2xl:flex">

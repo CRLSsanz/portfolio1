@@ -10,7 +10,8 @@ const Navbar = () => {
   return (
     <section>
       <div className="w-full  flex justify-center bg-black/0 backdrop-blur-2xl">
-        <nav className="w-full  h-16 px-2 lg:px-5 flex justify-between items-center">
+        {/** NAVBAR */}
+        <div className="w-full  h-16 px-2 lg:px-5 flex justify-between items-center">
           <div
             href="#section1"
             className="shadow-lg shadow-transparent ml-4 text-transparent"
@@ -93,7 +94,7 @@ const Navbar = () => {
               )}
             </button>
           </div>
-        </nav>
+        </div>
       </div>
 
       <ul

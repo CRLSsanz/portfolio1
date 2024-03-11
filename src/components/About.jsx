@@ -97,7 +97,12 @@ const About = () => {
           </h4>
         </div>
 
-        <div className="flex">
+        <div
+          data-aos="zoom-in"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+          className="flex"
+        >
           <a
             href="#sectionWork"
             className="text-center text-sm w-full md:w-1/2 rounded-sm whitespace-nowrap py-3 tracking-widest text-white  bg-gradient-to-br from-cyan-500 to-purple-500/50 hover:bg-gradient-to-bl hover:to-blue-600"
@@ -107,10 +112,13 @@ const About = () => {
         </div>
       </div>
 
-      <h2 className="animate__animated animate__bounce text-3xl text-white dark:text-gray-900 mb-5">
+      <h2 className="text-3xl text-white dark:text-gray-900 mb-5">
         {texts.abSubTitle}
       </h2>
-      <p className=" text-gray-300 dark:text-gray-700 lg:pr-12 mb-16">
+      <p
+        data-aos="fade-up"
+        className=" text-gray-300 dark:text-gray-700 lg:pr-12 mb-16"
+      >
         {texts.abSubTitleText}
       </p>
 
@@ -121,7 +129,10 @@ const About = () => {
       </div>
 
       <div className="text-gray-400 dark:text-gray-500 md:grid md:grid-cols-3 md:gap-5 md:gap-y-10">
-        <div className=" animate-up relative card-color p-5 lg:pt-10 mb-14 md:mb-0">
+        <div
+          data-aos="fade-up"
+          className="relative card-color p-5 lg:pt-10 mb-14 md:mb-0"
+        >
           <div className="-mt-14 lg:-mt-[70px] mb-5 ml-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -145,7 +156,10 @@ const About = () => {
           <div className="xl:hidden absolute w-0.5 h-7 bottom-0 right-7 bg-gradient-to-b from-cyan-400 to-purple-500"></div>
         </div>
 
-        <div className=" animate-up relative card-color p-5 lg:pt-10 mb-14 md:mb-0">
+        <div
+          data-aos="fade-up"
+          className="relative card-color p-5 lg:pt-10 mb-14 md:mb-0"
+        >
           <div className="-mt-14 lg:-mt-[70px] mb-5 ml-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -169,7 +183,10 @@ const About = () => {
           <div className="xl:hidden absolute w-0.5 h-7 bottom-0 right-7 bg-gradient-to-b from-cyan-400 to-purple-500"></div>
         </div>
 
-        <div className=" animate-up relative card-color p-5 lg:pt-10 mb-14 md:mb-0">
+        <div
+          data-aos="fade-up"
+          className="relative card-color p-5 lg:pt-10 mb-14 md:mb-0"
+        >
           <div className="-mt-14 lg:-mt-[70px] mb-5 ml-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -193,7 +210,10 @@ const About = () => {
           <div className="xl:hidden absolute w-0.5 h-7 bottom-0 right-7 bg-gradient-to-b from-cyan-400 to-purple-500"></div>
         </div>
 
-        <div className=" animate-up relative card-color p-5 lg:pt-10 md:mb-0">
+        <div
+          data-aos="fade-up"
+          className="relative card-color p-5 lg:pt-10 md:mb-0"
+        >
           <div className="-mt-14 lg:-mt-[70px] mb-5 ml-2 ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
