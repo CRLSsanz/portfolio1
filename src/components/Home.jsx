@@ -28,7 +28,7 @@ const Home = () => {
           <div className="z-50 flex justify-end md:justify-start">
             <a
               href="#sectionContact"
-              className="py-1 px-8 md:text-lg tracking-wider border border-gray-400 rounded-full hover:shadow-md hover:shadow-white/50 hover:dark:shadow-black/30 cursor-pointer"
+              className="py-2 px-8 text-sm md:text-lg tracking-wider border border-gray-400 rounded-full hover:shadow-md hover:shadow-white/50 hover:dark:shadow-black/30 cursor-pointer"
             >
               CONTACT
             </a>

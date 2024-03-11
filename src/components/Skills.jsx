@@ -3,22 +3,22 @@ import { useAppContext } from "../context/AppProvider";
 const cargarImagen = require.context("../images", true);
 
 const skills = [
-  { name: "html", width: "40px" },
-  { name: "css", width: "60px" },
-  { name: "javascript", width: "40px" },
-  { name: "react", width: "50px" },
-  { name: "vue", width: "45px" },
-  { name: "nodejs", width: "50px" },
-  { name: "mongodb", width: "50px" },
-  { name: "mysql", width: "50px" },
-  { name: "git", width: "50px" },
-  { name: "github", width: "50px" },
-  { name: "tailwind", width: "55px" },
-  { name: "bootstrap", width: "50px" },
-  { name: "vscode", width: "45px" },
-  { name: "photoS", width: "60px" },
-  { name: "cDraw", width: "45px" },
-  { name: "responsive", width: "60px" },
+  { name: "html", width: "30px" },
+  { name: "css", width: "50px" },
+  { name: "javascript", width: "35px" },
+  { name: "react", width: "45px" },
+  { name: "vue", width: "40px" },
+  { name: "nodejs", width: "40px" },
+  { name: "mongodb", width: "40px" },
+  { name: "mysql", width: "40px" },
+  { name: "git", width: "40px" },
+  { name: "github", width: "40px" },
+  { name: "tailwind", width: "40px" },
+  { name: "bootstrap", width: "40px" },
+  { name: "vscode", width: "35px" },
+  { name: "photoS", width: "50px" },
+  { name: "cDraw", width: "35px" },
+  { name: "responsive", width: "40px" },
 ];
 
 const Skills = () => {
@@ -30,13 +30,13 @@ const Skills = () => {
       </h1>
       <p className="text-gray-300 dark:text-gray-500 mb-5">{texts.skillText}</p>
 
-      <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2 gap-4">
         {skills.map((item, index) => (
           <div
             key={index}
-            className="rounded bg-gray-500/10 text-gray-300 dark:text-gray-600 flex flex-col justify-between items-center hover:bg-gray-600 dark:hover:text-gray-100 hover:cursor-pointer active:bg-cyan-600 active:dark:text-gray-100 shadow shadow-gray-950/50"
+            className="rounded bg-gray-500/10 text-gray-300 dark:text-gray-600 flex flex-row items-center hover:bg-gray-600 dark:hover:text-gray-100 hover:cursor-pointer active:bg-cyan-600 active:dark:text-gray-100 shadow shadow-gray-950/50"
           >
-            <div className="h-20 flex items-center lg:hidden xl:flex">
+            <div className="h-16 2xl:h-14 w-14 flex items-center justify-center lg:hidden 2xl:flex">
               <img
                 className=""
                 src={cargarImagen(`./${item.name}.png`)}
@@ -44,7 +44,7 @@ const Skills = () => {
                 alt={item.name}
               />
             </div>
-            <h1 className="capitalize pb-3 lg:pt-3 xl:pt-0">{item.name}</h1>
+            <h1 className="capitalize lg:py-2 lg:px-5 2xl:p-0">{item.name}</h1>
           </div>
         ))}
       </div>

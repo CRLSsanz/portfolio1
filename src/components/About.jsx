@@ -4,6 +4,14 @@ const cargarImagen = require.context("../images", true);
 
 const About = () => {
   const { texts } = useAppContext();
+
+  const card = [
+    { name: texts.abDo1title, width: "40px" },
+    { name: texts.abDo2title, width: "40px" },
+    { name: texts.abDo3title, width: "40px" },
+    { name: texts.abDo4title, width: "40px" },
+  ];
+
   return (
     <div className=" text-white dark:text-gray-800 px-5 md:px-10 ">
       <div className="mb-10">
@@ -99,15 +107,21 @@ const About = () => {
         </div>
       </div>
 
-      <h2 className="text-3xl text-white dark:text-gray-900 mb-5">
+      <h2 className="animate__animated animate__bounce text-3xl text-white dark:text-gray-900 mb-5">
         {texts.abSubTitle}
       </h2>
       <p className=" text-gray-300 dark:text-gray-700 lg:pr-12 mb-16">
         {texts.abSubTitleText}
       </p>
 
+      <div className="hidden">
+        {card.map((item, index) => (
+          <h1 key={index}>{item.name}</h1>
+        ))}
+      </div>
+
       <div className="text-gray-400 dark:text-gray-500 md:grid md:grid-cols-3 md:gap-5 md:gap-y-10">
-        <div className="relative bg-gradient-to-br from-[#1E1F26]/80 to-[#2C303A]/10 dark:from-gray-200 dark:gray-200 Bbg-[#1E1F26] rounded-md shadow shadow-gray-950 dark:shadow-gray-950/50 p-5 lg:pt-10 mb-14 md:mb-0">
+        <div className=" animate-up relative card-color p-5 lg:pt-10 mb-14 md:mb-0">
           <div className="-mt-14 lg:-mt-[70px] mb-5 ml-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -131,7 +145,7 @@ const About = () => {
           <div className="xl:hidden absolute w-0.5 h-7 bottom-0 right-7 bg-gradient-to-b from-cyan-400 to-purple-500"></div>
         </div>
 
-        <div className="relative bg-gradient-to-br from-[#1E1F26]/80 to-[#2C303A]/10 dark:from-gray-200 dark:gray-200 Bbg-[#1E1F26] rounded-md shadow shadow-gray-950 dark:shadow-gray-950/50 p-5 lg:pt-10 mb-14 md:mb-0">
+        <div className=" animate-up relative card-color p-5 lg:pt-10 mb-14 md:mb-0">
           <div className="-mt-14 lg:-mt-[70px] mb-5 ml-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -155,7 +169,7 @@ const About = () => {
           <div className="xl:hidden absolute w-0.5 h-7 bottom-0 right-7 bg-gradient-to-b from-cyan-400 to-purple-500"></div>
         </div>
 
-        <div className="relative bg-gradient-to-br from-[#1E1F26]/80 to-[#2C303A]/10 dark:from-gray-200 dark:gray-200 Bbg-[#1E1F26] rounded-md shadow shadow-gray-950 dark:shadow-gray-950/50 p-5 lg:pt-10 mb-14 md:mb-0">
+        <div className=" animate-up relative card-color p-5 lg:pt-10 mb-14 md:mb-0">
           <div className="-mt-14 lg:-mt-[70px] mb-5 ml-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -179,7 +193,7 @@ const About = () => {
           <div className="xl:hidden absolute w-0.5 h-7 bottom-0 right-7 bg-gradient-to-b from-cyan-400 to-purple-500"></div>
         </div>
 
-        <div className="relative bg-gradient-to-br from-[#1E1F26]/80 to-[#2C303A]/10 dark:from-gray-200 dark:gray-200 Bbg-[#1E1F26] rounded-md shadow shadow-gray-950 dark:shadow-gray-950/50 p-5 lg:pt-10 md:mb-0">
+        <div className=" animate-up relative card-color p-5 lg:pt-10 md:mb-0">
           <div className="-mt-14 lg:-mt-[70px] mb-5 ml-2 ">
             <svg
               xmlns="http://www.w3.org/2000/svg"

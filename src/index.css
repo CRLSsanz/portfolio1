@@ -74,3 +74,29 @@ h2 {
 .fam-home {
   font-family: "Bebas Neue", sans-serif;
 }
+
+.card-color {
+  @apply rounded bg-gradient-to-br from-[#1E1F26]/80 to-[#2C303A]/10 dark:from-gray-200 text-gray-400 dark:text-gray-600 hover:bg-gray-500/50 dark:hover:bg-gray-300 shadow shadow-gray-950 dark:shadow-gray-950/50 hover:cursor-pointer;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+
+.animate-up {
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+
+  animation-timeline: --image;
+  animation-name: show;
+
+  animation-range: entry 25% cover 30%;
+  animation-fill-mode: both;
+}
