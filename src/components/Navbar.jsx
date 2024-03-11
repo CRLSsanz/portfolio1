@@ -98,14 +98,14 @@ const Navbar = () => {
       </div>
 
       <ul
-        className={`fixed z-50 text-white lg:font-semibold bg-gradient-to-r from-black via-black/90 dark:via-black/30 to-black/0 bBg-[#0C87A7ee] top-0 w-[calc(100%-120px)] sm:w-[400px] h-full Xlg:h-[calc(100%-56px)] transform transition-all duration-500
+        className={`fixed z-50 text-white lg:font-medium bg-gradient-to-r from-black via-black/90 dark:via-black/30 to-black/0 bBg-[#0C87A7ee] top-0 w-[calc(100%-120px)] sm:w-[400px] h-full Xlg:h-[calc(100%-56px)] transform transition-all duration-500
         ${
           navbar
             ? " opacity-100 pointer-events-auto left-0"
             : "opacity-0 pointer-events-none -left-80  2xl:opacity-100 2xl:pointer-events-auto 2xl:left-0"
         }`}
       >
-        <div className="p-6 w-[200px] h-full flex flex-col justify-between Bbg-black bg-gradient-to-r from-cyan-600 to-cyan-600">
+        <div className="p-6 w-[200px] h-full flex flex-col justify-between bg-gradient-to-r from-cyan-600 to-cyan-600">
           <div>
             <li className="mb-10">
               <h2 className="text-sm lg:text-base tracking-[0.2em] ">
@@ -113,28 +113,48 @@ const Navbar = () => {
               </h2>
             </li>
 
-            <li className="w-full py-3 lg:py-5 hover:font-bold ">
-              <a href="#sectionHome" onClick={() => setNavbar(!navbar)}>
+            <li className="w-full hover:border-l-4 hover:pl-2 border-gray-100/20 mb-3 ">
+              <a
+                href="#sectionHome"
+                className="flex py-2 lg:py-3"
+                onClick={() => setNavbar(!navbar)}
+              >
                 Home
               </a>
             </li>
-            <li className="w-full border-t border-gray-900/10 py-3 lg:py-5 hover:font-bold ">
-              <a href="#sectionAbout" onClick={() => setNavbar(!navbar)}>
+            <li className="w-full hover:border-l-4 hover:pl-2 border-gray-100/20 mb-3 ">
+              <a
+                href="#sectionAbout"
+                className="flex py-2 lg:py-3"
+                onClick={() => setNavbar(!navbar)}
+              >
                 {texts.navbarAbout}
               </a>
             </li>
-            <li className="w-full border-t border-gray-900/10 py-3 lg:py-5 hover:font-bold ">
-              <a href="#sectionSkills" onClick={() => setNavbar(!navbar)}>
+            <li className="w-full hover:border-l-4 hover:pl-2 border-gray-100/20 mb-3 ">
+              <a
+                href="#sectionSkills"
+                className="flex py-2 lg:py-3"
+                onClick={() => setNavbar(!navbar)}
+              >
                 {texts.navbarSkills}
               </a>
             </li>
-            <li className="w-full border-t border-gray-900/10 py-3 lg:py-5 hover:font-bold ">
-              <a href="#sectionWork" onClick={() => setNavbar(!navbar)}>
+            <li className="w-full hover:border-l-4 hover:pl-2 border-gray-100/20 mb-3 ">
+              <a
+                href="#sectionWork"
+                className="flex py-2 lg:py-3"
+                onClick={() => setNavbar(!navbar)}
+              >
                 {texts.navbarWork}
               </a>
             </li>
-            <li className="w-full border-t border-gray-900/10 py-3 lg:py-5 hover:font-bold mb-10">
-              <a href="#sectionContact" onClick={() => setNavbar(!navbar)}>
+            <li className="w-full hover:border-l-4 hover:pl-2 border-gray-100/20 mb-10">
+              <a
+                href="#sectionContact"
+                className="flex py-2 lg:py-3"
+                onClick={() => setNavbar(!navbar)}
+              >
                 {texts.navbarContact}
               </a>
             </li>

@@ -24,7 +24,7 @@ const skills = [
 const Skills = () => {
   const { texts } = useAppContext();
   return (
-    <div className="px-5 md:px-10 xl:pr-0 lg:pt-1">
+    <div className="px-5 md:px-10 xl:pr-0 lg:pt-1 overflow-hidden ">
       <h1 className="text-3xl mb-5 text-white dark:text-gray-900">
         {texts.skillTitle}
       </h1>
@@ -35,6 +35,7 @@ const Skills = () => {
           <div
             key={index}
             data-aos="fade-left"
+            data-aos-duration="1000"
             className="rounded bg-gray-500/10 text-gray-300 dark:text-gray-600 flex flex-row items-center hover:bg-gray-600 dark:hover:text-gray-100 hover:cursor-pointer active:bg-cyan-600 active:dark:text-gray-100 shadow shadow-gray-950/50"
           >
             <div className="h-16 2xl:h-14 w-14 flex items-center justify-center lg:hidden 2xl:flex">

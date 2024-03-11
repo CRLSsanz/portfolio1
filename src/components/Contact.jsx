@@ -18,7 +18,11 @@ const Contact = () => {
       </h1>
 
       <div className="flex flex-col md:flex-row">
-        <div className="md:w-1/2 mb-10 md:mb-0">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="md:w-1/2 mb-10 md:mb-0"
+        >
           <div className="md:pr-20 xl:pr-32 mb-5">
             <p className="text-gray-300 text-justify">{texts.contactText}</p>
           </div>
@@ -93,7 +97,11 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="w-full md:w-1/2 mb-10">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          className="overflow-hidden w-full md:w-1/2 mb-10"
+        >
           <p className="text-gray-300 mb-5 md:pr-10">{texts.contactForm}</p>
           <form onSubmit={handleSubmit} className="text-gray-300 fam-general">
             <input
@@ -128,10 +136,15 @@ const Contact = () => {
               </button>
             </div>
 
-            <div className="flex">
+            <div
+              data-aos="zoom-in-right"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-sine"
+              className="flex"
+            >
               <button
                 type="submit"
-                className="text-center text-sm w-full xl:w-1/2 rounded-sm whitespace-nowrap py-3 tracking-widest text-white  bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-l hover:to-purple-500"
+                className="text-center text-sm w-full md:w-1/2 rounded-sm whitespace-nowrap py-3 tracking-widest text-white  bg-gradient-to-br from-cyan-500 to-purple-500/50 hover:bg-gradient-to-bl hover:to-blue-600"
               >
                 ¡Enviar Mensaje!
               </button>
