@@ -53,23 +53,19 @@ const Work = () => {
       >
         {texts.workTitle}
       </h1>
-      <p
-        data-aos="fade-left"
-        data-aos-duration="2000"
-        className=" text-gray-300 dark:text-gray-500 mb-5"
-      >
-        {texts.workText}
-      </p>
+      <p className=" text-gray-300 dark:text-gray-500 mb-5">{texts.workText}</p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-8">
         {/** CARD WORD */}
         {card.map((item, index) => (
           <div key={index} className="Xbg-red-400">
-            <div className="pt-8 md:pt-10 px-6 md:px-8 bg-gray-500/10 shadow-md shadow-black/90 rounded-lg overflow-hidden">
+            <div className="pt-10 px-6 md:px-8 bg-gray-500/10 shadow-md shadow-black/30 rounded-lg overflow-hidden">
               <img
                 data-aos="zoom-in-up"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-sine"
                 data-aos-duration="2000"
-                className="lg:hidden w-full md:h-40 lg:h-60 -mb-2 hover:rotate-3 rounded hover:scale-105"
+                className="lg:hidden w-full md:h-40 lg:h-60 -mb-2 rounded "
                 src={cargarImagen(`./${item.image}`)}
                 //style={{ width: "200px" }}
                 alt={item.title}

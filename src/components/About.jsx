@@ -49,15 +49,11 @@ const About = () => {
       <div className="overflow-hidden -m-1 p-1">
         <h1
           data-aos="fade-left"
-          className="text-3xl mb-2 text-white dark:text-gray-700"
+          className="text-3xl mb-5 text-white dark:text-gray-700"
         >
           {texts.abTitle}
         </h1>
-        <p
-          data-aos="fade-left"
-          data-aos-duration="2000"
-          className="text-gray-300 dark:text-gray-500 lg:pr-12 mb-5"
-        >
+        <p className="text-gray-300 dark:text-gray-500 lg:pr-12 mb-5">
           {texts.abTitleText}
         </p>
         <div
@@ -134,7 +130,7 @@ const About = () => {
         {/** BOTTON */}
         <div
           data-aos="zoom-in-left"
-          data-aos-duration="1000"
+          data-aos-duration="2000"
           className="flex mb-10"
         >
           <a
@@ -145,18 +141,10 @@ const About = () => {
           </a>
         </div>
         {/** SUBTITULO */}
-        <h2
-          data-aos="fade-left"
-          data-aos-duration="1000"
-          className="text-3xl text-white font-medium dark:text-gray-700 mb-5"
-        >
+        <h2 className="text-3xl text-white font-medium dark:text-gray-700 mb-5">
           {texts.abSubTitle}
         </h2>
-        <p
-          data-aos="fade-left"
-          data-aos-duration="2000"
-          className=" text-gray-300 dark:text-gray-500 lg:pr-12 mb-16"
-        >
+        <p className=" text-gray-300 dark:text-gray-500 lg:pr-12 mb-16">
           {texts.abSubTitleText}
         </p>
 
@@ -168,11 +156,7 @@ const About = () => {
         {/** 4 CARD */}
         <div className=" text-gray-400 dark:text-gray-500 md:grid md:grid-cols-3 md:gap-5 md:gap-y-10">
           {card.map((item, index) => (
-            <div
-              data-aos="zoom-in-up"
-              data-aos-duration="2000"
-              className="relative card-color p-5 lg:pt-10 mb-14 md:mb-0"
-            >
+            <div className="relative card-color p-5 lg:pt-10 mb-14 md:mb-0">
               <div className="flex flex-row justify-between">
                 <div className="-mt-14 lg:-mt-[70px] mb-5 ml-2">
                   <svg
@@ -190,15 +174,28 @@ const About = () => {
                     />
                   </svg>
                 </div>
-                <h2 className="fam-number text-4xl text-white dark:text-gray-700 my-2 lg:-mt-2">
+                <h2
+                  data-aos="fade-right"
+                  data-aos-duration="3000"
+                  data-aos-offset="200"
+                  data-aos-easing="ease-in-sine"
+                  className="fam-number text-4xl text-white dark:text-gray-700 mb-1 lg:-mt-2"
+                >
                   {item.id}
                 </h2>
               </div>
-              <h2 className="tracking-wider text-xl text-white dark:text-gray-700 mb-5">
+              <h2
+                data-aos="fade-left"
+                className="tracking-wider text-xl text-white dark:text-gray-700 mb-5"
+              >
                 {item.title}
               </h2>
               <p className="lg:text-start pb-10">{item.text}</p>
-              <span className="absolute bottom-5 left-5 text-cyan-500 text-sm cursor-pointer border-b border-cyan-500/40">
+              <span
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                className="absolute bottom-5 left-5 text-cyan-500 text-sm cursor-pointer border-b border-cyan-500/40"
+              >
                 {item.link}
               </span>
               <div className="xl:hidden absolute w-0.5 h-7 bottom-0 right-7 bg-gradient-to-b from-cyan-400 to-purple-500"></div>

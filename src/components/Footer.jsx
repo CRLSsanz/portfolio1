@@ -27,7 +27,7 @@ const Footer = () => {
       </div>
 
       <div className="flex justify-center mb-10">
-        <a href="#sectionHome" className="p-2  animate-bounce">
+        <a href="#sectionHome" className="p-2 text-white animate-bounce">
           <svg
             stroke="currentColor"
             fill="currentColor"
@@ -41,7 +41,7 @@ const Footer = () => {
         </a>
       </div>
 
-      <div className="text-gray-500 flex flex-col md:flex-row justify-between">
+      <div className="text-gray-400 flex flex-col md:flex-row justify-between">
         <div className="md:w-1/3 mb-5">
           <h1 className="text-gray-100 fam-logo font-bold tracking-wider text-2xl mb-5">
             CRL<span className="text-cyan-500">S</span> CODE

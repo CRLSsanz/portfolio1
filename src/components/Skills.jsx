@@ -24,22 +24,16 @@ const skills = [
 const Skills = () => {
   const { texts } = useAppContext();
   return (
-    <div className="px-5 pb-1 md:px-10 xl:pr-0 lg:pt-1 overflow-hidden ">
+    <div className="px-5 pb-1 md:px-10 xl:pr-0 lg:pt-1 overflow-hidden">
       <h1
         data-aos="fade-left"
         className="text-3xl mb-5 text-white dark:text-gray-700"
       >
         {texts.skillTitle}
       </h1>
-      <p
-        data-aos="fade-left"
-        data-aos-duration="1000"
-        className="text-gray-300 dark:text-gray-500 mb-5"
-      >
-        {texts.skillText}
-      </p>
+      <p className="text-gray-300 dark:text-gray-500 mb-5">{texts.skillText}</p>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2 gap-4 mb-10">
+      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2 gap-4">
         {skills.map((item, index) => (
           <div
             key={index}

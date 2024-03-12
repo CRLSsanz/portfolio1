@@ -12,18 +12,30 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-full px-5 md:px-10 mb-10">
-      <h1 className="text-3xl xl:text-4xl mb-5 text-white">
+    <div className="w-full px-5 md:px-10 mb-10 overflow-hidden">
+      <h1
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        className="text-3xl xl:text-4xl mb-5 text-white dark:text-gray-700"
+      >
         {texts.contactTitle}
       </h1>
 
       <div className="flex flex-col md:flex-row">
         <div className="md:w-1/2 mb-10 md:mb-0">
           <div className="md:pr-20 xl:pr-32 mb-5">
-            <p className="text-gray-300 text-justify">{texts.contactText}</p>
+            <p className="text-gray-300 dark:text-gray-500 text-justify">
+              {texts.contactText}
+            </p>
           </div>
 
-          <div className="w-full overflow-hidden">
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="2000"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            className="w-full overflow-hidden"
+          >
             <div className="Xbg-gray-800 text-cyan-500 font-medium py-5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-1 gap-y-5 Sshadow-lg shadow-black/50">
               <a
                 href="tel:+51990441430"
@@ -43,7 +55,7 @@ const Contact = () => {
                     d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
                   />
                 </svg>
-                <h2 data-aos="fade-left" className="text-gray-200 pl-2">
+                <h2 className="text-gray-200 dark:text-gray-500 pl-2">
                   Call me
                 </h2>
               </a>
@@ -67,11 +79,7 @@ const Contact = () => {
                     d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
                   />
                 </svg>
-                <h2
-                  data-aos="fade-left"
-                  data-aos-duration="1000"
-                  className="text-gray-200 pl-2"
-                >
+                <h2 className="text-gray-200 dark:text-gray-500 pl-2">
                   Send an email
                 </h2>
               </a>
@@ -94,11 +102,7 @@ const Contact = () => {
                     d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
                   />
                 </svg>
-                <h2
-                  data-aos="fade-left"
-                  data-aos-duration="2000"
-                  className="text-gray-200 pl-2"
-                >
+                <h2 className="text-gray-200 dark:text-gray-500 pl-2">
                   Whatsapp live
                 </h2>
               </a>
@@ -106,36 +110,32 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="overflow-hidden w-full md:w-1/2 mb-10">
-          <p className="text-gray-300 mb-5 md:pr-10">{texts.contactForm}</p>
+        <div className="w-full md:w-1/2 mb-10">
+          <p className="text-gray-300 dark:text-gray-500 mb-5 md:pr-10">
+            {texts.contactForm}
+          </p>
           <form
             onSubmit={handleSubmit}
-            className="text-gray-300 fam-general overflow-hidden"
+            className="text-gray-300 dark:text-gray-700 fam-general"
           >
             <input
               type="text"
-              data-aos="zoom-in-right"
-              className="w-full py-2.5 px-4 focus:outline-none bg-transparent rounded-md border-2 border-gray-700 mb-3"
+              className="w-full py-2.5 px-4 focus:outline-none bg-transparent dark:bg-gray-50 rounded-sm border border-gray-500/30 mb-3"
               placeholder="Your name"
             />
             <input
               type="number"
-              data-aos="zoom-in-right"
-              className="w-full xl:w-1/2 py-2.5 px-4 focus:outline-none bg-transparent rounded-md border-2 border-gray-700 mb-3"
+              className="w-full xl:w-1/2 py-2.5 px-4 focus:outline-none bg-transparent dark:bg-gray-50 rounded-sm border border-gray-500/30 mb-3"
               placeholder="Your telephone"
             />
             <input
               type="email"
-              data-aos="zoom-in-right"
-              data-aos-duration="1000"
-              className="w-full py-2.5 px-4 focus:outline-none bg-transparent rounded-md border-2 border-gray-700 mb-3"
+              className="w-full py-2.5 px-4 focus:outline-none bg-transparent dark:bg-gray-50 rounded-sm border border-gray-500/30 mb-3"
               placeholder="Your email"
             />
             <textarea
               rows="3"
-              data-aos="zoom-in-right"
-              data-aos-duration="2000"
-              className="w-full py-2.5 px-4 focus:outline-none bg-transparent rounded-md border-2 border-gray-700 mb-8"
+              className="w-full py-2.5 px-4 focus:outline-none bg-transparent dark:bg-gray-50 rounded-sm border border-gray-500/30 mb-8"
               placeholder="Your message"
             ></textarea>
 
@@ -151,7 +151,7 @@ const Contact = () => {
             </div>
 
             <div
-              data-aos="zoom-in-right"
+              data-aos="zoom-out-up"
               data-aos-duration="1000"
               className="flex"
             >

@@ -97,23 +97,23 @@ const Portfolio = () => {
           </div>
 
           <svg
-            className="block md:hidden -mb-1"
+            className="block md:hidden text-[#151515] dark:text-gray-200 -mb-1"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1440 180"
           >
             <path
-              fill="#151515"
+              fill="currentColor"
               fillOpacity="1"
               d="M0,160L1440,15L1440,180L0,180Z"
             ></path>
           </svg>
           <svg
-            className="hidden md:block -mb-1"
+            className="hidden md:block text-[#151515] dark:text-gray-200 -mb-1"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1440 70"
           >
             <path
-              fill="#151515"
+              fill="currentColor"
               fillOpacity="1"
               d="M0,60L1080,15L1440,60L1440,70L720,70L0,70Z"
             ></path>
@@ -143,7 +143,7 @@ const Portfolio = () => {
 
       <section
         id="sectionContact"
-        className="Hmin-h-[800px] bg-[#151515] Bbg-[#1A2035] flex"
+        className="Hmin-h-[800px] bg-[#151515] dark:bg-gray-200 Bbg-[#1A2035] flex"
       >
         <div className="mx-auto Xw-full">
           <div className="xl:w-[1100px]">
@@ -157,7 +157,7 @@ const Portfolio = () => {
         id="section6"
         className="bg-[#259ca0] flex"
         style={{
-          backgroundImage: `linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.95)), url(${bag3})`,
+          backgroundImage: `linear-gradient(rgba(0,0,0,9), rgba(0,0,0,0.85)), url(${bag3})`,
           backgroundPosition: "50% 20%",
           backgroundSize: "cover",
           //backgroundAttachment: "fixed",
