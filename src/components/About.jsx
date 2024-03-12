@@ -170,6 +170,7 @@ const About = () => {
           {card.map((item, index) => (
             <div
               data-aos="zoom-in-up"
+              data-aos-duration="2000"
               className="relative card-color p-5 lg:pt-10 mb-14 md:mb-0"
             >
               <div className="flex flex-row justify-between">
