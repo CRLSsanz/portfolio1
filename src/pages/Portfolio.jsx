@@ -66,17 +66,15 @@ const Portfolio = () => {
           <div className="flex">
             <div className="mx-auto XXw-full -mt-1">
               <div className="py-10 xl:w-[1100px] flex flex-col">
-                <div className="lg:flex lg:flex-row">
-                  <div className="lg:basis-2/3">
-                    <About />
-                  </div>
+                <div className="">
+                  <About />
+                </div>
 
-                  <div className="lg:basis-1/3 lg:sticky lg:top-0 lg:h-full">
-                    <h1 id="sectionSkills" className="h-16">
-                      {" "}
-                    </h1>
-                    <Skills />
-                  </div>
+                <div className="lg:hidden">
+                  <h1 id="sectionSkills" className="h-16">
+                    {" "}
+                  </h1>
+                  <Skills />
                 </div>
 
                 <div className="">

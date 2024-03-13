@@ -25,20 +25,25 @@ const Skills = () => {
   const { texts } = useAppContext();
   return (
     <div className="px-5 pb-1 md:px-10 lg:pt-1 overflow-hidden">
-      <h1
-        data-aos="fade-left"
-        className="text-3xl mb-5 text-white dark:text-gray-700"
-      >
-        {texts.skillTitle}
-      </h1>
+      <div className="flex items-end mb-5">
+        <h1
+          data-aos="fade-left"
+          className="text-3xl whitespace-nowrap text-white dark:text-gray-700"
+        >
+          {texts.skillTitle}
+        </h1>
+        <div className="w-full h-3 border-t border-gray-300 dark:border-gray-500 ml-3">
+          {" "}
+        </div>
+      </div>
       <p className="text-gray-300 dark:text-gray-500 mb-5">{texts.skillText}</p>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2 gap-3">
         {skills.map((item, index) => (
           <div
             key={index}
-            data-aos="Xzoom-in-up"
-            data-aos-duration="X1000"
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
             className="rounded bg-gray-500/10 text-gray-300 dark:text-gray-600 flex flex-row items-center hover:bg-gray-600 dark:hover:text-gray-100 hover:cursor-pointer active:bg-cyan-600 active:dark:text-gray-100 shadow shadow-gray-950/50"
           >
             <div className="h-16 2xl:h-14 w-14 flex items-center justify-center lg:hidden 2xl:flex">

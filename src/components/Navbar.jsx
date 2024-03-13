@@ -131,7 +131,7 @@ const Navbar = () => {
                 {texts.navbarAbout}
               </a>
             </li>
-            <li className="w-full hover:border-l-4 hover:pl-2 border-gray-100/20 mb-3 ">
+            <li className="lg:hidden w-full hover:border-l-4 hover:pl-2 border-gray-100/20 mb-3 ">
               <a
                 href="#sectionSkills"
                 className="flex py-2 lg:py-3"
