@@ -47,12 +47,15 @@ const About = () => {
         />
       </div>
       <div className="overflow-hidden -m-1 p-1">
-        <h1
-          data-aos="fade-left"
-          className="text-3xl mb-5 text-white dark:text-gray-700"
-        >
-          {texts.abTitle}
-        </h1>
+        <div className="flex items-end mb-5">
+          <h1
+            data-aos="fade-left"
+            className="text-3xl whitespace-nowrap text-white dark:text-gray-700"
+          >
+            {texts.abTitle}
+          </h1>
+          <div className="w-full h-3 border-t border-gray-300/50 ml-5"> </div>
+        </div>
         <p className="text-gray-300 dark:text-gray-500 lg:pr-12 mb-5">
           {texts.abTitleText}
         </p>
@@ -129,8 +132,8 @@ const About = () => {
         </div>
         {/** BOTTON */}
         <div
-          data-aos="zoom-in-left"
-          data-aos-duration="2000"
+          data-aos="Xzoom-in-left"
+          data-aos-duration="X500"
           className="flex mb-10"
         >
           <a
@@ -141,7 +144,11 @@ const About = () => {
           </a>
         </div>
         {/** SUBTITULO */}
-        <h2 className="text-3xl text-white font-medium dark:text-gray-700 mb-5">
+        <h2
+          data-aos="zoom-in-left"
+          data-aos-duration="500"
+          className="text-3xl text-white font-medium dark:text-gray-700 mb-5"
+        >
           {texts.abSubTitle}
         </h2>
         <p className=" text-gray-300 dark:text-gray-500 lg:pr-12 mb-16">
@@ -177,7 +184,7 @@ const About = () => {
                 <h2
                   data-aos="fade-right"
                   data-aos-duration="3000"
-                  data-aos-offset="200"
+                  data-aos-offset="300"
                   data-aos-easing="ease-in-sine"
                   className="fam-number text-4xl text-white dark:text-gray-700 mb-1 lg:-mt-2"
                 >

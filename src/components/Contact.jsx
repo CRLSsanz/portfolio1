@@ -151,7 +151,7 @@ const Contact = () => {
             </div>
 
             <div
-              data-aos="zoom-out-up"
+              data-aos="zoom-in-up"
               data-aos-duration="1000"
               className="flex"
             >

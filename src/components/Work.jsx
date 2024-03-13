@@ -46,13 +46,16 @@ const Work = () => {
 
   return (
     <div className="px-5 md:px-10 overflow-hidden">
-      <h1
-        data-aos="fade-left"
-        data-aos-duration="1000"
-        className="text-3xl xl:text-4xl mb-5 text-white dark:text-gray-900"
-      >
-        {texts.workTitle}
-      </h1>
+      <div className="flex justify-center items-end mb-5">
+        <h1
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          className="text-3xl xl:text-4xl text-white dark:text-gray-900"
+        >
+          {texts.workTitle}
+        </h1>
+        <div className="w-full h-3 border-t border-gray-300/50 ml-5"> </div>
+      </div>
       <p className=" text-gray-300 dark:text-gray-500 mb-5">{texts.workText}</p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-8">
@@ -64,7 +67,7 @@ const Work = () => {
                 data-aos="zoom-in-up"
                 data-aos-offset="200"
                 data-aos-easing="ease-in-sine"
-                data-aos-duration="2000"
+                data-aos-duration="1000"
                 className="lg:hidden w-full md:h-40 lg:h-60 -mb-2 rounded "
                 src={cargarImagen(`./${item.image}`)}
                 //style={{ width: "200px" }}
