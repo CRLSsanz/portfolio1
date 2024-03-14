@@ -1,6 +1,7 @@
 import React from "react";
 import { useAppContext } from "../context/AppProvider";
 import imgContact from "../images/img-social-media.png";
+import LogosSVG from "./LogosSVG";
 
 const Contact = () => {
   const { texts } = useAppContext();
@@ -32,7 +33,7 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="w-full overflow-hidden">
+          <div className="w-full overflow-hidden mb-5">
             <div className="Xbg-gray-800 text-cyan-500 font-medium py-5 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-1 gap-y-5 Sshadow-lg shadow-black/50">
               <div data-aos="zoom-out-up" data-aos-duration="1000" className="">
                 <a
@@ -118,6 +119,10 @@ const Contact = () => {
                 </a>
               </div>
             </div>
+          </div>
+
+          <div className="flex justify-center">
+            <LogosSVG />
           </div>
         </div>
 
