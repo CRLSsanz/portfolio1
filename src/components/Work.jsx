@@ -36,8 +36,7 @@ const Work = () => {
       id: "04",
       image: "work6.jpg",
       title: texts.workItem4,
-      skills:
-        "React - React Router - Tailwind - Chart Js - Fetch - Axios - Node.js",
+      skills: "React - Tailwind - Chart Js - Fetch - Axios - Node.js",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quas quod exercitationem, consequatur totam labore distinctio hic vel fugiat id!",
       link: "Leer màs",
       view: texts.workView,
@@ -88,7 +87,7 @@ const Work = () => {
                 <div className="w-full h-3 border-t border-gray-500/80 mx-3">
                   {" "}
                 </div>
-                <div className="flex flex-row gap-2 text-gray-500/80">
+                <div className="flex flex-row gap-2 text-gray-400 dark:text-gray-500">
                   <div>
                     <svg
                       stroke="currentColor"
@@ -124,17 +123,17 @@ const Work = () => {
               <div
                 data-aos="fade-left"
                 data-aos-duration="1000"
-                className="text-sm text-cyan-400 mb-2"
+                className="text-sm text-cyan-300 dark:text-cyan-500 mb-2"
               >
                 {item.skills}
               </div>
-              <p className="pb-7 text-gray-400 dark:text-gray-500">
+              <p className="pb-5 text-gray-400 dark:text-gray-500">
                 {item.text}
               </p>
               <span
                 data-aos="fade-left"
                 data-aos-duration="3000"
-                className="absolute bottom-0 left-1 text-cyan-400 text-sm cursor-pointer hover:border-b hover:border-cyan-500"
+                className="absolute bottom-0 left-1 text-cyan-300 dark:text-cyan-500 text-sm cursor-pointer hover:border-b hover:border-cyan-500"
               >
                 {item.link + " >"}
               </span>

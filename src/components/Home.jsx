@@ -9,8 +9,8 @@ const Home = () => {
   return (
     <div className="h-full p-5 sm:px-10 XXmd:w-[1100px] text-gray-400 dark:text-gray-500 ">
       <div className="w-full lg:max-w-[1300px] flex flex-row mb-5 mx-auto">
-        <div className="w-1/2 lg:w-1/4 lg:text-base tracking-widest ">
-          <h1 className="w-32 fam-logo leading-4 md:leading-6">CRLS CODE</h1>
+        <div className="w-1/2 lg:w-1/4 text-sm lg:text-base tracking-widest ">
+          <h1 className="w-24 fam-logo leading-4 md:leading-6">CRLS CODE</h1>
         </div>
 
         <div className="w-1/2 lg:w-3/4 text-xs md:text-sm flex flex-col lg:flex-row justify-between lg:items-center text-end md:text-start">

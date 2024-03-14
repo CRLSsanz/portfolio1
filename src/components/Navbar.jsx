@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useAppContext } from "../context/AppProvider";
+import LogosSVG from "./LogosSVG";
 const cargarImagen = require.context("../images", true);
 
 const Navbar = () => {
@@ -14,9 +15,13 @@ const Navbar = () => {
         <div className="w-full  h-16 px-2 lg:px-5 flex justify-between items-center">
           <div
             href="#section1"
-            className="shadow-lg shadow-transparent ml-4 text-transparent"
+            className="hidden shadow-lg shadow-transparent ml-4 text-transparent"
           >
             {" C R L S "}
+          </div>
+
+          <div className="flex justify-center">
+            <LogosSVG />
           </div>
 
           <div className="text-gray-200 dark:text-gray-700 flex flex-row items-center">

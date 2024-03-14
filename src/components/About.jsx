@@ -144,7 +144,7 @@ const About = () => {
             >
               <a
                 href="#sectionWork"
-                className="text-center text-sm w-full md:w-1/2 rounded-sm whitespace-nowrap py-3 tracking-widest text-white  bg-gradient-to-br from-cyan-500 to-purple-500/50 hover:bg-gradient-to-bl hover:to-blue-600"
+                className="text-center text-sm w-full md:w-1/2 rounded-sm whitespace-nowrap py-3 tracking-widest text-white  bg-gradient-to-br from-blue-500 to-green-500/70 hover:bg-gradient-to-tl hover:to-green-500/70"
               >
                 {texts.abBotton}
               </a>
@@ -167,18 +167,18 @@ const About = () => {
               ))}
             </div>
             {/** 4 CARD */}
-            <div className=" text-gray-400 dark:text-gray-500 md:grid md:grid-cols-3 md:gap-5 md:gap-y-10">
+            <div className="  md:grid md:grid-cols-3 md:gap-5 md:gap-y-10">
               {card.map((item, index) => (
-                <div className="relative rounded-lg bg-[#2C303A] dark:bg-gray-200 text-white dark:text-gray-800 p-5 lg:pt-10 mb-6 md:mb-0">
+                <div className="relative rounded-lg bg-[#2C303A] dark:bg-gray-50 dark:shadow text-gray-300 dark:text-gray-500 p-5 lg:pt-10 mb-8 md:mb-0">
                   <div className="flex flex-row justify-between">
                     <div className="-mt-9 lg:-mt-[70px] mb-5">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
-                        stroke-width="0.7"
+                        stroke-width="1"
                         stroke="currentColor"
-                        class="w-16 h-16 p-0.5 rounded-lg text-gray-100 dark:text-gray-600 bg-[#131417]/95 dark:bg-gray-100"
+                        class="w-16 h-16 p-0.5 rounded-lg bg-[#131417]/95 Xdark:bg-gray-100 dark:bg-gray-100"
                       >
                         <path
                           stroke-linecap="round"
@@ -199,21 +199,21 @@ const About = () => {
                   </div>
                   <h2
                     data-aos="fade-left"
-                    className="Xtracking-wide text-2xl md:text-xl mb-5"
+                    className="Xtracking-wide text-white dark:text-gray-700 text-2xl md:text-xl mb-5"
                   >
                     {item.title}
                   </h2>
-                  <p className="pb-10 text-gray-300 dark:text-gray-600">
-                    {item.text}
-                  </p>
+                  <p className="pb-6">{item.text}</p>
                   <span
                     data-aos="fade-left"
                     data-aos-duration="1000"
-                    className="absolute bottom-5 left-5 text-cyan-500 text-sm cursor-pointer border-b border-cyan-500/40"
+                    className="absolute bottom-5 left-5 text-cyan-300 dark:text-cyan-500 text-sm cursor-pointer hover:border-b border-cyan-500/40"
                   >
                     {item.link}
                   </span>
-                  <div className="xl:hidden absolute w-0.5 h-7 bottom-0 right-7 bg-gradient-to-b from-cyan-400 to-purple-500"></div>
+                  <div className="xl:hidden absolute w-0.5 h-7 bottom-0 right-7 bg-gradient-to-b from-cyan-500 to-green-500">
+                    {" "}
+                  </div>
                 </div>
               ))}
 

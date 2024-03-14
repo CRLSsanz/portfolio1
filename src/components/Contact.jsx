@@ -173,7 +173,7 @@ const Contact = () => {
             >
               <button
                 type="submit"
-                className="text-center text-sm w-full md:w-1/2 rounded-sm whitespace-nowrap py-3 tracking-widest text-white  bg-gradient-to-br from-cyan-500 to-purple-500/50 hover:bg-gradient-to-bl hover:to-blue-600"
+                className="text-center text-sm w-full md:w-1/2 rounded-sm whitespace-nowrap py-3 tracking-widest text-white  bg-gradient-to-br from-blue-500 to-green-500/70 hover:bg-gradient-to-tl hover:to-green-500/70"
               >
                 ¡Enviar Mensaje!
               </button>
