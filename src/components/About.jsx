@@ -57,7 +57,7 @@ const About = () => {
           <div className="w-full h-3 border-t border-gray-300 dark:border-gray-500 ml-3"></div>
         </div>
 
-        <div className="lg:flex lg:flex-row">
+        <div className="Xlg:flex Xlg:flex-row">
           <div className="lg:basis-2/3">
             <p className="text-gray-300 dark:text-gray-500 lg:pr-12 mb-5">
               {texts.abTitleText}
@@ -144,7 +144,7 @@ const About = () => {
             >
               <a
                 href="#sectionWork"
-                className="text-center text-sm w-full md:w-1/2 rounded-sm whitespace-nowrap py-3 tracking-widest text-white  bg-gradient-to-br from-blue-500 to-green-500/70 hover:bg-gradient-to-tl hover:to-green-500/70"
+                className="text-center text-sm w-full md:w-1/2 rounded-sm whitespace-nowrap py-3 tracking-widest text-white bg-gradient-to-br from-blue-500 to-green-500/70 hover:bg-gradient-to-tl hover:to-green-500/70"
               >
                 {texts.abBotton}
               </a>
@@ -247,8 +247,8 @@ const About = () => {
               </div>
             </div>
           </div>
-
-          <div className="hidden sticky top-20 h-full lg:block lg:basis-1/3 ml-20">
+          {/** SKILL EN ABOUT */}
+          <div className="Xhidden Xsticky Xtop-20 Xh-full lg:block lg:basis-1/3 ml-20">
             <h2
               data-aos="zoom-in-left"
               data-aos-duration="500"

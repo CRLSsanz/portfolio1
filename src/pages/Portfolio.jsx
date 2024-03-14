@@ -6,6 +6,7 @@ import Contact from "../components/Contact";
 import Skills from "../components/Skills";
 import Footer from "../components/Footer";
 import { useAppContext } from "../context/AppProvider";
+import Dashboard from "../components/Dashboard";
 
 const bag3 = "https://github.com/CRLSsanz/trade/blob/main/fondo01.jpg?raw=true";
 
@@ -36,10 +37,10 @@ const Portfolio = () => {
       >
         <div className="Xmx-auto w-full -mt-1">
           <div className="bg-[#1E1F26] dark:bg-gray-300 h-20"> </div>
-          <div className="-mt-16 h-16 w-full sticky z-50 top-0">
+
+          <div className="hidden -mt-16 h-16 w-full sticky z-50 top-0">
             <Navbar />
           </div>
-
           <svg
             className="block md:hidden waves-color -mt-1"
             xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +53,7 @@ const Portfolio = () => {
             ></path>
           </svg>
           <svg
-            className="hidden waves-color md:block -mt-1"
+            className="hidden waves-color Xmd:block -mt-1"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1440 70"
           >
@@ -63,9 +64,9 @@ const Portfolio = () => {
             ></path>
           </svg>
 
-          <div className="flex">
-            <div className="mx-auto XXw-full -mt-1">
-              <div className="py-10 xl:w-[1100px] flex flex-col">
+          <div className="flex flex-row">
+            <div className="lg:basis-8/12 flex justify-end -mt-1">
+              <div className="py-10 xl:w-[800px] flex flex-col">
                 <div className="">
                   <About />
                 </div>
@@ -90,6 +91,12 @@ const Portfolio = () => {
                   </h1>
                   <Contact />
                 </div>
+              </div>
+            </div>
+
+            <div className="lg:basis-4/12 flex justify-start bg-[#1E1F26]">
+              <div className=" Xbg-[#151515] max-h-screen sticky top-0">
+                <Dashboard />
               </div>
             </div>
           </div>
