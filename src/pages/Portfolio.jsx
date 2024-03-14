@@ -16,7 +16,7 @@ const Portfolio = () => {
     <div className={`${darkMode && "dark"} 2xl:pl-48 bg-cyan-500 `}>
       <section
         id="sectionHome"
-        className="min-h-[820px] 860 XXmd:min-h-screen md:min-h-[700px] Bbg-[#1A2035] bg-[#151515] dark:bg-gray-300 flex"
+        className="min-h-[820px] 860 XXmd:min-h-screen md:min-h-[700px] Bbg-[#1A2035] bg-[#1E1F26] dark:bg-gray-300 flex"
       >
         <div className="mx-auto w-full">
           <h1 className="Hh-16"> </h1>
@@ -26,7 +26,7 @@ const Portfolio = () => {
 
       <section
         id="sectionAbout"
-        className="min-h-[700px] bBg-[#1A2035] bg-[#2F3437] dark:bg-gray-100 Bbg-[#259ca0] flex"
+        className="min-h-[700px] bg-[#131417] Bbg-[#2F3437] dark:bg-gray-100 Bbg-[#259ca0] flex"
         style={{
           //backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,1)), url(${bag3})`,
           backgroundPosition: "50%",
@@ -35,13 +35,13 @@ const Portfolio = () => {
         }}
       >
         <div className="Xmx-auto w-full -mt-1">
-          <div className="bg-[#151515] dark:bg-gray-300 h-20"> </div>
+          <div className="bg-[#1E1F26] dark:bg-gray-300 h-20"> </div>
           <div className="-mt-16 h-16 w-full sticky z-50 top-0">
             <Navbar />
           </div>
 
           <svg
-            className="block md:hidden text-[#151515] dark:text-gray-300 -mt-1"
+            className="block md:hidden waves-color -mt-1"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1440 180"
           >
@@ -52,7 +52,7 @@ const Portfolio = () => {
             ></path>
           </svg>
           <svg
-            className="hidden text-[#151515] dark:text-gray-300 md:block -mt-1"
+            className="hidden waves-color md:block -mt-1"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1440 70"
           >
@@ -95,7 +95,7 @@ const Portfolio = () => {
           </div>
 
           <svg
-            className="block md:hidden text-[#151515] dark:text-gray-200 -mb-1"
+            className="block md:hidden text-[#18191E] dark:text-gray-200 -mb-1"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1440 180"
           >
@@ -106,7 +106,7 @@ const Portfolio = () => {
             ></path>
           </svg>
           <svg
-            className="hidden md:block text-[#151515] dark:text-gray-200 -mb-1"
+            className="hidden md:block text-[#18191E] dark:text-gray-200 -mb-1"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1440 70"
           >
@@ -141,7 +141,7 @@ const Portfolio = () => {
 
       <section
         id="sectionContact"
-        className="Hmin-h-[800px] bg-[#151515] dark:bg-gray-200 Bbg-[#1A2035] flex"
+        className="Hmin-h-[800px] bg-[#18191E] dark:bg-gray-200 Bbg-[#1A2035] flex"
       >
         <div className="mx-auto Xw-full">
           <div className="xl:w-[1100px]">

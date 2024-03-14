@@ -44,7 +44,7 @@ const Skills = () => {
             key={index}
             data-aos="zoom-in-up"
             data-aos-duration="1000"
-            className="rounded bg-gray-500/10 text-gray-300 dark:text-gray-600 flex flex-row items-center hover:bg-gray-600 dark:hover:text-gray-100 hover:cursor-pointer active:bg-cyan-600 active:dark:text-gray-100 shadow shadow-gray-950/50"
+            className="rounded border border-gray-800 dark:border-gray-300 flex flex-row items-center hover:bg-gray-500/10 hover:font-semibold hover:cursor-pointer active:bg-cyan-600"
           >
             <div className="h-16 2xl:h-14 w-14 flex items-center justify-center lg:hidden 2xl:flex">
               <img
@@ -54,7 +54,9 @@ const Skills = () => {
                 alt={item.name}
               />
             </div>
-            <h2 className="capitalize lg:py-2 lg:px-5 2xl:p-0">{item.name}</h2>
+            <h2 className="capitalize text-white hover:text-[#76DAFF] dark:text-gray-600 lg:py-2 lg:px-5 2xl:p-0 ">
+              {item.name}
+            </h2>
           </div>
         ))}
       </div>

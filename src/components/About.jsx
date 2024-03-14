@@ -169,16 +169,16 @@ const About = () => {
             {/** 4 CARD */}
             <div className=" text-gray-400 dark:text-gray-500 md:grid md:grid-cols-3 md:gap-5 md:gap-y-10">
               {card.map((item, index) => (
-                <div className="relative card-color p-5 lg:pt-10 mb-14 md:mb-0">
+                <div className="relative rounded-lg bg-[#2C303A] dark:bg-gray-200 text-white dark:text-gray-800 p-5 lg:pt-10 mb-6 md:mb-0">
                   <div className="flex flex-row justify-between">
-                    <div className="-mt-14 lg:-mt-[70px] mb-5 ml-2">
+                    <div className="-mt-9 lg:-mt-[70px] mb-5">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
-                        stroke-width="1.0"
+                        stroke-width="0.7"
                         stroke="currentColor"
-                        class="w-16 h-16 p-0.5 rounded-md bg-[#2F3437]/95 dark:bg-gray-100"
+                        class="w-16 h-16 p-0.5 rounded-lg text-gray-100 dark:text-gray-600 bg-[#131417]/95 dark:bg-gray-100"
                       >
                         <path
                           stroke-linecap="round"
@@ -192,18 +192,20 @@ const About = () => {
                       data-aos-duration="3000"
                       data-aos-offset="300"
                       data-aos-easing="ease-in-sine"
-                      className="fam-number text-4xl text-white dark:text-gray-700 mb-1 lg:-mt-2"
+                      className="fam-number text-4xl mb-1 lg:-mt-2"
                     >
                       {item.id}
                     </h2>
                   </div>
                   <h2
                     data-aos="fade-left"
-                    className="tracking-wider text-xl text-white dark:text-gray-700 mb-5"
+                    className="Xtracking-wide text-2xl md:text-xl mb-5"
                   >
                     {item.title}
                   </h2>
-                  <p className="lg:text-start pb-10">{item.text}</p>
+                  <p className="pb-10 text-gray-300 dark:text-gray-600">
+                    {item.text}
+                  </p>
                   <span
                     data-aos="fade-left"
                     data-aos-duration="1000"

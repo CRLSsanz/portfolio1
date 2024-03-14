@@ -98,7 +98,7 @@ const Navbar = () => {
       </div>
 
       <ul
-        className={`fixed z-50 text-white lg:font-medium bg-gradient-to-r from-black via-black/90 dark:via-black/30 to-black/0 bBg-[#0C87A7ee] top-0 w-[calc(100%-120px)] sm:w-[400px] h-full Xlg:h-[calc(100%-56px)] transform transition-all duration-500
+        className={`fixed z-50 text-white lg:font-medium bg-gradient-to-r from-black via-black/90 dark:via-black/30 to-black/0 bBg-[#0C87A7ee] top-0 w-[calc(100%-120px)] sm:w-[400px] lg:w-[250px] h-full Xlg:h-[calc(100%-56px)] transform transition-all duration-500
         ${
           navbar
             ? " opacity-100 pointer-events-auto left-0"
