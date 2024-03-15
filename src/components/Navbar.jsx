@@ -62,7 +62,7 @@ const Navbar = () => {
               )}
             </div>
             <div
-              className="Xbg-red-300 text-2xl fam-logo p-1 mx-2 -tracking-[0.5em]"
+              className="Xbg-red-300 text-2xl fam-logo p-1 mx-3 -tracking-[0.4em]"
               style={{ fontFamily: "Orbitron" }}
             >
               CS

@@ -6,13 +6,13 @@ const Dashboard = () => {
   const { language, handleLanguage } = useAppContext();
 
   return (
-    <div className="Xbg-blue-300 lg:w-[285px] Xh-full">
-      <div className="h-[380px] flex flex-col justify-between text-gray-200 dark:text-gray-700">
-        <div>
+    <div className="Xbg-blue-300 lg:w-[300px] Xh-full">
+      <div className="h-[380px] lg:h-full flex flex-col justify-between lg:justify-normal text-gray-200 dark:text-gray-700">
+        <div className="lg:mb-5 lg:border-b lg:border-gray-500/30">
           <div className="hidden text-center text-2xl font-semibold Xpy-2 h-16 pt-4">
-            CS.
+            CRLS CODE.
           </div>
-          <div className="Xbg-blue-300 w-12 h-12 md:w-16 md:h-16 rotate-90 lg:rotate-0 flex items-center">
+          <div className="Xbg-blue-300 w-14 h-14 md:w-16 md:h-16 rotate-90 lg:rotate-0 flex items-center">
             <div className="flex flex-row h-full  text-sm md:text-base">
               <a
                 href="#sectionAbout"
@@ -49,6 +49,83 @@ const Dashboard = () => {
           </div>
         </div>
 
+        {/** SKILL EN DASHBOARD */}
+        <div className="hidden lg:block  lg:pl-5">
+          <h2
+            data-aos="zoom-in-left"
+            data-aos-duration="500"
+            className="relative text-lg text-white font-medium dark:text-gray-700 mb-5"
+          >
+            <span className="absolute rounded top-1 p-1 text-white bg-cyan-600">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"
+                />
+              </svg>
+            </span>
+            <span className="pl-9">Use a work</span>
+          </h2>
+          <div className="text-[15px] flex flex-wrap gap-x-2 gap-y-3 mb-10">
+            <h4 className="abSkill">JavaScript</h4>
+            <h4 className="abSkill">TypeScript</h4>
+            <h4 className="abSkill">Html</h4>
+            <h4 className="abSkill">Css</h4>
+            <h4 className="abSkill">React</h4>
+            <h4 className="abSkill">Vue</h4>
+            <h4 className="abSkill">Next.Js</h4>
+            <h4 className="abSkill">Bootstrap</h4>
+            <h4 className="abSkill">Tailwind</h4>
+            <h4 className="abSkill">Node.Js</h4>
+            <h4 className="abSkill">Express</h4>
+            <h4 className="abSkill">MongoDB</h4>
+            <h4 className="abSkill">MySQL</h4>
+            <h4 className="abSkill">Git</h4>
+            <h4 className="abSkill">GitHub</h4>
+          </div>
+
+          <h2
+            data-aos="zoom-in-left"
+            data-aos-duration="500"
+            className="relative text-lg text-white font-medium dark:text-gray-700 mb-5"
+          >
+            <span className="absolute rounded top-1 p-1 text-white bg-cyan-600">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z"
+                />
+              </svg>
+            </span>
+            <span className="pl-9">Use for fun</span>
+          </h2>
+          <div className="text-[15px] flex flex-wrap gap-x-2 gap-y-3">
+            <h4 className="abSkill">Figma</h4>
+            <h4 className="abSkill">Python</h4>
+            <h4 className="abSkill">Postgres</h4>
+            <h4 className="abSkill">AWS</h4>
+            <h4 className="abSkill">PhotoShop</h4>
+            <h4 className="abSkill">CorelDraw</h4>
+            <h4 className="abSkill">Responsive</h4>
+          </div>
+        </div>
+        {/** LANGUAGE */}
         <div className="Xbg-blue-300 relative flex flex-col items-center justify-center">
           <div>
             <svg

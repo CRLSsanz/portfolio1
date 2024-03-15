@@ -45,8 +45,9 @@ const Portfolio = () => {
           <div className="XXX-mt-14 h-16 w-full sticky z-50 top-0">
             <Navbar />
           </div>
+
           <svg
-            className="block md:hidden waves-color Xtext-red-400 -mt-[10px]"
+            className="block md:hidden waves-color Xtext-red-400 -mt-1"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1440 180"
           >
@@ -98,15 +99,15 @@ const Portfolio = () => {
               </div>
             </div>
 
-            <div className="lg:basis-4/12 flex justify-start bg-[#1E1F26] dark:bg-gray-200 -mt-10 md:mt-0">
-              <div className=" Xbg-[#151515] Xbg-red-400 Xh-full h-[calc(100vh-320px)] sticky top-16">
+            <div className="lg:basis-4/12 flex justify-start bg-[#1E1F26] dark:bg-gray-200 -mt-12 md:mt-0">
+              <div className=" Xbg-[#151515] Xbg-red-400 Xh-full h-[calc(100vh-250px)] sticky top-16">
                 <Dashboard />
               </div>
             </div>
           </div>
 
           <svg
-            className="block md:hidden text-[#1E1F26] dark:text-gray-200 -mb-1 -mt-2"
+            className="block md:hidden text-[#1E1F26] dark:text-gray-200 -mb-1 -mt-3"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1440 180"
           >
