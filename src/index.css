@@ -37,6 +37,7 @@ HTML  - Raleway (solo letras)
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
 
 * {
   @apply transition-colors duration-300;
@@ -65,8 +66,8 @@ p {
   font-size: 15px;
 }
 
-.fam-general {
-  font-family: "Inter", sans-serif;
+.fam-anta {
+  font-family: "Anta", sans-serif;
 }
 
 .fam-number {

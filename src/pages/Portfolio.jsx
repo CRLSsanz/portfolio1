@@ -14,7 +14,11 @@ const Portfolio = () => {
   const { darkMode } = useAppContext();
 
   return (
-    <div className={`${darkMode && "dark"} 2xl:pl-48 bg-cyan-500 `}>
+    <div
+      className={`${
+        darkMode && "dark"
+      } XX2xl:pl-48--NAVBAR ala izquieda--XXbg-cyan-500 `}
+    >
       <section
         id="sectionHome"
         className="min-h-[820px] 860 XXmd:min-h-screen md:min-h-[700px] Bbg-[#1A2035] bg-[#1E1F26] dark:bg-gray-300 flex"
@@ -36,20 +40,20 @@ const Portfolio = () => {
         }}
       >
         <div className="Xmx-auto w-full -mt-1">
-          <div className="bg-[#1E1F26] dark:bg-gray-300 h-20"> </div>
+          <div className="hidden bg-[#1E1F26] dark:bg-gray-300 h-16"> </div>
 
-          <div className=" -mt-16 h-16 w-full sticky z-50 top-0">
+          <div className="XXX-mt-14 h-16 w-full sticky z-50 top-0">
             <Navbar />
           </div>
           <svg
-            className="block md:hidden waves-color -mt-1"
+            className="block md:hidden waves-color Xtext-red-400 -mt-[10px]"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1440 180"
           >
             <path
               fill="currentColor"
               fillOpacity="1"
-              d="M0,15L1440,170L1440,0L0,0Z"
+              d="M0,170L1440,15L1440,0L0,0Z"
             ></path>
           </svg>
           <svg
@@ -66,7 +70,7 @@ const Portfolio = () => {
 
           <div className="flex flex-row">
             <div className="lg:basis-8/12 flex justify-end -mt-1">
-              <div className="py-10 xl:w-[800px] flex flex-col">
+              <div className="py-5 xl:w-[800px] flex flex-col">
                 <div className="">
                   <About />
                 </div>
@@ -94,15 +98,15 @@ const Portfolio = () => {
               </div>
             </div>
 
-            <div className="lg:basis-4/12 flex justify-start bg-[#1E1F26] -mt-12 md:ml-0">
-              <div className=" Xbg-[#151515] max-h-screen sticky top-16">
+            <div className="lg:basis-4/12 flex justify-start bg-[#1E1F26] dark:bg-gray-200 -mt-10 md:mt-0">
+              <div className=" Xbg-[#151515] Xbg-red-400 Xh-full h-[calc(100vh-320px)] sticky top-16">
                 <Dashboard />
               </div>
             </div>
           </div>
 
           <svg
-            className="block md:hidden text-[#18191E] dark:text-gray-200 -mb-1 -mt-2"
+            className="block md:hidden text-[#1E1F26] dark:text-gray-200 -mb-1 -mt-2"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1440 180"
           >
@@ -113,7 +117,18 @@ const Portfolio = () => {
             ></path>
           </svg>
           <svg
-            className="hidden md:block text-[#18191E] dark:text-gray-200 -mb-1"
+            className="hidden md:block text-[#1E1F26] dark:text-gray-200 -mb-1 -mt-5"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 70"
+          >
+            <path
+              fill="currentColor"
+              fillOpacity="1"
+              d="M0,60L1080,15L1440,15L1440,70L720,70L0,70Z"
+            ></path>
+          </svg>
+          <svg
+            className="hidden XXXmd:block text-[#18191E] dark:text-gray-200 -mb-1"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1440 70"
           >
@@ -148,7 +163,7 @@ const Portfolio = () => {
 
       <section
         id="sectionContact"
-        className="Hmin-h-[800px] bg-[#18191E] dark:bg-gray-200 Bbg-[#1A2035] flex"
+        className="Hmin-h-[800px] bg-[#1E1F26] dark:bg-gray-200 Bbg-[#1A2035] flex"
       >
         <div className="mx-auto Xw-full">
           <div className="xl:w-[1100px]">

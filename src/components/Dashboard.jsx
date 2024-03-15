@@ -6,18 +6,18 @@ const Dashboard = () => {
   const { language, handleLanguage } = useAppContext();
 
   return (
-    <div className="Xw-16 lg:w-[285px] h-full">
-      <div className="h-[350px] md:h-[400px] flex flex-col justify-between">
+    <div className="Xbg-blue-300 lg:w-[285px] Xh-full">
+      <div className="h-[380px] flex flex-col justify-between text-gray-200 dark:text-gray-700">
         <div>
           <div className="hidden text-center text-2xl font-semibold Xpy-2 h-16 pt-4">
             CS.
           </div>
           <div className="Xbg-blue-300 w-12 h-12 md:w-16 md:h-16 rotate-90 lg:rotate-0 flex items-center">
-            <div className="flex flex-row h-full text-gray-200 text-sm md:text-base">
+            <div className="flex flex-row h-full  text-sm md:text-base">
               <a
                 href="#sectionAbout"
                 onClick={() => setNavbar(!navbar)}
-                className="flex items-center px-4 md:px-6 hover:bg-gray-500/20 hover:border-b-2 hover:border-green-500 cursor-pointer"
+                className="flex items-center justify-center w-[80px] md:px-6 hover:bg-gray-500/20 hover:border-b-2 hover:border-green-500 cursor-pointer"
               >
                 About
               </a>
@@ -25,7 +25,7 @@ const Dashboard = () => {
               <a
                 href="#sectionSkills"
                 onClick={() => setNavbar(!navbar)}
-                className="flex items-center px-3 hover:bg-gray-500/20 hover:border-b-2 hover:border-green-500 cursor-pointer"
+                className="flex items-center justify-center w-[80px] hover:bg-gray-500/20 hover:border-b-2 hover:border-green-500 cursor-pointer"
               >
                 Skill
               </a>
@@ -33,7 +33,7 @@ const Dashboard = () => {
               <a
                 href="#sectionWork"
                 onClick={() => setNavbar(!navbar)}
-                className="flex items-center px-3 hover:bg-gray-500/20 hover:border-b-2 hover:border-green-500 cursor-pointer"
+                className="flex items-center justify-center w-[80px] hover:bg-gray-500/20 hover:border-b-2 hover:border-green-500 cursor-pointer"
               >
                 Proyect
               </a>
@@ -41,7 +41,7 @@ const Dashboard = () => {
               <a
                 href="#sectionContact"
                 onClick={() => setNavbar(!navbar)}
-                className="flex items-center px-3 hover:bg-gray-500/20 hover:border-b-2 hover:border-green-500 cursor-pointer"
+                className="flex items-center justify-center w-[80px] hover:bg-gray-500/20 hover:border-b-2 hover:border-green-500 cursor-pointer"
               >
                 Contact
               </a>

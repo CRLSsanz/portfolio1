@@ -10,9 +10,9 @@ const Navbar = () => {
 
   return (
     <section>
-      <div className="w-full  flex justify-center bg-black/0 backdrop-blur-2xl">
+      <div className="w-full flex justify-center bg-black/0 backdrop-blur-2xl">
         {/** NAVBAR */}
-        <div className="w-full  h-16 px-2 lg:px-5 flex justify-between items-center">
+        <div className="w-full lg:w-[1150px] h-16 px-2 lg:px-5 flex justify-between items-center">
           <div
             href="#section1"
             className="hidden shadow-lg shadow-transparent ml-4 text-transparent"
@@ -26,7 +26,7 @@ const Navbar = () => {
 
           <div className="text-gray-200 dark:text-gray-700 flex flex-row items-center">
             <div
-              className="p-2 -mr-1 active:bg-none active:bg-transparent active:animate-ping focus:outline-none cursor-pointer"
+              className="p-2 active:bg-none active:bg-transparent active:animate-ping focus:outline-none cursor-pointer"
               onClick={toggleDarkMode}
             >
               {darkMode ? (
@@ -61,7 +61,12 @@ const Navbar = () => {
                 </svg>
               )}
             </div>
-
+            <div
+              className="Xbg-red-300 text-2xl fam-logo p-1 mx-2 -tracking-[0.5em]"
+              style={{ fontFamily: "Orbitron" }}
+            >
+              CS
+            </div>
             <button
               onClick={() => setNavbar(!navbar)}
               className="2xl:-- hidden p-2 mr-1 active:bg-none active:bg-transparent active:animate-ping focus:outline-none"
@@ -107,7 +112,7 @@ const Navbar = () => {
         ${
           navbar
             ? " opacity-100 pointer-events-auto left-0"
-            : "opacity-0 pointer-events-none -left-80  2xl:opacity-100 2xl:pointer-events-auto 2xl:left-0"
+            : "opacity-0 pointer-events-none -left-80  X2xl:opacity-100 X2xl:pointer-events-auto X2xl:left-0"
         }`}
       >
         <div className="p-6 w-[200px] h-full flex flex-col justify-between bg-gradient-to-r from-cyan-600 to-cyan-600">
