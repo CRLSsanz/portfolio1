@@ -62,14 +62,14 @@ const Navbar = () => {
               )}
             </div>
             <div
-              className="hidden Xbg-red-300 text-2xl fam-logo p-1 mx-3 -tracking-[0.4em]"
+              className="Xbg-red-300 text-2xl fam-logo p-1 mx-3 -tracking-[0.4em]"
               style={{ fontFamily: "Orbitron" }}
             >
               CS
             </div>
             <button
               onClick={() => setNavbar(!navbar)}
-              className="2xl:hidden p-2 mr-1 active:bg-none active:bg-transparent active:animate-ping focus:outline-none"
+              className="2xl:-- hidden p-2 mr-1 active:bg-none active:bg-transparent active:animate-ping focus:outline-none"
             >
               {navbar ? (
                 <svg

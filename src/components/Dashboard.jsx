@@ -3,8 +3,7 @@ import { useAppContext } from "../context/AppProvider";
 
 const Dashboard = () => {
   const [navbar, setNavbar] = useState(false);
-  const { language, handleLanguage } = useAppContext();
-
+  const { texts, language, handleLanguage } = useAppContext();
   return (
     <div className="Xbg-blue-300 lg:w-[300px] Xh-full">
       <div className="h-[380px] lg:h-full flex flex-col justify-between lg:justify-normal text-gray-200 dark:text-gray-700">
@@ -19,7 +18,7 @@ const Dashboard = () => {
                 onClick={() => setNavbar(!navbar)}
                 className="flex items-center justify-center w-[80px] md:px-6 hover:bg-gray-500/20 hover:border-b-2 hover:border-green-500 cursor-pointer"
               >
-                About
+                {texts.navbarAbout}
               </a>
 
               <a
@@ -27,7 +26,7 @@ const Dashboard = () => {
                 onClick={() => setNavbar(!navbar)}
                 className="flex items-center justify-center w-[80px] hover:bg-gray-500/20 hover:border-b-2 hover:border-green-500 cursor-pointer"
               >
-                Skill
+                {texts.navbarSkills}
               </a>
 
               <a
@@ -35,7 +34,7 @@ const Dashboard = () => {
                 onClick={() => setNavbar(!navbar)}
                 className="flex items-center justify-center w-[80px] hover:bg-gray-500/20 hover:border-b-2 hover:border-green-500 cursor-pointer"
               >
-                Proyect
+                {texts.navbarWork}
               </a>
 
               <a
@@ -43,7 +42,7 @@ const Dashboard = () => {
                 onClick={() => setNavbar(!navbar)}
                 className="flex items-center justify-center w-[80px] hover:bg-gray-500/20 hover:border-b-2 hover:border-green-500 cursor-pointer"
               >
-                Contact
+                {texts.navbarContact}
               </a>
             </div>
           </div>

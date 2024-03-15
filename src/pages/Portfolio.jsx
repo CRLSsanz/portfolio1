@@ -40,14 +40,14 @@ const Portfolio = () => {
         }}
       >
         <div className="Xmx-auto w-full">
-          <div className="bg-[#1E1F26] dark:bg-gray-300 h-16"> </div>
+          <div className="Xhidden bg-[#1E1F26] dark:bg-gray-300 h-16"> </div>
 
-          <div className="-mt-20 h-16 w-full sticky z-50 top-0">
+          <div className="-mt-16 h-16 w-full sticky z-50 top-0">
             <Navbar />
           </div>
 
           <svg
-            className="block md:hidden text-[#1E1F26] dark:text-gray-300 Xtext-red-400 mt-10"
+            className="block md:hidden text-[#1E1F26] dark:text-gray-300 Xtext-red-400 mt-1"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1440 180"
           >
@@ -70,7 +70,7 @@ const Portfolio = () => {
           </svg>
 
           <div className="flex flex-row">
-            <div className="lg:basis-8/12 flex justify-end -mt-1">
+            <div className="lg:basis-8/12 flex justify-end">
               <div className="py-5 xl:w-[800px] flex flex-col">
                 <div className="">
                   <About />
@@ -99,7 +99,7 @@ const Portfolio = () => {
               </div>
             </div>
 
-            <div className="lg:basis-4/12 flex justify-start bg-[#1E1F26] dark:bg-gray-200 -mt-10 md:mt-0">
+            <div className="lg:basis-4/12 flex justify-start bg-[#1E1F26] dark:bg-gray-200 -mt-12 md:mt-0">
               <div className=" Xbg-[#151515] Xbg-red-400 Xh-full h-[calc(100vh-250px)] sticky top-16">
                 <Dashboard />
               </div>
