@@ -38,7 +38,7 @@ const Portfolio = () => {
         <div className="Xmx-auto w-full -mt-1">
           <div className="bg-[#1E1F26] dark:bg-gray-300 h-20"> </div>
 
-          <div className="hidden -mt-16 h-16 w-full sticky z-50 top-0">
+          <div className=" -mt-16 h-16 w-full sticky z-50 top-0">
             <Navbar />
           </div>
           <svg
@@ -71,7 +71,7 @@ const Portfolio = () => {
                   <About />
                 </div>
 
-                <div className="lg:hidden">
+                <div className="">
                   <h1 id="sectionSkills" className="h-16">
                     {" "}
                   </h1>

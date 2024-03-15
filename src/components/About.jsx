@@ -37,8 +37,8 @@ const About = () => {
   ];
 
   return (
-    <div className=" text-white dark:text-gray-800 px-5 md:px-10">
-      <div className="-mt-20 md:-mt-16 lg:-mt-20 mb-5">
+    <div className=" text-white dark:text-gray-800">
+      <div className="px-5 -mt-20 md:-mt-16 lg:-mt-20 mb-5">
         <img
           src={cargarImagen(`./foto3.jpg`)}
           alt="perfil"
@@ -46,19 +46,18 @@ const About = () => {
           className="w-32 h-32 border-4 border-white dark:border-gray-700 rounded-full shadow-md shadow-gray-950"
         />
       </div>
-      <div className="overflow-hidden lg:overflow-visible -m-1 p-1">
-        <div className="flex items-end mb-5">
-          <h1
-            data-aos="fade-left"
-            className="text-3xl whitespace-nowrap text-white dark:text-gray-700"
-          >
-            {texts.abTitle}
-          </h1>
-          <div className="w-full h-3 border-t border-gray-300 dark:border-gray-500 ml-3"></div>
-        </div>
-
-        <div className="Xlg:flex Xlg:flex-row">
-          <div className="lg:basis-2/3">
+      <div className="overflow-hidden lg:overflow-visible">
+        <div className="px-2 sm:px-5 ">
+          <div className="flex items-end mb-5">
+            <h1
+              data-aos="fade-left"
+              className="text-3xl whitespace-nowrap text-white dark:text-gray-700"
+            >
+              {texts.abTitle}
+            </h1>
+            <div className="w-full h-3 border-t border-gray-300 dark:border-gray-500 ml-3"></div>
+          </div>
+          <div className="">
             <p className="text-gray-300 dark:text-gray-500 lg:pr-12 mb-5">
               {texts.abTitleText}
             </p>
@@ -166,89 +165,92 @@ const About = () => {
                 <h1 key={index}>{item.name}</h1>
               ))}
             </div>
-            {/** 4 CARD */}
-            <div className="  md:grid md:grid-cols-3 md:gap-5 md:gap-y-10">
-              {card.map((item, index) => (
-                <div className="relative rounded-lg bg-[#2C303A] dark:bg-gray-50 dark:shadow text-gray-300 dark:text-gray-500 p-5 lg:pt-10 mb-8 md:mb-0">
-                  <div className="flex flex-row justify-between">
-                    <div className="-mt-9 lg:-mt-[70px] mb-5">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1"
-                        stroke="currentColor"
-                        class="w-16 h-16 p-0.5 rounded-lg bg-[#131417]/95 Xdark:bg-gray-100 dark:bg-gray-100"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d={item.svg}
-                        />
-                      </svg>
-                    </div>
-                    <h2
-                      data-aos="fade-right"
-                      data-aos-duration="3000"
-                      data-aos-offset="300"
-                      data-aos-easing="ease-in-sine"
-                      className="fam-number text-4xl mb-1 lg:-mt-2"
+          </div>
+        </div>
+
+        <div className="Xlg:flex Xlg:flex-row pr-2 -ml-2 sm:ml-0 sm:px-5">
+          {/** 4 CARD */}
+          <div className="  sm:grid sm:grid-cols-2 md:grid-cols-3 sm:gap-5 ">
+            {card.map((item, index) => (
+              <div className="relative rounded-lg bg-[#2C303A] dark:bg-gray-50 dark:shadow text-gray-300 dark:text-gray-500 p-5 lg:pt-10 mb-6 sm:mb-2">
+                <div className="flex flex-row justify-between">
+                  <div className="-mt-9 lg:-mt-[70px] mb-5">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1"
+                      stroke="currentColor"
+                      class="w-16 h-16 p-0.5 rounded-lg bg-[#131417]/95 Xdark:bg-gray-100 dark:bg-gray-100"
                     >
-                      {item.id}
-                    </h2>
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d={item.svg}
+                      />
+                    </svg>
                   </div>
                   <h2
-                    data-aos="fade-left"
-                    className="Xtracking-wide text-white dark:text-gray-700 text-2xl md:text-xl mb-5"
+                    data-aos="fade-right"
+                    data-aos-duration="3000"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                    className="fam-number text-4xl mb-1 lg:-mt-2"
                   >
-                    {item.title}
+                    {item.id}
                   </h2>
-                  <p className="pb-6">{item.text}</p>
-                  <span
-                    data-aos="fade-left"
-                    data-aos-duration="1000"
-                    className="absolute bottom-5 left-5 text-cyan-300 dark:text-cyan-500 text-sm cursor-pointer hover:border-b border-cyan-500/40"
-                  >
-                    {item.link}
-                  </span>
-                  <div className="xl:hidden absolute w-0.5 h-7 bottom-0 right-7 bg-gradient-to-b from-cyan-500 to-green-500">
-                    {" "}
-                  </div>
                 </div>
-              ))}
-
-              <div
-                data-aos="zoom-in-up"
-                data-aos-duration="2000"
-                data-du
-                className="hidden relative card-color p-5 lg:pt-10 mb-14 md:mb-0"
-              >
-                <div className="-mt-14 lg:-mt-[70px] mb-5 ml-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.0"
-                    stroke="currentColor"
-                    class="w-16 h-16 p-0.5 rounded-md bg-[#2F3437]/95 dark:bg-gray-100"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M2.25 7.125C2.25 6.504 2.754 6 3.375 6h6c.621 0 1.125.504 1.125 1.125v3.75c0 .621-.504 1.125-1.125 1.125h-6a1.125 1.125 0 0 1-1.125-1.125v-3.75ZM14.25 8.625c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v8.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-8.25ZM3.75 16.125c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-2.25Z"
-                    />
-                  </svg>
-                </div>
-                <h2 className="tracking-wider text-xl text-white dark:text-gray-700 mb-5">
-                  {texts.abDo3title}
+                <h2
+                  data-aos="fade-left"
+                  className="Xtracking-wide text-white dark:text-gray-700 text-2xl md:text-xl mb-5"
+                >
+                  {item.title}
                 </h2>
-                <p className="lg:text-start lg:mb-5">{texts.abDo3text}</p>
-                <div className="xl:hidden absolute w-0.5 h-7 bottom-0 right-7 bg-gradient-to-b from-cyan-400 to-purple-500"></div>
+                <p className="pb-6">{item.text}</p>
+                <span
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  className="absolute bottom-5 left-5 text-cyan-300 dark:text-cyan-500 text-sm cursor-pointer hover:border-b border-cyan-500/40"
+                >
+                  {item.link}
+                </span>
+                <div className="xl:hidden absolute w-0.5 h-7 bottom-0 right-7 bg-gradient-to-b from-cyan-500 to-green-500">
+                  {" "}
+                </div>
               </div>
+            ))}
+
+            <div
+              data-aos="zoom-in-up"
+              data-aos-duration="2000"
+              data-du
+              className="hidden relative card-color p-5 lg:pt-10 mb-14 md:mb-0"
+            >
+              <div className="-mt-14 lg:-mt-[70px] mb-5 ml-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.0"
+                  stroke="currentColor"
+                  class="w-16 h-16 p-0.5 rounded-md bg-[#2F3437]/95 dark:bg-gray-100"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 7.125C2.25 6.504 2.754 6 3.375 6h6c.621 0 1.125.504 1.125 1.125v3.75c0 .621-.504 1.125-1.125 1.125h-6a1.125 1.125 0 0 1-1.125-1.125v-3.75ZM14.25 8.625c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v8.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-8.25ZM3.75 16.125c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-2.25Z"
+                  />
+                </svg>
+              </div>
+              <h2 className="tracking-wider text-xl text-white dark:text-gray-700 mb-5">
+                {texts.abDo3title}
+              </h2>
+              <p className="lg:text-start lg:mb-5">{texts.abDo3text}</p>
+              <div className="xl:hidden absolute w-0.5 h-7 bottom-0 right-7 bg-gradient-to-b from-cyan-400 to-purple-500"></div>
             </div>
           </div>
           {/** SKILL EN ABOUT */}
-          <div className="Xhidden Xsticky Xtop-20 Xh-full lg:block lg:basis-1/3 ml-20">
+          <div className="hidden Xsticky Xtop-20 Xh-full lg:block lg:basis-1/3 ml-20">
             <h2
               data-aos="zoom-in-left"
               data-aos-duration="500"

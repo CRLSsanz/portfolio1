@@ -24,7 +24,7 @@ const skills = [
 const Skills = () => {
   const { texts } = useAppContext();
   return (
-    <div className="px-5 pb-1 md:px-10 lg:pt-1 overflow-hidden">
+    <div className="px-2 sm:px-5 lg:pt-1 overflow-hidden">
       <div className="flex items-end mb-5">
         <h1
           data-aos="fade-left"
@@ -38,7 +38,7 @@ const Skills = () => {
       </div>
       <p className="text-gray-300 dark:text-gray-500 mb-5">{texts.skillText}</p>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2 gap-3">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
         {skills.map((item, index) => (
           <div
             key={index}
@@ -46,7 +46,7 @@ const Skills = () => {
             data-aos-duration="1000"
             className="rounded border border-gray-800 dark:border-gray-300 flex flex-row items-center hover:bg-gray-500/10 hover:font-semibold hover:cursor-pointer active:bg-cyan-600"
           >
-            <div className="h-16 2xl:h-14 w-14 flex items-center justify-center lg:hidden 2xl:flex">
+            <div className="h-16 w-14 flex items-center justify-center ">
               <img
                 className=""
                 src={cargarImagen(`./${item.name}.png`)}
@@ -54,7 +54,7 @@ const Skills = () => {
                 alt={item.name}
               />
             </div>
-            <h2 className="capitalize text-white hover:text-[#76DAFF] dark:text-gray-600 lg:py-2 lg:px-5 2xl:p-0 ">
+            <h2 className="capitalize text-white hover:text-[#76DAFF] dark:text-gray-600 ">
               {item.name}
             </h2>
           </div>

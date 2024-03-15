@@ -44,8 +44,8 @@ const Work = () => {
   ];
 
   return (
-    <div className="px-5 md:px-10 overflow-hidden">
-      <div className="flex justify-center items-end mb-5">
+    <div className="overflow-hidden">
+      <div className="px-2 sm:px-5 flex justify-center items-end mb-5">
         <h1
           data-aos="fade-left"
           data-aos-duration="1000"
@@ -55,31 +55,33 @@ const Work = () => {
         </h1>
         <div className="w-full h-3 border-t border-gray-300 dark:border-gray-500 ml-3"></div>
       </div>
-      <p className=" text-gray-300 dark:text-gray-500 mb-5">{texts.workText}</p>
+      <p className="px-2 sm:px-5 flex text-gray-300 dark:text-gray-500 mb-5">
+        {texts.workText}
+      </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-5 lg:gap-8 sm:px-5">
         {/** CARD WORD */}
         {card.map((item, index) => (
-          <div key={index} className="Xbg-red-400">
-            <div className="pt-10 px-6 md:px-8 bg-gray-500/10 shadow-md shadow-black/30 rounded-lg overflow-hidden">
+          <div key={index} className="pr-2 sm:pr-0 Xbg-red-400">
+            <div className="pt-10 px-6 -ml-2 sm:ml-0 bg-gray-500/10 shadow-md shadow-black/30 rounded-lg overflow-hidden">
               <img
                 data-aos="zoom-in-up"
                 data-aos-offset="200"
                 data-aos-easing="ease-in-sine"
                 data-aos-duration="1000"
-                className="lg:hidden w-full md:h-40 lg:h-60 -mb-2 rounded "
+                className="lg:hidden w-full md:h-52 -mb-2 rounded "
                 src={cargarImagen(`./${item.image}`)}
                 //style={{ width: "200px" }}
                 alt={item.title}
               />
               <img
-                className="hidden lg:block w-full md:h-40 lg:h-60 -mb-2 hover:rotate-3 rounded hover:scale-105 transform transition-all duration-5000"
+                className="hidden lg:block w-full lg:h-40 xl:h-52 -mb-2 hover:rotate-3 rounded hover:scale-105 transform transition-all duration-5000"
                 src={cargarImagen(`./${item.image}`)}
                 //style={{ width: "200px" }}
                 alt={item.title}
               />
             </div>
-            <div className="relative mt-5 px-1 mb-5">
+            <div className="pl-2 sm:pl-0 relative mt-5 mb-5">
               <div className="flex justify-between items-end mb-2">
                 <h2 className="dark:text-gray-700 text-xl font-semibold whitespace-nowrap">
                   {item.title}
@@ -133,7 +135,7 @@ const Work = () => {
               <span
                 data-aos="fade-left"
                 data-aos-duration="3000"
-                className="absolute bottom-0 left-1 text-cyan-300 dark:text-cyan-500 text-sm cursor-pointer hover:border-b hover:border-cyan-500"
+                className="absolute bottom-0 left-2 text-cyan-300 dark:text-cyan-500 text-sm cursor-pointer hover:border-b hover:border-cyan-500"
               >
                 {item.link + " >"}
               </span>
