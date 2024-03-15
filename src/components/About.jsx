@@ -170,9 +170,9 @@ const About = () => {
 
         <div className="Xlg:flex Xlg:flex-row pr-2 -ml-2 sm:ml-0 sm:px-5">
           {/** 4 CARD */}
-          <div className="  sm:grid sm:grid-cols-2 md:grid-cols-3 sm:gap-5 ">
+          <div className="sm:grid sm:grid-cols-2 md:grid-cols-3 sm:gap-5 ">
             {card.map((item, index) => (
-              <div className="relative rounded-lg bg-[#2C303A] dark:bg-gray-50 dark:shadow text-gray-300 dark:text-gray-500 p-5 lg:pt-10 mb-6 sm:mb-2">
+              <div className="relative rounded-lg bg-[#2C303A] dark:bg-gray-50 dark:shadow text-gray-300 dark:text-gray-500 p-5 lg:pt-10 mb-10 sm:mb-5">
                 <div className="flex flex-row justify-between">
                   <div className="-mt-9 lg:-mt-[70px] mb-5">
                     <svg
@@ -206,7 +206,7 @@ const About = () => {
                 >
                   {item.title}
                 </h2>
-                <p className="pb-6">{item.text}</p>
+                <p className="pb-5">{item.text}</p>
                 <span
                   data-aos="fade-left"
                   data-aos-duration="1000"

@@ -81,7 +81,7 @@ const Work = () => {
                 alt={item.title}
               />
             </div>
-            <div className="pl-2 sm:pl-0 relative mt-5 mb-5">
+            <div className="pl-2 sm:pl-0 relative mt-5 mb-10 md:mb-5">
               <div className="flex justify-between items-end mb-2">
                 <h2 className="dark:text-gray-700 text-xl font-semibold whitespace-nowrap">
                   {item.title}
@@ -135,7 +135,7 @@ const Work = () => {
               <span
                 data-aos="fade-left"
                 data-aos-duration="3000"
-                className="absolute bottom-0 left-2 text-cyan-300 dark:text-cyan-500 text-sm cursor-pointer hover:border-b hover:border-cyan-500"
+                className="absolute bottom-0 left-2 sm:left-0 text-cyan-300 dark:text-cyan-500 text-sm cursor-pointer hover:border-b hover:border-cyan-500"
               >
                 {item.link + " >"}
               </span>

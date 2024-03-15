@@ -94,15 +94,15 @@ const Portfolio = () => {
               </div>
             </div>
 
-            <div className="lg:basis-4/12 flex justify-start bg-[#1E1F26]">
-              <div className=" Xbg-[#151515] max-h-screen sticky top-0">
+            <div className="lg:basis-4/12 flex justify-start bg-[#1E1F26] -mt-12 md:ml-0">
+              <div className=" Xbg-[#151515] max-h-screen sticky top-16">
                 <Dashboard />
               </div>
             </div>
           </div>
 
           <svg
-            className="block md:hidden text-[#18191E] dark:text-gray-200 -mb-1"
+            className="block md:hidden text-[#18191E] dark:text-gray-200 -mb-1 -mt-2"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1440 180"
           >

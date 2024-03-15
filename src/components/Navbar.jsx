@@ -26,7 +26,7 @@ const Navbar = () => {
 
           <div className="text-gray-200 dark:text-gray-700 flex flex-row items-center">
             <div
-              className="p-2 active:bg-none active:bg-transparent active:animate-ping focus:outline-none cursor-pointer"
+              className="p-2 -mr-1 active:bg-none active:bg-transparent active:animate-ping focus:outline-none cursor-pointer"
               onClick={toggleDarkMode}
             >
               {darkMode ? (
@@ -64,7 +64,7 @@ const Navbar = () => {
 
             <button
               onClick={() => setNavbar(!navbar)}
-              className="2xl:hidden p-2 mr-1 active:bg-none active:bg-transparent active:animate-ping focus:outline-none"
+              className="2xl:-- hidden p-2 mr-1 active:bg-none active:bg-transparent active:animate-ping focus:outline-none"
             >
               {navbar ? (
                 <svg
