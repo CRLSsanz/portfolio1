@@ -17,7 +17,7 @@ const Dashboard = () => {
               <a
                 href="#sectionAbout"
                 onClick={() => setNavbar(!navbar)}
-                className="flex items-center justify-center lg:justify-start lg:pl-5 w-[90px] lg:w-[300px] lg:py-3 hover:bg-gray-400/20 hover:border-b-2 dark:hover:border-cyan-500 cursor-pointer"
+                className="flex items-center justify-center lg:justify-start lg:pl-5 w-[90px] lg:w-[300px] lg:py-3 hover:bg-gray-400/20 hover:border-b-2 border-cyan-500 cursor-pointerr"
               >
                 {texts.navbarAbout}
               </a>
@@ -25,7 +25,7 @@ const Dashboard = () => {
               <a
                 href="#sectionSkills"
                 onClick={() => setNavbar(!navbar)}
-                className="flex items-center justify-center lg:justify-start lg:pl-5 w-[90px] lg:w-[300px] lg:py-3 hover:bg-gray-500/20 hover:border-b-2 hover:border-green-500 cursor-pointer"
+                className="flex items-center justify-center lg:justify-start lg:pl-5 w-[90px] lg:w-[300px] lg:py-3 hover:bg-gray-400/20 hover:border-b-2 border-cyan-500 cursor-pointer"
               >
                 {texts.navbarSkills}
               </a>
@@ -33,7 +33,7 @@ const Dashboard = () => {
               <a
                 href="#sectionWork"
                 onClick={() => setNavbar(!navbar)}
-                className="flex items-center justify-center lg:justify-start lg:pl-5 w-[90px] lg:w-[300px] lg:py-3 hover:bg-gray-500/20 hover:border-b-2 hover:border-green-500 cursor-pointer"
+                className="flex items-center justify-center lg:justify-start lg:pl-5 w-[90px] lg:w-[300px] lg:py-3 hover:bg-gray-400/20 hover:border-b-2 border-cyan-500 cursor-pointer"
               >
                 {texts.navbarWork}
               </a>
@@ -41,7 +41,7 @@ const Dashboard = () => {
               <a
                 href="#sectionContact"
                 onClick={() => setNavbar(!navbar)}
-                className="flex items-center justify-center lg:justify-start lg:pl-5 w-[90px] lg:w-[300px] lg:py-3 hover:bg-gray-500/20 hover:border-b-2 hover:border-green-500 cursor-pointer"
+                className="flex items-center justify-center lg:justify-start lg:pl-5 w-[90px] lg:w-[300px] lg:py-3 hover:bg-gray-400/20 hover:border-b-2 border-cyan-500 cursor-pointer"
               >
                 {texts.navbarContact}
               </a>
