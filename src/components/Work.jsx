@@ -63,7 +63,7 @@ const Work = () => {
         {/** CARD WORD */}
         {card.map((item, index) => (
           <div key={index} className="pr-2 sm:pr-0 Xbg-red-400">
-            <div className="pt-10 px-6 -ml-2 sm:ml-0 bg-gray-500/10 shadow-md shadow-black/30 rounded-lg overflow-hidden">
+            <div className="pt-10 px-6 -ml-4 sm:ml-0 bg-gray-500/10 shadow-md shadow-black/30 rounded-lg overflow-hidden">
               <img
                 data-aos="zoom-in-up"
                 data-aos-offset="200"
@@ -81,7 +81,7 @@ const Work = () => {
                 alt={item.title}
               />
             </div>
-            <div className="pl-2 sm:pl-0 relative mt-5 mb-10 md:mb-5">
+            <div className="pl-2 sm:pl-0 relative mt-5 mb-14 md:mb-5">
               <div className="flex justify-between items-end mb-2">
                 <h2 className="dark:text-gray-700 text-xl font-semibold whitespace-nowrap">
                   {item.title}

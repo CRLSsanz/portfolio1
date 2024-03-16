@@ -38,7 +38,7 @@ const About = () => {
 
   return (
     <div className=" text-white dark:text-gray-800">
-      <div className="px-5 -mt-12 flex justify-end md:justify-start md:mt-0 mb-5">
+      <div className="px-5 -mt-14 flex justify-start md:mt-0 mb-5">
         <img
           src={cargarImagen(`./foto3.jpg`)}
           alt="perfil"
@@ -195,7 +195,7 @@ const About = () => {
                   <h2
                     data-aos="fade-right"
                     data-aos-duration="3000"
-                    data-aos-offset="300"
+                    data-aos-offset="200"
                     data-aos-easing="ease-in-sine"
                     className="fam-number text-4xl mb-1 lg:-mt-2"
                   >
