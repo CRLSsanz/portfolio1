@@ -21,7 +21,7 @@ const Portfolio = () => {
     >
       <section
         id="sectionHome"
-        className="min-h-[920px] 820 XXmd:min-h-screen md:min-h-[700px] Bbg-[#1A2035] bg-[#1E1F26] dark:bg-gray-200 lg:dark:bg-gray-300 flex"
+        className="min-h-[820px] XXmd:min-h-screen md:min-h-[700px] Bbg-[#1A2035] bg-[#1E1F26] dark:bg-gray-200 lg:dark:bg-gray-300 flex"
       >
         <div className="mx-auto w-full">
           <h1 className="Hh-16"> </h1>
@@ -99,8 +99,8 @@ const Portfolio = () => {
               </div>
             </div>
 
-            <div className="lg:basis-4/12 flex justify-start bg-[#1E1F26] dark:bg-gray-200 -mt-12 md:mt-0">
-              <div className=" Xbg-[#151515] Xbg-red-400 Xh-full h-[calc(100vh-250px)] sticky top-16">
+            <div className="lg:basis-4/12 flex justify-start bg-[#1E1F26] lg:bg-[#1E1F26]/80 dark:bg-gray-200 -mt-12 md:mt-0">
+              <div className=" Xbg-[#151515] Xbg-red-400 Xh-full h-[550px] lg:h-[650px] sticky top-16">
                 <Dashboard />
               </div>
             </div>
@@ -118,7 +118,7 @@ const Portfolio = () => {
             ></path>
           </svg>
           <svg
-            className="hidden md:block text-[#1E1F26] dark:text-gray-200 -mb-1 -mt-5"
+            className="hidden md:block text-[#1E1F26] dark:text-gray-200 -mb-1 -mt-5 xl:-mt-8"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1440 70"
           >

@@ -26,7 +26,7 @@ const Navbar = () => {
 
           <div className="text-gray-200 dark:text-gray-700 flex flex-row items-center">
             <div
-              className="p-2 active:bg-none active:bg-transparent active:animate-ping focus:outline-none cursor-pointer"
+              className="hidden p-2 active:bg-none active:bg-transparent active:animate-ping focus:outline-none cursor-pointer"
               onClick={toggleDarkMode}
             >
               {darkMode ? (

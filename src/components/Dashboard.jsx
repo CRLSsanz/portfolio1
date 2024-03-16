@@ -3,10 +3,11 @@ import { useAppContext } from "../context/AppProvider";
 
 const Dashboard = () => {
   const [navbar, setNavbar] = useState(false);
-  const { texts, language, handleLanguage } = useAppContext();
+  const { texts, language, handleLanguage, darkMode, toggleDarkMode } =
+    useAppContext();
   return (
     <div className="Xbg-blue-300 lg:w-[300px] Xh-full">
-      <div className="h-[450px] lg:h-full flex flex-col justify-between lg:justify-normal text-gray-200 dark:text-gray-700">
+      <div className="h-[500px] lg:h-full flex flex-col justify-between lg:justify-normal text-gray-200 dark:text-gray-700">
         <div className="lg:mb-5 lg:border-b lg:border-gray-500/30">
           <div className="hidden text-center text-2xl font-semibold Xpy-2 h-16 pt-4">
             CRLS CODE.
@@ -16,7 +17,7 @@ const Dashboard = () => {
               <a
                 href="#sectionAbout"
                 onClick={() => setNavbar(!navbar)}
-                className="flex items-center justify-center lg:justify-start lg:pl-5 w-[90px] lg:w-[300px] lg:py-2 hover:bg-gray-500/20 hover:border-b-2 hover:border-green-500 cursor-pointer"
+                className="flex items-center justify-center lg:justify-start lg:pl-5 w-[90px] lg:w-[300px] lg:py-3 hover:bg-gray-400/20 hover:border-b-2 dark:hover:border-cyan-500 cursor-pointer"
               >
                 {texts.navbarAbout}
               </a>
@@ -24,7 +25,7 @@ const Dashboard = () => {
               <a
                 href="#sectionSkills"
                 onClick={() => setNavbar(!navbar)}
-                className="flex items-center justify-center lg:justify-start lg:pl-5 w-[90px] lg:w-[300px] lg:py-2 hover:bg-gray-500/20 hover:border-b-2 hover:border-green-500 cursor-pointer"
+                className="flex items-center justify-center lg:justify-start lg:pl-5 w-[90px] lg:w-[300px] lg:py-3 hover:bg-gray-500/20 hover:border-b-2 hover:border-green-500 cursor-pointer"
               >
                 {texts.navbarSkills}
               </a>
@@ -32,7 +33,7 @@ const Dashboard = () => {
               <a
                 href="#sectionWork"
                 onClick={() => setNavbar(!navbar)}
-                className="flex items-center justify-center lg:justify-start lg:pl-5 w-[90px] lg:w-[300px] lg:py-2 hover:bg-gray-500/20 hover:border-b-2 hover:border-green-500 cursor-pointer"
+                className="flex items-center justify-center lg:justify-start lg:pl-5 w-[90px] lg:w-[300px] lg:py-3 hover:bg-gray-500/20 hover:border-b-2 hover:border-green-500 cursor-pointer"
               >
                 {texts.navbarWork}
               </a>
@@ -40,7 +41,7 @@ const Dashboard = () => {
               <a
                 href="#sectionContact"
                 onClick={() => setNavbar(!navbar)}
-                className="flex items-center justify-center lg:justify-start lg:pl-5 w-[90px] lg:w-[300px] lg:py-2 hover:bg-gray-500/20 hover:border-b-2 hover:border-green-500 cursor-pointer"
+                className="flex items-center justify-center lg:justify-start lg:pl-5 w-[90px] lg:w-[300px] lg:py-3 hover:bg-gray-500/20 hover:border-b-2 hover:border-green-500 cursor-pointer"
               >
                 {texts.navbarContact}
               </a>
@@ -48,21 +49,96 @@ const Dashboard = () => {
           </div>
         </div>
 
-        {/** SKILL EN DASHBOARD */}
-        <div className="hidden lg:block  lg:pl-5">
-          <h2
-            data-aos="zoom-in-left"
-            data-aos-duration="500"
-            className="relative text-lg text-white font-medium dark:text-gray-700 mb-5"
-          >
-            <span className="absolute rounded top-1 p-1 text-white bg-cyan-600">
+        {/** MODO DARK y LANGUAGE  */}
+        <div className="lg:flex lg:flex-row lg:justify-between lg:border-b lg:border-gray-500/30 lg:px-5 lg:pb-5 lg:mb-5">
+          <div className="Xbg-blue-300 relative flex flex-col lg:flex-row-reverse items-center justify-center mb-6 lg:mb-0">
+            <span className="lg:hidden uppercase text-sm">MD</span>
+            <span className="hidden lg:block uppercase text-sm lg:ml-2">
+              MODE
+            </span>
+            <div
+              className="p-2 lg:p-0 pb-5 lg:pb-0 active:bg-none active:bg-transparent active:animate-ping focus:outline-none cursor-pointer -mt-[52px] lg:-mt-0"
+              onClick={toggleDarkMode}
+            >
+              {darkMode ? (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6 text-gray-700"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+                  />
+                </svg>
+              ) : (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6 text-gray-200"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+                  />
+                </svg>
+              )}
+            </div>
+          </div>
+
+          <div className="Xbg-blue-300 relative flex flex-col lg:flex-row-reverse items-center justify-center">
+            <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="w-5 h-5"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"
+                />
+              </svg>
+            </div>
+            <span className="uppercase text-sm lg:mr-2">{language}</span>
+            <select
+              className="Bbg-red-300 absolute top-0 w-14 py-2 right-1 appearance-none bg-transparent text-transparent focus:text-transparent focus:outline-none hover:cursor-pointer"
+              onChange={handleLanguage}
+            >
+              <option value="en">English</option>
+              <option value="fr">Frances</option>
+              <option value="it">Italiano</option>
+              <option value="es">Spanish</option>
+            </select>
+          </div>
+        </div>
+
+        {/** SKILL EN DASHBOARD */}
+        <div className="hidden lg:block lg:pl-5">
+          <h2
+            data-aos="zoom-in-left"
+            data-aos-duration="500"
+            className="relative text-lg text-white font-medium dark:text-gray-700 mb-3"
+          >
+            <span className="absolute rounded p-1 text-white bg-cyan-600">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
               >
                 <path
                   stroke-linecap="round"
@@ -73,7 +149,7 @@ const Dashboard = () => {
             </span>
             <span className="pl-9">Use a work</span>
           </h2>
-          <div className="text-[15px] flex flex-wrap gap-x-2 gap-y-3 mb-10">
+          <div className="text-sm flex flex-wrap gap-2 mb-5">
             <h4 className="abSkill">JavaScript</h4>
             <h4 className="abSkill">TypeScript</h4>
             <h4 className="abSkill">Html</h4>
@@ -94,16 +170,16 @@ const Dashboard = () => {
           <h2
             data-aos="zoom-in-left"
             data-aos-duration="500"
-            className="relative text-lg text-white font-medium dark:text-gray-700 mb-5"
+            className="relative text-lg text-white font-medium dark:text-gray-700 mb-3"
           >
-            <span className="absolute rounded top-1 p-1 text-white bg-cyan-600">
+            <span className="absolute rounded p-1 text-white bg-cyan-600">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="w-5 h-5"
+                class="w-4 h-4"
               >
                 <path
                   stroke-linecap="round"
@@ -114,7 +190,7 @@ const Dashboard = () => {
             </span>
             <span className="pl-9">Use for fun</span>
           </h2>
-          <div className="text-[15px] flex flex-wrap gap-x-2 gap-y-3">
+          <div className="text-sm flex flex-wrap gap-2">
             <h4 className="abSkill">Figma</h4>
             <h4 className="abSkill">Python</h4>
             <h4 className="abSkill">Postgres</h4>
@@ -123,35 +199,6 @@ const Dashboard = () => {
             <h4 className="abSkill">CorelDraw</h4>
             <h4 className="abSkill">Responsive</h4>
           </div>
-        </div>
-        {/** LANGUAGE */}
-        <div className="Xbg-blue-300 relative flex flex-col items-center justify-center">
-          <div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-6 h-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"
-              />
-            </svg>
-          </div>
-          <span className="uppercase text-sm">{language}</span>
-          <select
-            className="Bbg-red-300 absolute top-0 w-14 py-2 right-1 appearance-none bg-transparent text-transparent focus:text-transparent focus:outline-none hover:cursor-pointer"
-            onChange={handleLanguage}
-          >
-            <option value="en">English</option>
-            <option value="fr">Frances</option>
-            <option value="it">Italiano</option>
-            <option value="es">Spanish</option>
-          </select>
         </div>
       </div>
     </div>
