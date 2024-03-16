@@ -53,7 +53,7 @@ const Work = () => {
         >
           {texts.workTitle}
         </h1>
-        <div className="w-full h-3 border-t border-gray-300 dark:border-gray-500 ml-3"></div>
+        <div className="w-full h-3 border-t border-gray-500/80 ml-3"></div>
       </div>
       <p className="px-2 sm:px-5 flex text-gray-300 dark:text-gray-500 mb-5">
         {texts.workText}
@@ -86,7 +86,7 @@ const Work = () => {
                 <h2 className="dark:text-gray-700 text-xl font-semibold whitespace-nowrap">
                   {item.title}
                 </h2>
-                <div className="w-full h-3 border-t border-gray-500/80 mx-3">
+                <div className="w-full h-3 border-t border-gray-500/80 mx-2">
                   {" "}
                 </div>
                 <div className="flex flex-row gap-2 text-gray-400 dark:text-gray-500">

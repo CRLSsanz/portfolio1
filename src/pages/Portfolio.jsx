@@ -21,7 +21,7 @@ const Portfolio = () => {
     >
       <section
         id="sectionHome"
-        className="min-h-[920px] 820 XXmd:min-h-screen md:min-h-[700px] Bbg-[#1A2035] bg-[#1E1F26] dark:bg-gray-300 flex"
+        className="min-h-[920px] 820 XXmd:min-h-screen md:min-h-[700px] Bbg-[#1A2035] bg-[#1E1F26] dark:bg-gray-200 lg:dark:bg-gray-300 flex"
       >
         <div className="mx-auto w-full">
           <h1 className="Hh-16"> </h1>
@@ -40,21 +40,21 @@ const Portfolio = () => {
         }}
       >
         <div className="Xmx-auto w-full">
-          <div className="Xhidden bg-[#1E1F26] dark:bg-gray-300 h-16"> </div>
+          <div className="Xhidden bg-[#1E1F26] dark:bg-gray-200 h-16"> </div>
 
           <div className="-mt-16 h-16 w-full sticky z-50 top-0">
             <Navbar />
           </div>
 
           <svg
-            className="block md:hidden text-[#1E1F26] dark:text-gray-300 Xtext-red-400 mt-1"
+            className="block md:hidden text-[#1E1F26] dark:text-gray-200 Xtext-red-400 -mt-0"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1440 180"
           >
             <path
               fill="currentColor"
               fillOpacity="1"
-              d="M0,170L1440,15L1440,0L0,0Z"
+              d="M0,15L1440,170L1440,0L0,0Z"
             ></path>
           </svg>
           <svg

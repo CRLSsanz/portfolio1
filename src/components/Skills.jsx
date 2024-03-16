@@ -32,9 +32,7 @@ const Skills = () => {
         >
           {texts.skillTitle}
         </h1>
-        <div className="w-full h-3 border-t border-gray-300 dark:border-gray-500 ml-3">
-          {" "}
-        </div>
+        <div className="w-full h-3 border-t border-gray-500/80 ml-3"> </div>
       </div>
       <p className="text-gray-300 dark:text-gray-500 mb-5">{texts.skillText}</p>
 

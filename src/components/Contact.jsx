@@ -22,7 +22,7 @@ const Contact = () => {
         >
           {texts.contactTitle}
         </h1>
-        <div className="w-full h-3 border-t border-gray-300 dark:border-gray-500 ml-3"></div>
+        <div className="w-full h-3 border-t border-gray-500/80 ml-3"></div>
       </div>
 
       <div className="flex flex-col md:flex-row">

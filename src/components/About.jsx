@@ -38,7 +38,7 @@ const About = () => {
 
   return (
     <div className=" text-white dark:text-gray-800">
-      <div className="px-5 -mt-12 md:mt-0 mb-5">
+      <div className="px-5 -mt-12 flex justify-end md:justify-start md:mt-0 mb-5">
         <img
           src={cargarImagen(`./foto3.jpg`)}
           alt="perfil"
@@ -55,7 +55,7 @@ const About = () => {
             >
               {texts.abTitle}
             </h1>
-            <div className="w-full h-3 border-t border-gray-300 dark:border-gray-500 ml-3"></div>
+            <div className="w-full h-3 border-t border-gray-500/80 ml-3"></div>
           </div>
           <div className="">
             <p className="text-gray-300 dark:text-gray-500 lg:pr-12 mb-5">

@@ -6,17 +6,17 @@ const Dashboard = () => {
   const { texts, language, handleLanguage } = useAppContext();
   return (
     <div className="Xbg-blue-300 lg:w-[300px] Xh-full">
-      <div className="h-[380px] lg:h-full flex flex-col justify-between lg:justify-normal text-gray-200 dark:text-gray-700">
+      <div className="h-[450px] lg:h-full flex flex-col justify-between lg:justify-normal text-gray-200 dark:text-gray-700">
         <div className="lg:mb-5 lg:border-b lg:border-gray-500/30">
           <div className="hidden text-center text-2xl font-semibold Xpy-2 h-16 pt-4">
             CRLS CODE.
           </div>
-          <div className="Xbg-blue-300 w-14 h-14 md:w-16 md:h-16 rotate-90 lg:rotate-0 flex items-center">
-            <div className="flex flex-row h-full  text-sm md:text-base">
+          <div className="Xbg-blue-300 w-14 h-14 md:w-16 md:h-16 lg:h-full rotate-90 lg:rotate-0 flex items-center">
+            <div className="flex flex-row lg:flex-col h-full text-sm md:text-base">
               <a
                 href="#sectionAbout"
                 onClick={() => setNavbar(!navbar)}
-                className="flex items-center justify-center w-[80px] md:px-6 hover:bg-gray-500/20 hover:border-b-2 hover:border-green-500 cursor-pointer"
+                className="flex items-center justify-center lg:justify-start lg:pl-5 w-[90px] lg:w-[300px] lg:py-2 hover:bg-gray-500/20 hover:border-b-2 hover:border-green-500 cursor-pointer"
               >
                 {texts.navbarAbout}
               </a>
@@ -24,7 +24,7 @@ const Dashboard = () => {
               <a
                 href="#sectionSkills"
                 onClick={() => setNavbar(!navbar)}
-                className="flex items-center justify-center w-[80px] hover:bg-gray-500/20 hover:border-b-2 hover:border-green-500 cursor-pointer"
+                className="flex items-center justify-center lg:justify-start lg:pl-5 w-[90px] lg:w-[300px] lg:py-2 hover:bg-gray-500/20 hover:border-b-2 hover:border-green-500 cursor-pointer"
               >
                 {texts.navbarSkills}
               </a>
@@ -32,7 +32,7 @@ const Dashboard = () => {
               <a
                 href="#sectionWork"
                 onClick={() => setNavbar(!navbar)}
-                className="flex items-center justify-center w-[80px] hover:bg-gray-500/20 hover:border-b-2 hover:border-green-500 cursor-pointer"
+                className="flex items-center justify-center lg:justify-start lg:pl-5 w-[90px] lg:w-[300px] lg:py-2 hover:bg-gray-500/20 hover:border-b-2 hover:border-green-500 cursor-pointer"
               >
                 {texts.navbarWork}
               </a>
@@ -40,7 +40,7 @@ const Dashboard = () => {
               <a
                 href="#sectionContact"
                 onClick={() => setNavbar(!navbar)}
-                className="flex items-center justify-center w-[80px] hover:bg-gray-500/20 hover:border-b-2 hover:border-green-500 cursor-pointer"
+                className="flex items-center justify-center lg:justify-start lg:pl-5 w-[90px] lg:w-[300px] lg:py-2 hover:bg-gray-500/20 hover:border-b-2 hover:border-green-500 cursor-pointer"
               >
                 {texts.navbarContact}
               </a>
