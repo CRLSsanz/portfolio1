@@ -51,7 +51,7 @@ const About = () => {
           <div className="flex items-end mb-5">
             <h1
               data-aos="fade-left"
-              className="text-3xl whitespace-nowrap text-white dark:text-gray-700"
+              className="text-4xl whitespace-nowrap text-white dark:text-gray-700"
             >
               {texts.abTitle}
             </h1>
@@ -211,19 +211,19 @@ const About = () => {
                 </div>
                 <h2
                   data-aos="fade-left"
-                  className="Xtracking-wide text-white dark:text-gray-700 text-2xl md:text-xl mb-5"
+                  className="Xtracking-wide text-white dark:text-gray-700 text-xl font-semibold md:text-xl mb-2"
                 >
                   {item.title}
                 </h2>
-                <p className="pb-5">{item.text}</p>
+                <p className="pb-8">{item.text}</p>
                 <span
                   data-aos="fade-left"
                   data-aos-duration="1000"
-                  className="absolute bottom-5 left-5 text-cyan-300 dark:text-cyan-500 text-sm cursor-pointer hover:border-b border-cyan-500/40"
+                  className="absolute bottom-7 left-5 text-cyan-300 dark:text-cyan-500 text-sm cursor-pointer hover:border-b border-cyan-500"
                 >
                   {item.link}
                 </span>
-                <div className="xl:hidden absolute w-0.5 h-7 bottom-0 right-7 bg-gradient-to-b from-cyan-500 to-green-500">
+                <div className="X2xl:hidden absolute w-0.5 h-7 bottom-0 right-7 bg-gradient-to-b from-cyan-500 to-green-500">
                   {" "}
                 </div>
               </div>

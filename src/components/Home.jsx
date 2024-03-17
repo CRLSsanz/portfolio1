@@ -152,7 +152,7 @@ const Home = () => {
                 </span>
 
                 <span className="text-gray-400 dark:text-gray-500 tracking-normal whitespace-normal Xbg-yellow-200 text-lg fam-raleway">
-                  <p className="text-justify pl-10 pt-10 text-sm mb-2">
+                  <p className="text-justify pl-10 pt-10 text-sm mb-5">
                     <h2 className="text-base inline-block">about</h2> - I
                     believe web design can be more diverse and inspiring. With a
                     mission to present the possibilities of web design, I am
@@ -165,7 +165,7 @@ const Home = () => {
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
                       stroke="currentColor"
-                      class="w-6 h-6 -mr-3 animate-bounce"
+                      class="w-6 h-6 animate-bounce"
                     >
                       <path
                         stroke-linecap="round"

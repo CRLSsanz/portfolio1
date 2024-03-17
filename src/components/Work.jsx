@@ -7,39 +7,52 @@ const Work = () => {
   const card = [
     {
       id: "01",
-      image: "work1.jpg",
-      title: texts.workItem1,
-      skills: "Javascript - jQuery - Bootstrap - Php - mySql",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quas quod exercitationem, consequatur totam labore distinctio hic vel fugiat id!",
+      image: "w-estructuras.jpg",
+      title: "Estructuras MCH",
+      skills: "Html - Css - Theme - jQuery - Bootstrap",
+      text: texts.workStructureMCH,
       link: "Leer màs",
       view: texts.workView,
     },
     {
       id: "02",
-      image: "work2.jpg",
-      title: texts.workItem2,
-      skills: "Html - Css - Theme",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quas quod exercitationem, consequatur totam labore distinctio hic vel fugiat id!",
-      link: "Leer màs",
-      view: texts.workView,
+      image: "w-marketing.jpg",
+      title: "Marketing Online",
+      skills: "Html - Css - Bootstrap",
+      text: texts.workMarketingOnline,
+      web: "https://www.google.com.",
     },
     {
       id: "03",
-      image: "work4.jpg",
-      title: texts.workItem3,
-      skills: "Html - Bootstrap",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quas quod exercitationem, consequatur totam labore distinctio hic vel fugiat id!",
-      link: "Leer màs",
-      view: texts.workView,
+      image: "w-fastfood.jpg",
+      title: "Fast Food J&M",
+      skills: "React - Tailwind - Chart js - Fetch - mySql",
+      text: texts.workFastFood,
+      web: "https://www.google.com.",
     },
     {
       id: "04",
-      image: "work6.jpg",
-      title: texts.workItem4,
-      skills: "React - Tailwind - Chart Js - Fetch - Axios - Node.js",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quas quod exercitationem, consequatur totam labore distinctio hic vel fugiat id!",
-      link: "Leer màs",
-      view: texts.workView,
+      image: "w-crypto.jpg",
+      title: "Crypto Currency",
+      skills: "React - Bootstrap - Json - Axios - ApiRest",
+      text: texts.workCrypto,
+      web: "https://www.google.com.",
+    },
+    {
+      id: "05",
+      image: "w-corsi.jpg",
+      title: "Corsi al Minuto",
+      skills: "React - Nextjs - Tailwind",
+      text: texts.workCorsi,
+      web: "https://corsialminuto.it/fullstack-web-developer",
+    },
+    {
+      id: "06",
+      image: "w-apeteat.jpg",
+      title: "Apeteat",
+      skills: "React - Nextjs - Tailwind",
+      text: texts.workApeteat,
+      web: "https://www.apeteat.com/",
     },
   ];
 
@@ -60,7 +73,7 @@ const Work = () => {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-5 lg:gap-8 sm:px-5">
-        {/** CARD WORD */}
+        {/** CARD WORK */}
         {card.map((item, index) => (
           <div key={index} className="pr-2 sm:pr-0 Xbg-red-400">
             <div className="pt-10 px-6 -ml-4 sm:ml-0 bg-gray-500/10 shadow-md shadow-black/30 rounded-lg overflow-hidden">
@@ -137,61 +150,11 @@ const Work = () => {
                 data-aos-duration="3000"
                 className="absolute bottom-0 left-2 sm:left-0 text-cyan-300 dark:text-cyan-500 text-sm cursor-pointer hover:border-b hover:border-cyan-500"
               >
-                {item.link + " >"}
+                Leer màs {" > "}
               </span>
             </div>
           </div>
         ))}
-
-        <div className="hidden md:inline-block shadow-md shadow-black/90">
-          <img
-            className="w-full"
-            src={cargarImagen(`./work3.jpg`)}
-            //style={{ width: "200px" }}
-            alt="work3"
-          />
-        </div>
-
-        <div className="hidden shadow-md shadow-black/90">
-          <img
-            className="w-full"
-            src={cargarImagen(`./work5.jpg`)}
-            //style={{ width: "200px" }}
-            alt="work5"
-          />
-        </div>
-
-        <div className="hidden bg-gray-100 text-gray-700 shadow-md shadow-black/90 rounded-br-3xl rounded-tl-3xl">
-          <img
-            className="w-full rounded-tl-3xl"
-            src={cargarImagen(`./work6.jpg`)}
-            //style={{ width: "200px" }}
-            alt="work6"
-          />
-          <div className="p-4">
-            <div className="flex justify-between mb-2">
-              <h4>{texts.workItem4}</h4>
-              <h4>{texts.workView}</h4>
-            </div>
-            <div className="text-gray-100 flex flex-wrap">
-              <h1 className="p-1 px-2 bg-gray-800 rounded mr-1 mb-1">React</h1>
-              <h1 className="p-1 px-2 bg-gray-800 rounded mr-1 mb-1">
-                React Router
-              </h1>
-              <h1 className="p-1 px-2 bg-gray-800 rounded mr-1 mb-1">
-                Tailwind
-              </h1>
-              <h1 className="p-1 px-2 bg-gray-800 rounded mr-1 mb-1">
-                Chart Js
-              </h1>
-              <h1 className="p-1 px-2 bg-gray-800 rounded mr-1 mb-1">Fetch</h1>
-              <h1 className="p-1 px-2 bg-gray-800 rounded mr-1 mb-1">Axios</h1>
-              <h1 className="p-1 px-2 bg-gray-800 rounded mr-1 mb-1">
-                Node.js
-              </h1>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );

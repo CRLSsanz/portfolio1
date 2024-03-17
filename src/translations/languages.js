@@ -48,11 +48,22 @@ const translations = {
     //WORK
     workTitle: "Work",
     workText: "Check out some of my recent work",
-    workItem1: "Expenses & Income",
-    workItem2: "MCH Structures",
-    workItem3: "Marketing Online",
-    workItem4: "Fast Food J&M",
-    workView: "View",
+    workStructureMCH:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quas quod exercitationem, consequatur totam labore distinctio hic vel fugiat id!",
+
+    workMarketingOnline:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quas quod exercitationem, consequatur totam labore distinctio hic vel fugiat id!",
+
+    workFastFood:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quas quod exercitationem, consequatur totam labore distinctio hic vel fugiat id!",
+
+    workCrypto:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quas quod exercitationem, consequatur totam labore distinctio hic vel fugiat id!",
+
+    workCorsi:
+      "Learn to create applications and websites with MasterD's Full Stack Web Developer course and become an expert web programmer. The professional figure of the Full Stack developer is a point of reference for the entire team working on a project.",
+    workApeteat:
+      "Food and wellness service. Join our community and enjoy the best daily food service in this new hybrid work reality. Eat healthy and sustainable wherever you are. 100% natural.",
     //CONTACT
     contactTitle: "Contact me",
     contactText:
@@ -110,11 +121,25 @@ const translations = {
     //WORK
     workTitle: "Proyectos",
     workText: "Estos son algunos de mis proyectos web del último tiempo.",
-    workItem1: "Control de Gastos",
-    workItem2: "Extructuras MCH",
-    workItem3: "Marketing Online",
-    workItem4: "Comida Rapida J&M",
-    workView: "Ver",
+
+    workStructureMCH:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quas quod exercitationem, consequatur totam labore distinctio hic vel fugiat id!",
+
+    workMarketingOnline:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quas quod exercitationem, consequatur totam labore distinctio hic vel fugiat id!",
+
+    workFastFood:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quas quod exercitationem, consequatur totam labore distinctio hic vel fugiat id!",
+
+    workCrypto:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quas quod exercitationem, consequatur totam labore distinctio hic vel fugiat id!",
+
+    workCorsi:
+      "Aprenda a crear aplicaciones y sitios web con el curso Full Stack Web Developer de MasterD y conviértase en un programador web experto. La figura profesional del desarrollador Full Stack es un punto de referencia para todo el equipo que trabaja en un proyecto.",
+
+    workApeteat:
+      "Servicio de alimentación y bienestar. Únete a nuestra comunidad y disfruta del mejor servicio de comida diaria en esta nueva realidad laboral híbrida. Come sano y sostenible estés dónde estés. 100% Natural.",
+
     //CONTACT
     contactTitle: "Contáctame",
     contactText:
@@ -236,6 +261,8 @@ const translations = {
     workItem3: "Marketing Online",
     workItem4: "Fast Food J&M",
     workView: "Vedere",
+    workCorsi:
+      "Impara a creare applicazioni e siti web con il corso di Full Stack Web Developer di MasterD e diventa un programmatore web esperto. La figura professionale dello sviluppatore Full Stack è un punto di riferimento per tutto il team che lavora su un progetto.",
     //CONTACT
     contactTitle: "Contattami",
     contactText:
