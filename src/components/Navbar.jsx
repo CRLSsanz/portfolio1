@@ -12,7 +12,7 @@ const Navbar = () => {
     <section>
       <div className="w-full flex justify-center bg-black/0 backdrop-blur-2xl">
         {/** NAVBAR */}
-        <div className="w-full lg:w-[1100px] h-16 px-2 lg:px-5 flex justify-between items-center">
+        <div className="w-full xl:w-[1150px] 2xl:ml-36 h-16 px-2 lg:px-5 flex justify-between items-center">
           <div
             href="#section1"
             className="hidden shadow-lg shadow-transparent ml-4 text-transparent"

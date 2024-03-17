@@ -17,7 +17,7 @@ const Home = () => {
           <h4 className="mb-5 lg:mb-0">
             FULLSTACK DEVELOPER
             <br /> FOLIO /{" "}
-            <span className="fam-number font-light">2021 - 2024</span>
+            <span className="fam-number font-light">2020 - 2024</span>
           </h4>
 
           <h4 className="mb-5 lg:mb-0">
@@ -28,7 +28,7 @@ const Home = () => {
           <div className="z-50 flex justify-end md:justify-start">
             <a
               href="#sectionContact"
-              className="py-2 px-8 text-sm md:text-lg tracking-wider border border-gray-400 rounded-full hover:shadow-md hover:shadow-white/50 hover:dark:shadow-black/30 cursor-pointer"
+              className="py-2 px-8 text-sm md:text-lg tracking-wider border border-gray-400 rounded-full hover:text-white hover:bg-gray-400 hover:dark:shadow-black/30 cursor-pointer"
             >
               CONTACT
             </a>
@@ -152,13 +152,29 @@ const Home = () => {
                 </span>
 
                 <span className="text-gray-400 dark:text-gray-500 tracking-normal whitespace-normal Xbg-yellow-200 text-lg fam-raleway">
-                  <p className="text-justify pl-10 pt-10 text-sm mb-5">
-                    <span>ABOUT</span> I believe web design can be more diverse
-                    and inspiring. With a mission to present the possibilities
-                    of web design, I am pursuing new expressions through
-                    experiments and thoughts.
+                  <p className="text-justify pl-10 pt-10 text-sm mb-2">
+                    <h2 className="text-base inline-block">about</h2> - I
+                    believe web design can be more diverse and inspiring. With a
+                    mission to present the possibilities of web design, I am
+                    pursuing new expressions through experiments and thoughts.
                   </p>
-                  <h4 className="pl-10">scrol v</h4>
+                  <div className="flex flex-row justify-end pl-10 -mr-5">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6 -mr-3 animate-bounce"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5"
+                      />
+                    </svg>
+                    <h2 className="rotate-90">scroll</h2>
+                  </div>
                 </span>
               </div>
             </div>

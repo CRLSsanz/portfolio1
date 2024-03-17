@@ -33,12 +33,12 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="w-full overflow-hidden mb-5">
-            <div className="Xbg-gray-800 text-white Xtext-cyan-500 font-medium py-5 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-1 gap-y-5 Sshadow-lg shadow-black/50">
+          <div className="w-full overflow-hidden">
+            <div className="Xbg-gray-800 text-white Xtext-cyan-500 font-medium py-5 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-1 gap-y-5 Sshadow-lg shadow-black/50 mb-10">
               <div data-aos="zoom-out-up" data-aos-duration="1000" className="">
                 <a
                   href="tel:+51990441430"
-                  className="rounded-md w-44 bg-cyan-600 Xbg-gray-500/5 py-2 pl-4 flex flex-row items-center"
+                  className="rounded w-44 text-white bg-gradient-to-br from-blue-500 to-green-500/70  hover:rotate-2 py-2 pl-4 flex flex-row items-center"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -55,9 +55,7 @@ const Contact = () => {
                     />
                   </svg>
 
-                  <h2 className="Xtext-gray-200 dark:text-gray-500 pl-3">
-                    Call me
-                  </h2>
+                  <h4 className="Xtext-gray-200  pl-3">Call me</h4>
                 </a>
               </div>
 
@@ -69,7 +67,7 @@ const Contact = () => {
                 <a
                   href="mailto:carlossandev@gmail.com"
                   Subject="Interesado%20en%20el%20desarrollo%20de%20website"
-                  className="rounded-md w-44 bg-cyan-600 py-2 pl-4 flex flex-row items-center"
+                  className="rounded w-44 text-white bg-gradient-to-r from-blue-500 to-green-500/70 hover:-ml-0.5 py-2 pl-4 flex flex-row items-center"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -85,9 +83,7 @@ const Contact = () => {
                       d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
                     />
                   </svg>
-                  <h2 className="Xtext-gray-200 dark:text-gray-500 pl-3">
-                    Send an email
-                  </h2>
+                  <h4 className="Xtext-gray-200  pl-3">Send an email</h4>
                 </a>
               </div>
 
@@ -97,7 +93,7 @@ const Contact = () => {
                 className="ml-20 sm:ml-0 md:ml-20"
               >
                 <a
-                  className="rounded-md w-44 bg-cyan-600 py-2 pl-4 flex flex-row items-center"
+                  className="rounded w-44 text-white bg-gradient-to-tr from-blue-500 to-green-500/70  hover:-rotate-2 py-2 pl-4 flex flex-row items-center"
                   href="https://api.whatsapp.com/send?phone=+393801836002&text=Hello, I am interested in your services."
                 >
                   <svg
@@ -128,9 +124,7 @@ const Contact = () => {
                       </g>
                     </g>
                   </svg>
-                  <h2 className="Xtext-gray-200 dark:text-gray-500 pl-3">
-                    Whatsapp live
-                  </h2>
+                  <h4 className="Xtext-gray-200  pl-3">Whatsapp live</h4>
                 </a>
               </div>
             </div>
@@ -188,7 +182,7 @@ const Contact = () => {
             >
               <button
                 type="submit"
-                className="text-center text-sm w-full md:w-1/2 rounded-sm whitespace-nowrap py-3 tracking-widest text-white  bg-gradient-to-br from-blue-500 to-green-500/70 hover:bg-gradient-to-tl hover:to-green-500/70"
+                className="text-center text-sm w-full md:w-1/2 rounded-sm whitespace-nowrap py-3 tracking-widest text-white bg-gradient-to-br from-blue-500 to-green-500/70 hover:bg-gradient-to-tl hover:to-green-500/70"
               >
                 ¡Enviar Mensaje!
               </button>
