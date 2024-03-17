@@ -51,7 +51,7 @@ const About = () => {
           <div className="flex items-end mb-5">
             <h1
               data-aos="fade-left"
-              className="text-4xl whitespace-nowrap text-white dark:text-gray-700"
+              className="text-3xl whitespace-nowrap text-white dark:text-gray-700"
             >
               {texts.abTitle}
             </h1>
@@ -158,19 +158,13 @@ const About = () => {
             <h2
               data-aos="zoom-in-left"
               data-aos-duration="500"
-              className="text-3xl text-white font-medium dark:text-gray-700 mb-5"
+              className="text-2xl text-white dark:text-gray-700 mb-5"
             >
               {texts.abSubTitle}
             </h2>
             <p className=" text-gray-300 dark:text-gray-500 lg:pr-12 mb-16">
               {texts.abSubTitleText}
             </p>
-
-            <div className="hidden">
-              {card.map((item, index) => (
-                <h1 key={index}>{item.name}</h1>
-              ))}
-            </div>
           </div>
         </div>
 
@@ -211,7 +205,7 @@ const About = () => {
                 </div>
                 <h2
                   data-aos="fade-left"
-                  className="Xtracking-wide text-white dark:text-gray-700 text-xl font-semibold md:text-xl mb-2"
+                  className="Xtracking-wide text-white dark:text-gray-700 text-xl font-semibold mb-2"
                 >
                   {item.title}
                 </h2>

@@ -7,10 +7,12 @@ const skills = [
   { name: "css", width: "50px" },
   { name: "javascript", width: "35px" },
   { name: "react", width: "45px" },
+  { name: "nextjs", width: "50px" },
   { name: "vue", width: "40px" },
   { name: "nodejs", width: "40px" },
   { name: "mongodb", width: "40px" },
   { name: "mysql", width: "40px" },
+  { name: "php", width: "40px" },
   { name: "git", width: "40px" },
   { name: "github", width: "40px" },
   { name: "tailwind", width: "40px" },
@@ -18,7 +20,6 @@ const skills = [
   { name: "vscode", width: "35px" },
   { name: "photoS", width: "50px" },
   { name: "cDraw", width: "35px" },
-  { name: "responsive", width: "40px" },
 ];
 
 const Skills = () => {

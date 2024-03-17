@@ -53,8 +53,11 @@ const Dashboard = () => {
         <div className="lg:flex lg:flex-row lg:justify-between lg:border-b lg:border-gray-500/30 lg:px-5 lg:pb-5 lg:mb-5">
           <div className="Xbg-blue-300 relative flex flex-col lg:flex-row-reverse items-center justify-center mb-6 lg:mb-0">
             <span className="lg:hidden uppercase text-sm">MD</span>
-            <span className="hidden lg:block uppercase text-sm lg:ml-2">
-              MODE
+            <span
+              className="hidden lg:block uppercase text-sm lg:ml-2 cursor-pointer"
+              onClick={toggleDarkMode}
+            >
+              {texts.navbarMode}
             </span>
             <div
               className="p-2 lg:p-0 pb-5 lg:pb-0 active:bg-none active:bg-transparent active:animate-ping focus:outline-none cursor-pointer -mt-[52px] lg:-mt-0"
@@ -117,8 +120,8 @@ const Dashboard = () => {
               onChange={handleLanguage}
             >
               <option value="en">English</option>
-              <option value="fr">Frances</option>
-              <option value="it">Italiano</option>
+              {/**  <option value="fr">Frances</option>
+              <option value="it">Italiano</option> */}
               <option value="es">Spanish</option>
             </select>
           </div>

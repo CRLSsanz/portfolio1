@@ -17,7 +17,7 @@ const Home = () => {
           <h4 className="mb-5 lg:mb-0">
             FULLSTACK DEVELOPER
             <br /> FOLIO /{" "}
-            <span className="fam-number font-light">2020 - 2024</span>
+            <span className="fam-number font-light">2021 - 2024</span>
           </h4>
 
           <h4 className="mb-5 lg:mb-0">

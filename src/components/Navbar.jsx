@@ -233,12 +233,6 @@ const Navbar = () => {
               </span>
             </div>
           </div>
-
-          <li className="hidden">
-            <a href="http://www.google.com" className="">
-              + Downloader my resumen
-            </a>
-          </li>
         </div>
       </ul>
     </section>

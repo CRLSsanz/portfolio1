@@ -8,6 +8,7 @@ const translations = {
     navbarSkills: "Skills",
     navbarWork: "Work",
     navbarContact: "Contact",
+    navbarMode: "Mode",
     //HOME
     homeHello: "Hi my name is",
     homeTitle: "I'm a full Stack Developer",
@@ -17,7 +18,7 @@ const translations = {
     //ABOUT
     abTitle: "Welcome",
     abTitleText:
-      "My name is Carlos Sanchez and I am a full stack Developer, specialized in Front-End. Programmer. Creative. Whimsical specialist. International Speaker. Ex-Google.",
+      "My name is Carlos Sanchez and I am a full stack Developer, specialized in Front-End. Programmer. Creative. Specialist. Capricious. Enthusiast of new challenges. I am passionate about creating great software.",
     abInfo1: "Available",
     abInfo2: "Links",
     abInfo3: "February",
@@ -27,7 +28,7 @@ const translations = {
     abBotton: "Brings ideas to life with code!",
     abSubTitle: "What i do",
     abSubTitleText:
-      "The digital world is constantly evolving, your online presence is essential for the success of your business, which is why we accompany you from the process of defining and building your brand.",
+      "The digital world is constantly evolving, your online presence is essential for the success of your business, which is why I accompany you from the process of defining and building your brand.",
 
     abDo1title: "Web Development and Design",
     abDo1text:
@@ -47,7 +48,7 @@ const translations = {
       "These are some of the technologies and skills learned throughout my career",
     //WORK
     workTitle: "Work",
-    workText: "Check out some of my recent work",
+    workText: "These are some of my recent web projects.",
     workStructureMCH:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quas quod exercitationem, consequatur totam labore distinctio hic vel fugiat id!",
 
@@ -68,9 +69,12 @@ const translations = {
     contactTitle: "Contact me",
     contactText:
       "Contact us for free and together let's grow your business in the digital world! Our team of experts is ready to make it happen.",
+    contactCall: "Call me now",
+    contactSend: "Send an email",
+    contactLive: "Whatsapp live",
     contactForm:
       "Fill in your info in the form below and I look forward to hearing from you!",
-    contactSend: "Send Message!",
+    contactSendForm: "Send Message!",
   },
   es: {
     //NAVBAR
@@ -80,6 +84,7 @@ const translations = {
     navbarSkills: "Tecnología",
     navbarWork: "Proyectos",
     navbarContact: "Contacto",
+    navbarMode: "Modo",
     //HOME
     homeHello: "Hola mi nombre es",
     homeTitle: "Desarrollador Web",
@@ -89,7 +94,7 @@ const translations = {
     //ABOUT
     abTitle: "Welcome",
     abTitleText:
-      "Me llamo Carlos Sanchez y soy Desarrollador full stack, especializado en Front-End. Programador. Creativo. Especialista caprichoso. Ponente Internacional. Ex-Google.",
+      "Me llamo Carlos Sanchez y soy Desarrollador full stack, especializado en Front-End. Programador. Creativo. Especialista. Caprichoso. Entusiasta de nuevos retos. Me apasiona crear software excelente.",
     abInfo1: "Disponible",
     abInfo2: "Enlaces",
     abInfo3: "de Febrero",
@@ -99,7 +104,7 @@ const translations = {
     abBotton: "¡Da vida a las ideas con código!",
     abSubTitle: "Lo que hago",
     abSubTitleText:
-      "El mundo digital está en constante evolución, tu presencia en línea es esencial para el éxito de tu negocio, es por ello que te acompañamos desde el proceso de definición y construcción de tu marca.",
+      "El mundo digital está en constante evolución, tu presencia en línea es esencial para el éxito de tu negocio, es por ello que te acompaño desde el proceso de definición y construcción de tu marca.",
 
     abDo1title: "Desarrollo y Diseño Web",
     abDo1text:
@@ -120,23 +125,17 @@ const translations = {
       "Estas son algunas de las tecnologías y habilidades aprendidas a lo largo de mi carrera",
     //WORK
     workTitle: "Proyectos",
-    workText: "Estos son algunos de mis proyectos web del último tiempo.",
-
+    workText: "Estos son algunos de mis proyectos web recientes.",
     workStructureMCH:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quas quod exercitationem, consequatur totam labore distinctio hic vel fugiat id!",
-
     workMarketingOnline:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quas quod exercitationem, consequatur totam labore distinctio hic vel fugiat id!",
-
     workFastFood:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quas quod exercitationem, consequatur totam labore distinctio hic vel fugiat id!",
-
     workCrypto:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quas quod exercitationem, consequatur totam labore distinctio hic vel fugiat id!",
-
     workCorsi:
       "Aprenda a crear aplicaciones y sitios web con el curso Full Stack Web Developer de MasterD y conviértase en un programador web experto. La figura profesional del desarrollador Full Stack es un punto de referencia para todo el equipo que trabaja en un proyecto.",
-
     workApeteat:
       "Servicio de alimentación y bienestar. Únete a nuestra comunidad y disfruta del mejor servicio de comida diaria en esta nueva realidad laboral híbrida. Come sano y sostenible estés dónde estés. 100% Natural.",
 
@@ -144,9 +143,12 @@ const translations = {
     contactTitle: "Contáctame",
     contactText:
       "¡Contáctanos de forma gratuita y juntos hagamos crecer tu negocio en el mundo digital! Nuestro equipo de expertos está listo para hacerlo realidad.",
+    contactCall: "Llamar ahora",
+    contactSend: "Enviar email",
+    contactLive: "Msn Whatsapp",
     contactForm:
       "Complete su información en el formulario a continuación y espero tener noticias suyas.",
-    contactSend: "Enviar Mensaje!",
+    contactSendForm: "Enviar Mensaje!",
   },
   fr: {
     //NAVBAR
