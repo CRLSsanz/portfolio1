@@ -143,7 +143,7 @@ const Home = () => {
 
             <div className="relative Xbg-orange-300">
               <div className="absolute bottom-0 tracking-[-0.05em] w-full flex flex-row justify-between whitespace-nowrap xl:pl-36">
-                <span>
+                <span className="Xbg-blue-950 ">
                   <span className="tracking-[-0.06em]">
                     B<span className="text-cyan-600">A</span>
                     <span>CK</span>
@@ -151,8 +151,14 @@ const Home = () => {
                   -<span className="-ml-2">END</span>
                 </span>
 
-                <span className="tracking-normal Xbg-yellow-200 text-xl">
-                  <div> </div>
+                <span className="text-gray-400 dark:text-gray-500 tracking-normal whitespace-normal Xbg-yellow-200 text-lg fam-raleway">
+                  <p className="text-justify pl-10 pt-10 text-sm mb-5">
+                    <span>ABOUT</span> I believe web design can be more diverse
+                    and inspiring. With a mission to present the possibilities
+                    of web design, I am pursuing new expressions through
+                    experiments and thoughts.
+                  </p>
+                  <h4 className="pl-10">scrol v</h4>
                 </span>
               </div>
             </div>

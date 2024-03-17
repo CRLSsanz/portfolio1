@@ -47,7 +47,7 @@ const Portfolio = () => {
           </div>
 
           <svg
-            className="block md:hidden text-[#1E1F26] dark:text-transparent Xtext-red-400 -mt-0"
+            className="block md:hidden text-[#1E1F26] dark:text-transparent Xtext-red-400 -mt-0 h-12 max-w-full"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1440 180"
           >
@@ -99,7 +99,7 @@ const Portfolio = () => {
               </div>
             </div>
 
-            <div className="lg:basis-4/12 flex justify-start bg-[#1E1F26] lg:bg-[#1E1F26]/80 dark:bg-gray-200 -mt-12 md:mt-0 border-l md:border-l-0 border-gray-400/40">
+            <div className="lg:basis-4/12 flex justify-start bg-[#1E1F26] lg:bg-[#1E1F26]/80 dark:bg-gray-200 -mt-12 md:mt-0">
               <div className=" Xbg-[#151515] Xbg-red-400 Xh-full h-[550px] lg:h-[650px] sticky top-16 ">
                 <Dashboard />
               </div>

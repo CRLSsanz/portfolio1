@@ -36,7 +36,7 @@ const Skills = () => {
       </div>
       <p className="text-gray-300 dark:text-gray-500 mb-5">{texts.skillText}</p>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 pb-10">
         {skills.map((item, index) => (
           <div
             key={index}

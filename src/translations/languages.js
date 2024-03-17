@@ -15,7 +15,7 @@ const translations = {
       "An enthusiast of new challenges. I am passionate about creating excellent software seeking to leverage my experience and knowledge to make the web and your apps a little better..",
     homeButton: "View Work",
     //ABOUT
-    abTitle: "Hello World!",
+    abTitle: "Welcome",
     abTitleText:
       "My name is Carlos Sanchez and I am a full stack Developer, specialized in Front-End. Programmer. Creative. Whimsical specialist. International Speaker. Ex-Google.",
     abInfo1: "Available",
@@ -76,7 +76,7 @@ const translations = {
       "Soy un entusiasta de los nuevos retos; me apasiona crear software excelente buscando aprovechar mi experiencia y conocimientos.",
     homeButton: "Ver Portafolio",
     //ABOUT
-    abTitle: "Hello World!",
+    abTitle: "Welcome",
     abTitleText:
       "Me llamo Carlos Sanchez y soy Desarrollador full stack, especializado en Front-End. Programador. Creativo. Especialista caprichoso. Ponente Internacional. Ex-Google.",
     abInfo1: "Disponible",
