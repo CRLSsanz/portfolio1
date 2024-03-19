@@ -60,7 +60,7 @@ const Dashboard = () => {
               {texts.navbarMode}
             </span>
             <div
-              className="p-2 lg:p-0 pb-5 lg:pb-0 active:bg-none active:bg-transparent active:animate-ping focus:outline-none cursor-pointer -mt-[52px] lg:-mt-0"
+              className="p-2 lg:p-0 pb-5 lg:pb-0 active:bg-none active:bg-transparent active:animate-ping focus:outline-none cursor-pointer -mt-[52px] lg:-mt-0 "
               onClick={toggleDarkMode}
             >
               {darkMode ? (

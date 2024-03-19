@@ -1,16 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import guitar from "../images/guitar.mp3";
 //import { useAppContext } from "../context/AppProvider";
 //import foto from "../images/img-web-developer.png.webp";
 //import foto from "https://www.click-academy.it/wp-content/uploads/2024/01/img-web-developer-sito-a-chi-e-dedicato.png.webp";
 
 const Home = () => {
   //const { texts } = useAppContext();
+  const [value, setValue] = useState(1);
+
+  useEffect(() => {
+    if (value % 2 === 0) play();
+  });
+
+  function play() {
+    new Audio(guitar).play();
+  }
 
   return (
     <div className="h-full p-5 sm:px-10 XXmd:w-[1100px] text-gray-400 dark:text-gray-500 ">
       <div className="w-full lg:max-w-[1300px] flex flex-row mb-5 mx-auto">
         <div className="w-1/2 lg:w-1/4 text-sm lg:text-base tracking-widest ">
-          <h1 className="w-24 fam-logo leading-4 md:leading-6">CRLS CODE</h1>
+          <h1
+            className="w-24 fam-logo leading-4 md:leading-6 cursor-pointer"
+            onClick={() => setValue(value + 1)}
+          >
+            CRLS CODE
+          </h1>
         </div>
 
         <div className="w-1/2 lg:w-3/4 text-xs md:text-sm flex flex-col lg:flex-row justify-between lg:items-center text-end md:text-start">

@@ -158,7 +158,7 @@ const About = () => {
             <h2
               data-aos="zoom-in-left"
               data-aos-duration="500"
-              className="text-2xl text-white dark:text-gray-700 mb-5"
+              className="text-2xl text-white font-semibold dark:text-gray-700 mb-5"
             >
               {texts.abSubTitle}
             </h2>
