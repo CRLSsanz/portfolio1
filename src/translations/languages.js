@@ -1,5 +1,5 @@
 // 6
-const initialLanguage = "en";
+const initialLanguage = "es";
 const translations = {
   en: {
     //NAVBAR
@@ -18,7 +18,7 @@ const translations = {
     //ABOUT
     abTitle: "Welcome",
     abTitleText:
-      "My name is Carlos Sanchez and I am a full stack Developer, specialized in Front-End. Programmer. Creative. Specialist. Capricious. Enthusiast of new challenges. I am passionate about creating great software.",
+      "My name is Carlos Sanchez and I am a Full Stack Developer, specialized in Front-End. Programmer. Creative. Specialist. Capricious. Enthusiast of new challenges. I am passionate about creating great software.",
     abInfo1: "Available",
     abInfo2: "Links",
     abInfo3: "February",
@@ -94,7 +94,7 @@ const translations = {
     //ABOUT
     abTitle: "Welcome",
     abTitleText:
-      "Me llamo Carlos Sanchez y soy Desarrollador full stack, especializado en Front-End. Programador. Creativo. Especialista. Caprichoso. Entusiasta de nuevos retos. Me apasiona crear software excelente.",
+      "Me llamo Carlos Sanchez y soy Desarrollador Full Stack, especializado en Front-End. Programador. Creativo. Especialista. Apasionado de crear software excelente. Entusiasta de nuevos retos.",
     abInfo1: "Disponible",
     abInfo2: "Enlaces",
     abInfo3: "de Febrero",
@@ -127,27 +127,26 @@ const translations = {
     workTitle: "Proyectos",
     workText: "Estos son algunos de mis proyectos web recientes.",
     workStructureMCH:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quas quod exercitationem, consequatur totam labore distinctio hic vel fugiat id!",
+      "Fabricación de Estructuras Metálicas de Acero a Medida. En estructuras MCH damos las mejores soluciones en soldaduras, corte, taladramiento, granallado o pintura, entre otros en la fabricación de estructuras metálicas de todo tipo.",
     workMarketingOnline:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quas quod exercitationem, consequatur totam labore distinctio hic vel fugiat id!",
+      "Impulsa tu Negocio, descubre el poder de la consultoría estratégica de marketing y ventas para impulsar tu negocio hacia el éxito.",
     workFastFood:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quas quod exercitationem, consequatur totam labore distinctio hic vel fugiat id!",
+      "Tu propia solución de pedidos en línea, con sitios y aplicaciones permite que los clientes en la tienda hagan pedidos directamente desde su teléfono con los pedidos desde la mesa de Fast Food J&M",
     workCrypto:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quas quod exercitationem, consequatur totam labore distinctio hic vel fugiat id!",
+      "Precio de BTC hoy. El precio en tiempo real de Bitcoin por (BTC/USD) y su capitalización de mercado actual. Volumen de trading en 24 horas. El precio de BTC respecto a USD se actualiza en tiempo real.",
     workCorsi:
       "Aprenda a crear aplicaciones y sitios web con el curso Full Stack Web Developer de MasterD y conviértase en un programador web experto. La figura profesional del desarrollador Full Stack es un punto de referencia para todo el equipo que trabaja en un proyecto.",
     workApeteat:
       "Servicio de alimentación y bienestar. Únete a nuestra comunidad y disfruta del mejor servicio de comida diaria en esta nueva realidad laboral híbrida. Come sano y sostenible estés dónde estés. 100% Natural.",
 
     //CONTACT
-    contactTitle: "Contáctame",
-    contactText:
-      "¡Contáctanos de forma gratuita y juntos hagamos crecer tu negocio en el mundo digital! Nuestro equipo de expertos está listo para hacerlo realidad.",
+    contactTitle: "Contacto",
+    contactText: `Contáctame de forma gratuita y juntos hagamos crecer tu negocio en este mundo digital. ¡Estamos listo para hacerlo realidad!.`,
     contactCall: "Llamar ahora",
     contactSend: "Enviar email",
     contactLive: "Msn Whatsapp",
     contactForm:
-      "Complete su información en el formulario a continuación y espero tener noticias suyas.",
+      "Complete su información en el formulario a continuación; espero tener noticias suyas.",
     contactSendForm: "Enviar Mensaje!",
   },
   fr: {
