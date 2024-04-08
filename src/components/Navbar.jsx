@@ -200,7 +200,9 @@ const Navbar = () => {
                 <option value="en">English</option>
                 <option value="fr">Frances</option>
                 <option value="it">Italiano</option>
-                <option value="es">Spanish</option>
+                <option value="es" selected>
+                  Spanish
+                </option>
               </select>
             </div>
           </div>

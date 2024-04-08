@@ -10,11 +10,7 @@ const translations = {
     navbarContact: "Contact",
     navbarMode: "Mode",
     //HOME
-    homeHello: "Hi my name is",
-    homeTitle: "I'm a full Stack Developer",
-    homeText:
-      "An enthusiast of new challenges. I am passionate about creating excellent software seeking to leverage my experience and knowledge to make the web and your apps a little better..",
-    homeButton: "View Work",
+    homeButton: "Contact",
     //ABOUT
     abTitle: "Welcome",
     abTitleText:
@@ -86,15 +82,11 @@ const translations = {
     navbarContact: "Contacto",
     navbarMode: "Modo",
     //HOME
-    homeHello: "Hola mi nombre es",
-    homeTitle: "Desarrollador Web",
-    homeText:
-      "Soy un entusiasta de los nuevos retos; me apasiona crear software excelente buscando aprovechar mi experiencia y conocimientos.",
-    homeButton: "Ver Portafolio",
+    homeButton: "Contacto",
     //ABOUT
     abTitle: "Welcome",
     abTitleText:
-      "Me llamo Carlos Sanchez y soy Desarrollador Full Stack, especializado en Front-End. Programador. Creativo. Especialista. Apasionado de crear software excelente. Entusiasta de nuevos retos.",
+      "Me llamo Carlos Sanchez y soy desarrollador Full Stack, especializado en Front-End. Programador. Creativo. Especialista. Apasionado de crear software excelente. Entusiasta de nuevos retos.",
     abInfo1: "Disponible",
     abInfo2: "Enlaces",
     abInfo3: "de Febrero",
@@ -127,17 +119,17 @@ const translations = {
     workTitle: "Proyectos",
     workText: "Estos son algunos de mis proyectos web recientes.",
     workStructureMCH:
-      "Fabricación de Estructuras Metálicas de Acero a Medida. En estructuras MCH damos las mejores soluciones en soldaduras, corte, taladramiento, granallado o pintura, entre otros en la fabricación de estructuras metálicas de todo tipo.",
+      "Fabricación de estructuras metálicas a medida. En estructuras MCH le damos las mejores soluciones en soldaduras, corte, taladramiento o pintura, entre otras estructuras metálicas de todo tipo.",
     workMarketingOnline:
-      "Impulsa tu Negocio, descubre el poder de la consultoría estratégica de marketing y ventas para impulsar tu negocio hacia el éxito.",
+      "Impulsa tu negocio o marca, descubre el poder de la consultoría estratégica de marketing y ventas para impulsar tu negocio hacia el éxito.",
     workFastFood:
-      "Tu propia solución de pedidos en línea, con sitios y aplicaciones permite que los clientes en la tienda hagan pedidos directamente desde su teléfono con los pedidos desde la mesa de Fast Food J&M",
+      "Tu propia solución de pedidos en línea, con sitios y aplicaciones permite que los clientes en la tienda hagan pedidos directamente desde su teléfono desde la mesa de Fast Food J&M",
     workCrypto:
-      "Precio de BTC hoy. El precio en tiempo real de Bitcoin por (BTC/USD) y su capitalización de mercado actual. Volumen de trading en 24 horas. El precio de BTC respecto a USD se actualiza en tiempo real.",
+      "Los precios en tiempo real del Bitcoin por (BTC/USD) y su capitalización de mercado actual. Volumen de trading en 24 horas. Cotización y/o tipo de cambio del precio de BTC respecto a USD.",
     workCorsi:
-      "Aprenda a crear aplicaciones y sitios web con el curso Full Stack Web Developer de MasterD y conviértase en un programador web experto. La figura profesional del desarrollador Full Stack es un punto de referencia para todo el equipo que trabaja en un proyecto.",
+      "Aprenda a crear aplicaciones y sitios web con el curso Full Stack Web Developer de MasterD y conviértase en un programador web experto. La figura profesional del desarrollador Full Stack es un punto de referencia para todo proyecto.",
     workApeteat:
-      "Servicio de alimentación y bienestar. Únete a nuestra comunidad y disfruta del mejor servicio de comida diaria en esta nueva realidad laboral híbrida. Come sano y sostenible estés dónde estés. 100% Natural.",
+      "Servicio de alimentación y bienestar. Únete a nuestra comunidad y disfruta del mejor servicio de comida diaria. Come sano y sostenible estés dónde estés, 100% Natural.",
 
     //CONTACT
     contactTitle: "Contacto",
